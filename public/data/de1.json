@@ -770,8 +770,778 @@
         "Tỳ được ví như \"cái bếp\" của cơ thể, phụ trách <b>tiêu hóa và hấp thu (vận hóa)</b> thức ăn.",
         "Khi \"bếp\" yếu (Tỳ hư) thì việc ăn uống sẽ không còn ngon miệng, tiêu hóa kém."
       ]
+    },
+  
+    {
+      "id": 41,
+      "question": "Ngoài ăn uống không điều độ và mệt nhọc quá sức, yếu tố nào sau đây cũng được liệt kê là nguyên nhân gây Tỳ khí hư trong tài liệu?",
+      "image": null,
+      "options": [
+        "A. Do tiếp xúc với phong hàn tà khí thường xuyên",
+        "B. Do phú bẩm bất túc, thể trạng vốn hư yếu, hoặc cao tuổi thể lực yếu",
+        "C. Do Can khí uất kết làm ảnh hưởng đến chức năng của Tỳ",
+        "D. Do uống quá nhiều nước làm tăng gánh nặng cho Tỳ"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Theo tài liệu, các nguyên nhân gây Tỳ khí hư bao gồm:<br />- Ăn uống không điều độ, mệt nhọc quá sức, ưu tư tổn thương Tỳ thổ.<br />- <b>Phú bẩm bất túc, thể trạng vốn hư yếu:</b> Tức là cơ địa sinh ra đã yếu, chức năng Tỳ không mạnh.<br />- <b>Cao tuổi thể lực yếu:</b> Tuổi già làm các tạng phủ suy yếu tự nhiên.<br />- Ốm nặng vừa mới khỏi, điều dưỡng không đầy đủ.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Nguyên nhân)",
+      "hints": [
+        "Tỳ khí hư có thể do yếu tố <b>bẩm sinh (phú bẩm)</b> hoặc do <b>quá trình lão hóa tự nhiên</b>.",
+        "Không chỉ do lối sống mà còn do nền tảng sức khỏe ban đầu hoặc tuổi tác."
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Trong bệnh Háo suyễn (hen suyễn), Tỳ hư đóng vai trò như thế nào trong việc hình thành đàm trọc gây bệnh?",
+      "image": null,
+      "options": [
+        "A. Tỳ hư làm Phế khí cũng hư theo, không tuyên giáng được gây suyễn",
+        "B. Tỳ hư không sinh đủ huyết nuôi Phế, làm Phế yếu dễ bị ngoại tà",
+        "C. Tỳ hư không vận hóa được thủy cốc, biến thành đàm trọc trữ ở trong Phế",
+        "D. Tỳ hư làm Thận không nạp khí, khí nghịch lên gây suyễn"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mối quan hệ giữa Tỳ và Phế trong bệnh Háo suyễn (hen suyễn) thường được mô tả là \"Tỳ là nguồn sinh đàm, Phế là đồ chứa đàm\".<br />Cụ thể, khi <b>Tỳ hư không vận hóa được thủy cốc</b> (thức ăn, nước uống), các chất dịch không được chuyển hóa đúng cách sẽ ngưng tụ lại thành <b>đàm trọc</b>. Đàm này sẽ được vận chuyển và <b>trữ ở trong Phế</b>. Khi gặp các yếu tố kích thích (ăn uống không phù hợp, ngoại tà), đàm bị dẫn động sẽ gây tắc nghẽn đường hô hấp, phát sinh cơn suyễn.",
+      "difficulty": "hard",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Phân tích - Háo suyễn)",
+      "hints": [
+        "Câu nói quan trọng: <b>\"Tỳ vi sinh đàm chi nguyên, Phế vi trữ đàm chi khí\"</b> (Tỳ là nguồn sinh đàm, Phế là đồ chứa đàm).",
+        "Tỳ hư → Thủy cốc không hóa thành tinh vi mà thành đàm → Đàm tích ở Phế → Gây suyễn."
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Hiện tượng \"dương không hóa thủy\" trong Tỳ dương hư dẫn đến triệu chứng nào sau đây ở đường tiêu hóa?",
+      "image": null,
+      "options": [
+        "A. Táo bón, phân khô cứng",
+        "B. Ợ hơi, ợ chua nhiều",
+        "C. Tiết tả dạng nhiều nước (trong, không mùi), có thể ra đồ ăn không tiêu",
+        "D. Đau bụng dữ dội, cự án"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Trong Tỳ dương hư, \"dương không hóa thủy\" có nghĩa là dương khí của Tỳ quá yếu, không đủ sức để chuyển hóa (hóa) phần thủy dịch (thủy) trong thức ăn và trong cơ thể. Điều này dẫn đến:<br />- <b>Thủy thấp bị đình tụ:</b> Nước không được hấp thu và chuyển hóa mà ứ đọng lại ở đường tiêu hóa.<br />- <b>Tiết tả dạng nhiều nước:</b> Phân sẽ lỏng, chứa nhiều nước, thường trong và không có mùi hôi thối nồng (khác với tiêu chảy do thấp nhiệt).<br />- <b>Ra đồ ăn không tiêu:</b> Do chức năng tiêu hóa chung của Tỳ Vị cũng suy giảm nặng.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư (Phân tích)",
+      "hints": [
+        "<b>Dương hư thì không \"hóa\" (biến đổi, làm bay hơi) được nước</b>.",
+        "Nước không hóa được sẽ đi thẳng ra ngoài theo đường tiêu hóa, gây tiêu chảy toàn nước."
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Trong hội chứng Tỳ Bị Hàn Thấp, triệu chứng \"người mệt mỏi, thân thể nặng nề\" chủ yếu phản ánh điều gì?",
+      "image": null,
+      "options": [
+        "A. Sự thiếu hụt khí huyết toàn thân",
+        "B. Sự xâm nhập của phong tà vào kinh lạc",
+        "C. Sự đình trệ của thủy thấp làm ngăn trở khí cơ, dương khí không thông暢",
+        "D. Sự tổn thương của Can Thận"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Trong hội chứng Tỳ Bị Hàn Thấp:<br />- <b>\"Thấp\"</b> là một loại tà khí có tính <b>nặng nề, dính nhớt, gây trì trệ</b>.<br />- Khi thấp tà xâm phạm Tỳ, làm Tỳ mất chức năng vận hóa, thủy thấp sẽ bị ứ đọng lại trong cơ thể.<br />- Sự đình trệ của thủy thấp này sẽ <b>ngăn trở sự lưu thông của khí cơ</b> (sự vận hành của khí) và làm cho <b>dương khí không được thông暢</b> (lan tỏa, hoạt động).<br />Hậu quả là người bệnh cảm thấy <b>mệt mỏi</b> (do dương khí bị cản trở, không đủ sức) và <b>thân thể nặng nề</b> (do tính chất của thấp tà).",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Bị Hàn Thấp",
+      "hints": [
+        "Nhớ đặc tính của <b>Thấp: Nặng nề, trì trệ</b>.",
+        "Thấp tà làm cơ thể như đeo đá, khí huyết khó lưu thông gây mệt mỏi, nặng nề."
+      ]
+    },
+    {
+      "id": 45,
+      "question": "Biểu hiện \"miệng đắng, dính nhớt, ăn không ngon\" kèm theo \"da vàng nhẹ không tươi nhuận\" thường là dấu hiệu của hội chứng nào liên quan đến Tỳ?",
+      "image": null,
+      "options": [
+        "A. Tỳ Khí Hư",
+        "B. Tỳ Dương Hư",
+        "C. Tỳ Bị Hàn Thấp",
+        "D. Tỳ Bị Thấp Nhiệt"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Các triệu chứng này rất điển hình cho hội chứng <b>Tỳ Bị Thấp Nhiệt</b>:<br />- <b>Miệng đắng:</b> Thường do Nhiệt (đặc biệt là Can Đởm nhiệt, nhưng ở đây thấp nhiệt uất kết ở Tỳ Vị cũng có thể gây ra).<br />- <b>Miệng dính nhớt:</b> Dấu hiệu của Thấp tà.<br />- <b>Ăn không ngon:</b> Do thấp nhiệt làm cản trở chức năng vận hóa của Tỳ Vị.<br />- <b>Da vàng nhẹ không tươi nhuận (hoàng đản thể âm hoàng):</b> Do thấp nhiệt làm cản trở sự sơ tiết của Can Đởm và vận hóa của Tỳ, khiến mật (đởm trấp) không đi theo đường bình thường mà thấm ra da.<br />Tất cả các dấu hiệu này đều chỉ sự kết hợp của \"Thấp\" và \"Nhiệt\" tại Tỳ Vị.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Bị Thấp Nhiệt",
+      "hints": [
+        "<b>Miệng đắng = Nhiệt</b>. <b>Miệng dính nhớt = Thấp</b>.",
+        "<b>Da vàng</b> (do thấp nhiệt cản trở đởm) cũng là một dấu hiệu quan trọng."
+      ]
+    },
+    {
+      "id": 46,
+      "question": "Mối quan hệ giữa Tâm Bào và \"thần minh\" (hoạt động tinh thần, ý thức) được mô tả như thế nào trong tài liệu?",
+      "image": null,
+      "options": [
+        "A. Tâm Bào không liên quan đến thần minh, chỉ bảo vệ Tâm về mặt thực thể",
+        "B. Khi Tâm Bào bị bệnh, có thể ảnh hưởng đến thần chí, gây ra các triệu chứng tương tự bệnh của Tâm như hôn mê, nói sảng",
+        "C. Tâm Bào chủ về tư duy logic, còn Tâm chủ về cảm xúc",
+        "D. Thần minh do Não chủ, Tâm Bào chỉ hỗ trợ tuần hoàn máu lên não"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tài liệu nêu rõ: \"Khi Tâm Bào bị bệnh, có thể ảnh hưởng đến thần chí, gây ra các triệu chứng tương tự bệnh của Tâm như hôn mê, nói sảng.\"<br />Điều này cho thấy Tâm Bào không chỉ là một lớp màng bảo vệ đơn thuần mà còn có vai trò liên quan mật thiết đến chức năng thần minh của Tâm. Khi tà khí xâm phạm Tâm Bào (ví dụ trong \"Nhiệt nhập Tâm Bào\" hoặc \"Đàm trọc che lấp Tâm khiếu\"), các biểu hiện rối loạn thần chí sẽ xuất hiện, tương tự như khi chính Tâm bị bệnh.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tâm và Tâm Bào - Đại cương về Tâm Bào",
+      "hints": [
+        "Tâm chủ thần minh. Tâm Bào là \"vỏ bọc\" của Tâm, nên bệnh ở Tâm Bào cũng <b>ảnh hưởng đến \"Thần\"</b>.",
+        "Triệu chứng thần chí ở bệnh Tâm Bào (hôn mê, nói sảng) giống như bệnh ở Tâm."
+      ]
+    },
+    {
+      "id": 47,
+      "question": "Trong hội chứng \"Nhiệt nhập Tâm Bào\", đặc điểm lưỡi \"đỏ giáng, khô, không có rêu hoặc ít rêu\" là do nguyên nhân trực tiếp nào?",
+      "image": null,
+      "options": [
+        "A. Do huyết ứ ở lưỡi gây ra",
+        "B. Do hàn tà làm ngưng tụ khí huyết ở lưỡi",
+        "C. Do nhiệt tà cực thịnh thiêu đốt tân dịch của cơ thể",
+        "D. Do Tỳ hư không sinh đủ tân dịch để nhu nhuận lưỡi"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Trong hội chứng \"Nhiệt nhập Tâm Bào\", nhiệt tà rất mạnh và đã vào sâu phần Dinh, Huyết.<br />- <b>Lưỡi đỏ giáng:</b> \"Đỏ giáng\" là màu đỏ sẫm, là biểu hiện của nhiệt đã vào sâu phần Dinh, Huyết.<br />- <b>Lưỡi khô, không có rêu hoặc ít rêu:</b> Là do <b>nhiệt tà cực thịnh đã thiêu đốt, làm hao tổn nặng nề tân dịch</b> (dịch cơ thể). Khi tân dịch cạn kiệt, lưỡi sẽ không còn được nuôi dưỡng đầy đủ, trở nên khô và mất lớp rêu bình thường.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Nhiệt nhập Tâm Bào",
+      "hints": [
+        "<b>Nhiệt cực thì làm khô tân dịch</b>.",
+        "Lưỡi đỏ sẫm (giáng) + Khô + Không rêu = Nhiệt rất mạnh làm cạn kiệt nước trong cơ thể."
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Trong hội chứng \"Đàm Trọc Che Lấp Tâm Khiếu\", các biểu hiện như \"cười khóc thất thường, hành vi bất thường\" thuộc nhóm triệu chứng nào là chính?",
+      "image": null,
+      "options": [
+        "A. Rối loạn tiêu hóa do đàm trọc ở Tỳ Vị",
+        "B. Rối loạn hô hấp do đàm ở Phế",
+        "C. Rối loạn thần chí do đàm che lấp Tâm khiếu",
+        "D. Rối loạn vận động do đàm ở kinh lạc"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Hội chứng \"Đàm Trọc Che Lấp Tâm Khiếu\" có nghĩa là đàm (một sản phẩm bệnh lý có tính dính đặc, trọc) đã che lấp các \"khiếu\" (lỗ thông) của Tâm. Tâm là nơi tàng \"Thần\" (ý thức, tinh thần).<br />Khi các khiếu của Tâm bị che lấp, \"Thần\" sẽ bị nhiễu loạn, không còn minh mẫn. Điều này dẫn đến các <b>rối loạn về thần chí</b> là triệu chứng nổi bật và chính yếu, bao gồm: hôn mê, nói năng không rõ ràng, lú lẫn, và cả những biểu hiện cảm xúc, hành vi bất thường như <b>cười khóc thất thường, hành vi bất thường</b>.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Đàm Trọc Che Lấp Tâm Khiếu",
+      "hints": [
+        "Tâm khiếu bị <b>\"che lấp\"</b> bởi đàm thì <b>\"Thần\"</b> không thể sáng suốt được.",
+        "Các hành vi, cảm xúc kỳ lạ, không kiểm soát được là dấu hiệu của rối loạn thần chí."
+      ]
+    },
+    {
+      "id": 49,
+      "question": "Theo đại cương về Tam Tiêu, vai trò của Tam Tiêu đối với \"nguyên khí\" là gì?",
+      "image": null,
+      "options": [
+        "A. Tam Tiêu sinh ra nguyên khí",
+        "B. Tam Tiêu tàng trữ nguyên khí",
+        "C. Tam Tiêu là đường thông hành của nguyên khí và các loại khí khác",
+        "D. Tam Tiêu không liên quan đến nguyên khí, chỉ vận hành thủy dịch"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tài liệu nêu rõ: \"Tam Tiêu là một trong Lục Phủ... Là đường thông hành của nguyên khí và các loại khí khác. Khí cơ thăng giáng, xuất nhập của các tạng phủ đều phải thông qua Tam Tiêu.\"<br />Điều này có nghĩa là Tam Tiêu giống như một hệ thống \"đường giao thông\" cho phép nguyên khí (khí gốc của cơ thể, do Thận tàng trữ) và các loại khí khác (như tông khí, dinh khí, vệ khí) lưu thông đến khắp các tạng phủ và toàn thân, đảm bảo cho các hoạt động sống diễn ra bình thường.",
+      "difficulty": "medium",
+      "topic": "YHCT - Phủ Tam Tiêu - Đại cương về Tam Tiêu",
+      "hints": [
+        "Tam Tiêu được ví như <b>\"con đường\"</b> hoặc <b>\"hệ thống ống dẫn\"</b>.",
+        "Nó là nơi để <b>nguyên khí</b> và các loại khí khác <b>lưu thông, đi lại</b> trong cơ thể."
+      ]
+    },
+    {
+      "id": 50,
+      "question": "Trong \"Biện chứng Thượng Tiêu Bất Lợi\", ngoài ngoại tà (phong hàn, phong nhiệt) xâm phạm Phế, yếu tố nào từ Tâm có thể gây ra hội chứng này?",
+      "image": null,
+      "options": [
+        "A. Tâm huyết hư",
+        "B. Tâm khí hư",
+        "C. Tâm hỏa thượng viêm",
+        "D. Tâm âm hư"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Thượng Tiêu bao gồm Tâm và Phế. Nguyên nhân gây \"Thượng Tiêu Bất Lợi\" có thể do:<br />- Ngoại tà xâm phạm Phế (ví dụ phong hàn, phong nhiệt).<br />- Tình chí uất kết ảnh hưởng đến sự tuyên giáng của Phế khí.<br />- <b>Tâm hỏa thượng viêm:</b> Nghĩa là lửa của Tâm bốc mạnh lên trên. Khi Tâm hỏa vượng, nó có thể ảnh hưởng đến Phế (Hỏa khắc Kim), hoặc gây ra các triệu chứng ở Thượng Tiêu như mất ngủ, hồi hộp, miệng lưỡi lở loét, góp phần vào tình trạng \"bất lợi\" của Thượng Tiêu.",
+      "difficulty": "medium",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Thượng Tiêu Bất Lợi",
+      "hints": [
+        "Thượng Tiêu = Tâm + Phế.",
+        "<b>Tâm hỏa</b> (lửa ở Tâm) bốc lên trên cũng gây rối loạn ở Thượng Tiêu."
+      ]
+    },
+    {
+      "id": 51,
+      "question": "Hội chứng \"Trung Tiêu Ứ Trệ\" (Tỳ Vị Bất Hòa) có thể do nguyên nhân nào sau đây gây ra, ngoài việc ăn uống không điều độ và ngoại tà xâm phạm Tỳ Vị?",
+      "image": null,
+      "options": [
+        "A. Lao động trí óc quá nhiều",
+        "B. Tình chí thất điều (cảm xúc rối loạn)",
+        "C. Thiếu ngủ kéo dài",
+        "D. Ít vận động thể lực"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tài liệu ghi rõ nguyên nhân của \"Trung Tiêu Ứ Trệ\" (Tỳ Vị Bất Hòa) bao gồm:<br />- Ăn uống không điều độ.<br />- <b>Tình chí thất điều:</b> Các yếu tố cảm xúc như lo nghĩ quá nhiều (ưu tư thương Tỳ), tức giận (Can khí uất kết ảnh hưởng Tỳ Vị - Mộc khắc Thổ) đều có thể làm rối loạn khí cơ của Trung Tiêu, khiến Tỳ Vị không hòa hợp, gây ứ trệ.<br />- Ngoại tà xâm phạm Tỳ Vị.",
+      "difficulty": "easy",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Trung Tiêu Ứ Trệ",
+      "hints": [
+        "<b>Cảm xúc (tình chí)</b> có ảnh hưởng lớn đến tiêu hóa (Tỳ Vị).",
+        "Lo nghĩ nhiều hại Tỳ, tức giận hại Can rồi Can lại khắc Tỳ, đều gây Trung Tiêu ứ trệ."
+      ]
+    },
+    {
+      "id": 52,
+      "question": "Trong \"Biện chứng Hạ Tiêu Thất Điều\", triệu chứng \"đới hạ\" (khí hư) ở nữ giới thường liên quan đến rối loạn chức năng của tạng nào là chủ yếu?",
+      "image": null,
+      "options": [
+        "A. Tâm",
+        "B. Phế",
+        "C. Tỳ",
+        "D. Thận"
+      ],
+      "correctAnswer": "D",
+      "explanation": "\"Hạ Tiêu Thất Điều\" liên quan đến rối loạn ở Thận và Bàng Quang. <br />- <b>Thận</b> chủ về sinh dục, phát dục và có vai trò quan trọng trong việc duy trì chức năng của hai mạch Nhâm, Đới (hai kinh mạch quan trọng liên quan đến kinh nguyệt, khí hư ở phụ nữ).<br />- Khi Thận khí hư suy, đặc biệt là Thận dương hư không ôn ấm được bào cung, hoặc Thận âm hư không nuôi dưỡng được, có thể dẫn đến rối loạn ở mạch Nhâm, Đới, gây ra <b>đới hạ</b> (khí hư bất thường).<br />Mặc dù Tỳ hư cũng có thể gây đới hạ (do thấp trệ), nhưng trong bối cảnh Hạ Tiêu Thất Điều, Thận thường là gốc.",
+      "difficulty": "medium",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Hạ Tiêu Thất Điều",
+      "hints": [
+        "Hạ Tiêu = Thận, Bàng Quang...",
+        "<b>Thận</b> có vai trò quan trọng với cơ quan sinh dục và các vấn đề phụ khoa như <b>đới hạ</b>."
+      ]
+    },
+    {
+      "id": 53,
+      "question": "Theo bảng Mạch học, mạch \"Phù hoãn\" chủ bệnh gì?",
+      "image": null,
+      "options": [
+        "A. Biểu hàn, đau khớp do phong",
+        "B. Chứng biểu hàn có ra mồ hôi",
+        "C. Biểu nhiệt, phong nhiệt",
+        "D. Phong đàm, biểu chứng kèm thêm đàm thấp"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Phân tích mạch \"Phù hoãn\":<br />- <b>Mạch Phù:</b> Chủ bệnh ở Biểu (phần nông, bên ngoài).<br />- <b>Mạch Hoãn:</b> Mạch đi thong thả, hòa hoãn, không căng, không gấp. Khi mạch Phù mà Hoãn, thường gặp trong chứng Biểu hư, ví dụ như <b>chứng biểu hàn nhưng có ra mồ hôi</b> (do vệ khí không vững chắc, lỗ chân lông không đóng kín được).<br />Nếu là biểu hàn thực sự (không ra mồ hôi) thì mạch thường là Phù Khẩn.",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Phù = Biểu</b> (bên ngoài).",
+        "<b>Hoãn</b> ở đây có thể hiểu là \"lỏng lẻo\", \"không chặt chẽ\", gợi ý sự <b>hư</b> của biểu, làm <b>mồ hôi ra được</b> dù bị cảm lạnh."
+      ]
+    },
+    {
+      "id": 54,
+      "question": "Mạch \"Trầm sác\" theo bảng Mạch học chủ bệnh gì?",
+      "image": null,
+      "options": [
+        "A. Lý hàn",
+        "B. Đàm ẩm, thực tích",
+        "C. Lý nhiệt",
+        "D. Ứ huyết"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Trầm sác\":<br />- <b>Mạch Trầm:</b> Chủ bệnh ở Lý (bên trong).<br />- <b>Mạch Sác:</b> Mạch đập nhanh, chủ Nhiệt chứng.<br />Kết hợp lại, mạch <b>Trầm sác</b> thường chỉ tình trạng <b>Lý nhiệt</b>, nghĩa là nhiệt tà đã vào sâu bên trong cơ thể.",
+      "difficulty": "easy",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Trầm = Lý</b> (bên trong).",
+        "<b>Sác = Nhiệt</b> (mạch nhanh).",
+        "Vậy, Trầm Sác = Nhiệt ở bên trong."
+      ]
+    },
+    {
+      "id": 55,
+      "question": "Mạch \"Trầm tế\" theo bảng Mạch học thường là dấu hiệu của tình trạng bệnh lý nào?",
+      "image": null,
+      "options": [
+        "A. Can uất khí trệ, chưng đau",
+        "B. Âm hư, huyết hư sinh nội nhiệt",
+        "C. Lý hư, khí huyết hư, âm hư",
+        "D. Hàn gây đau ở kinh mạch can"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Trầm tế\":<br />- <b>Mạch Trầm:</b> Chủ bệnh ở Lý (bên trong).<br />- <b>Mạch Tế:</b> Mạch nhỏ như sợi chỉ, ấn nhẹ không rõ, ấn mạnh mới thấy. Chủ các chứng Hư (khí hư, huyết hư, âm hư) hoặc Thấp tà cản trở.<br />Khi mạch vừa Trầm vừa Tế, thường chỉ các tình trạng <b>Lý hư</b>, bao gồm <b>khí huyết hư</b> (khí và máu đều thiếu) hoặc <b>âm hư</b> (phần âm dịch của cơ thể thiếu hụt). Bệnh ở sâu bên trong và có tính chất suy nhược.",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Trầm = Lý</b> (bên trong).",
+        "<b>Tế = Nhỏ, yếu</b>, gợi ý sự <b>thiếu hụt (Hư)</b> như thiếu khí, thiếu máu, thiếu âm dịch.",
+        "Vậy, Trầm Tế = Sự suy yếu, thiếu hụt ở bên trong."
+      ]
+    },
+    {
+      "id": 56,
+      "question": "Mạch \"Huyền trì\" theo bảng Mạch học chủ yếu do nguyên nhân nào gây ra?",
+      "image": null,
+      "options": [
+        "A. Can nhiệt, can hoả",
+        "B. Can thận âm hư, âm hư can uất",
+        "C. Hàn gây đau ở kinh mạch can",
+        "D. Hàn ứ trệ ở kinh mạch can, gây đau nhiều"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Huyền trì\":<br />- <b>Mạch Huyền:</b> Căng như dây đàn. Thường chủ các bệnh của Can, hoặc chứng Đau.<br />- <b>Mạch Trì:</b> Mạch đập chậm. Chủ Hàn chứng.<br />Kết hợp lại, mạch <b>Huyền trì</b> thường gặp khi có <b>hàn tà gây đau ở kinh mạch Can</b>. \"Hàn\" làm cho mạch Trì (chậm lại), và sự đau hoặc sự co rút do hàn ở kinh Can làm cho mạch Huyền (căng).",
+      "difficulty": "hard",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Huyền = Can</b> hoặc <b>Đau</b>.",
+        "<b>Trì = Hàn</b> (mạch chậm).",
+        "Vậy, Huyền Trì = Lạnh gây đau ở Can hoặc kinh Can."
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Mạch \"Hoạt sác\" theo bảng Mạch học thường gặp trong bệnh cảnh nào sau đây?",
+      "image": null,
+      "options": [
+        "A. Đàm ẩm, thực tích",
+        "B. Lý hàn, đau",
+        "C. Đàm nhiệt, đàm hoả",
+        "D. Can uất khí trệ, chưng đau"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Hoạt sác\":<br />- <b>Mạch Hoạt:</b> Mạch đi trơn tru, như hạt châu lăn trên mâm. Chủ Đàm, hoặc Thực tích (thức ăn ứ đọng), hoặc Nhiệt.<br />- <b>Mạch Sác:</b> Mạch đập nhanh. Chủ Nhiệt chứng.<br />Khi mạch vừa Hoạt (do đàm) vừa Sác (do nhiệt), thường chỉ tình trạng <b>Đàm nhiệt</b> (đàm kết hợp với nhiệt) hoặc <b>Đàm hoả</b> (nhiệt mạnh hơn, như lửa).",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Hoạt = Trơn tuột</b>, gợi ý có <b>Đàm</b> hoặc <b>Thực tích</b>.",
+        "<b>Sác = Nhiệt</b> (mạch nhanh).",
+        "Vậy, Hoạt Sác = Đàm có kèm theo Nhiệt."
+      ]
+    },
+    {
+      "id": 58,
+      "question": "Mạch \"Nhu hoãn\" theo bảng Mạch học thường liên quan đến bệnh ở đâu hoặc loại bệnh nào?",
+      "image": null,
+      "options": [
+        "A. Biểu hàn, đau khớp do phong",
+        "B. Lý nhiệt",
+        "C. Bệnh ở tỳ vị, bệnh mạn tính",
+        "D. Can nhiệt, can hoả"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Nhu hoãn\":<br />- <b>Mạch Nhu:</b> Mạch Phù mà Tế, ấn vào thì không có lực, mềm mại. Chủ Hư chứng hoặc Thấp tà.<br />- <b>Mạch Hoãn:</b> Mạch đi thong thả, hòa hoãn. Thường chủ Tỳ hư hoặc Thấp khốn.<br />Kết hợp lại, mạch <b>Nhu hoãn</b> thường gặp trong các <b>bệnh ở Tỳ Vị</b> (do Tỳ chủ thấp, Tỳ hư thì sinh thấp, và Tỳ hư làm mạch vô lực), hoặc các <b>bệnh mạn tính</b> (bệnh kéo dài làm khí huyết suy yếu, mạch trở nên mềm yếu, vô lực).",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Nhu = Mềm yếu, vô lực</b> (do Hư hoặc Thấp).",
+        "<b>Hoãn = Thong thả, hòa hoãn</b> (thường do Tỳ hư, Thấp).",
+        "Nhu Hoãn thường chỉ sự suy yếu, trì trệ ở Tỳ Vị hoặc trong các bệnh kéo dài."
+      ]
+    },
+    {
+      "id": 59,
+      "question": "Trong hội chứng Tỳ khí hư, triệu chứng \"ít muốn nói, giọng nói nhỏ yếu\" phản ánh trực tiếp sự suy giảm về phương diện nào của cơ thể?",
+      "image": null,
+      "options": [
+        "A. Sự suy giảm của huyết dịch",
+        "B. Sự suy giảm của tân dịch",
+        "C. Sự suy giảm của khí lực toàn thân (Trung khí hoặc Nguyên khí bất túc)",
+        "D. Sự suy giảm của chức năng Thận"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Khí trong YHCT có nhiều chức năng, trong đó có vai trò thúc đẩy các hoạt động của cơ thể và tạo ra sức mạnh cho tiếng nói.<br />- Khi Tỳ khí hư, dẫn đến <b>Trung khí bất túc</b> (khí ở trung tiêu do Tỳ Vị tạo ra không đủ) hoặc ảnh hưởng đến <b>Nguyên khí bất túc</b> (khí gốc của cơ thể cũng suy yếu).<br />- Sự thiếu hụt khí lực toàn thân này làm cho người bệnh cảm thấy <b>mệt mỏi, không có sức để nói nhiều (ít muốn nói)</b>, và khi nói thì <b>giọng nói nhỏ yếu, không có lực</b>.<br />Đây là biểu hiện của sự suy giảm năng lượng chung của cơ thể do Tỳ hư không tạo đủ khí.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Lâm sàng)",
+      "hints": [
+        "<b>Khí tạo ra sức mạnh và âm thanh</b>. Khí hư thì nói không ra hơi, giọng yếu.",
+        "Tỳ khí hư → Trung khí/Nguyên khí thiếu → Không đủ khí lực để nói to, nói nhiều."
+      ]
+    },
+    {
+      "id": 60,
+      "question": "Mối quan hệ của Tâm Bào Lạc với huyết mạch được mô tả như thế nào trong chức năng sinh lý?",
+      "image": null,
+      "options": [
+        "A. Tâm Bào Lạc sinh ra huyết dịch",
+        "B. Tâm Bào Lạc lọc huyết dịch trước khi vào Tâm",
+        "C. Tâm Bào Lạc thông với huyết mạch, giúp Tâm chủ huyết mạch",
+        "D. Tâm Bào Lạc không có liên hệ trực tiếp với huyết mạch"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tài liệu nêu rõ chức năng sinh lý của Tâm Bào: \"Thay Tâm hành lệnh: Thực hiện một số chức năng của Tâm, đặc biệt về mặt thần chí và huyết mạch. <b>Tâm Bào Lạc thông với huyết mạch, giúp Tâm chủ huyết mạch.</b>\"<br />Điều này có nghĩa là Tâm Bào Lạc (kinh mạch của Tâm Bào) có sự kết nối và tương thông với hệ thống huyết mạch toàn thân. Thông qua sự kết nối này, Tâm Bào hỗ trợ Tâm trong việc điều hành, quản lý sự lưu thông của huyết dịch trong mạch máu.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tâm và Tâm Bào - Đại cương về Tâm Bào",
+      "hints": [
+        "Tâm Bào là \"phụ tá\" của Tâm, giúp Tâm thực hiện chức năng <b>chủ huyết mạch</b>.",
+        "Sự \"thông\" giữa Tâm Bào Lạc và huyết mạch đảm bảo sự phối hợp này."
+      ]
+    },
+    {
+      "id": 61,
+      "question": "Theo sách Chư bệnh nguyên hậu luận, câu nói \"Tỳ khí ma sát cho tiêu đi thì ăn được\" và \"ăn không tiêu là do Tỳ không ma sát\" nhấn mạnh vai trò nào của Tỳ khí?",
+      "image": null,
+      "options": [
+        "A. Vai trò thống nhiếp huyết dịch của Tỳ",
+        "B. Vai trò vận hóa, nghiền nát thức ăn của Tỳ",
+        "C. Vai trò thăng thanh của Tỳ",
+        "D. Vai trò sinh huyết của Tỳ"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Câu nói \"Tỳ khí ma sát cho tiêu đi thì ăn được\" và \"ăn không tiêu là do Tỳ không ma sát\" từ sách Chư bệnh nguyên hậu luận rất hình tượng. Nó ví von Tỳ khí như một lực <b>\"ma sát\"</b>, có tác dụng <b>nghiền nát, tiêu hóa (vận hóa)</b> thức ăn. <br />Khi Tỳ khí mạnh, sự \"ma sát\" này tốt, thức ăn được tiêu hóa hiệu quả, giúp ăn ngon miệng. Ngược lại, khi Tỳ khí yếu, \"không ma sát\" được, thức ăn sẽ không tiêu, gây đầy bụng, chán ăn.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Phân tích)",
+      "hints": [
+        "\"Ma sát\" ở đây có thể hiểu là quá trình <b>co bóp, nghiền nát, chuyển hóa</b> thức ăn của Tỳ Vị.",
+        "Tỳ khí mạnh thì \"ma sát\" tốt, tiêu hóa tốt. Tỳ khí yếu thì \"ma sát\" kém, ăn không tiêu."
+      ]
+    },
+    {
+      "id": 62,
+      "question": "Biểu hiện nào sau đây KHÔNG thuộc thể lâm sàng \"Tỳ không thống huyết\" của Tỳ khí hư?",
+      "image": null,
+      "options": [
+        "A. Đại tiện ra máu",
+        "B. Rong kinh (kinh nguyệt kéo dài)",
+        "C. Kinh nguyệt ra quá nhiều",
+        "D. Sa trực tràng"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Tỳ có chức năng <b>thống nhiếp huyết</b>, nghĩa là giữ cho máu đi đúng trong lòng mạch, không bị chảy tràn ra ngoài. Khi Tỳ khí hư, chức năng này suy giảm, gọi là \"Tỳ không thống huyết\", dẫn đến các chứng xuất huyết như:<br />- <b>Đại tiện ra máu</b> (máu đi ra theo phân).<br />- <b>Rong kinh</b> (kinh nguyệt kéo dài không dứt).<br />- <b>Kinh nguyệt ra quá nhiều</b>.<br /><b>Sa trực tràng</b> là biểu hiện của thể \"Tỳ hư hạ hãm\", do Tỳ khí hư không nâng đỡ được tạng phủ.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Thể lâm sàng đặc biệt)",
+      "hints": [
+        "\"Thống huyết\" = Quản lý, kiểm soát máu. \"Tỳ không thống huyết\" = Tỳ không giữ được máu.",
+        "Hãy tìm các triệu chứng liên quan đến <b>chảy máu</b> để nhận diện thể này."
+      ]
+    },
+    {
+      "id": 63,
+      "question": "Trong ca lâm sàng Tỳ dương hư (bệnh nhân nam, 60 tuổi), chi tiết \"Đau bụng âm ỉ quanh rốn, nặng hơn khi ăn đồ lạnh hoặc trời lạnh, đỡ khi xoa bóp hoặc chườm ấm\" là biểu hiện điển hình của yếu tố bệnh lý nào?",
+      "image": null,
+      "options": [
+        "A. Thấp tà gây ách tắc",
+        "B. Nhiệt tà gây đau rát",
+        "C. Hàn tà gây co rút và đau",
+        "D. Khí trệ gây căng tức"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Các đặc điểm của cơn đau bụng này đều chỉ rõ tính chất <b>\"Hàn\" (lạnh)</b>:<br />- <b>Nặng hơn khi ăn đồ lạnh hoặc trời lạnh:</b> \"Hàn\" gặp \"hàn\" thì bệnh nặng thêm.<br />- <b>Đỡ khi xoa bóp hoặc chườm ấm:</b> \"Hàn\" gặp \"ấm\" thì dịu bớt.<br />Đây là quy luật cơ bản để nhận biết các chứng đau do hàn. Tỳ dương hư có bản chất là hàn ở bên trong, nên các triệu chứng sẽ mang tính hàn.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư (Ca lâm sàng)",
+      "hints": [
+        "Ghi nhớ quy tắc của chứng Hàn: <b>Gặp lạnh đau tăng, gặp ấm đau giảm</b>.",
+        "Triệu chứng này rất điển hình cho các bệnh lý có tính chất \"lạnh\"."
+      ]
+    },
+    {
+      "id": 64,
+      "question": "Trong hội chứng Tỳ Bị Thấp Nhiệt, triệu chứng \"khát nhưng không muốn uống\" được giải thích như thế nào?",
+      "image": null,
+      "options": [
+        "A. Do nhiệt làm khô miệng gây khát, nhưng thấp làm nặng nề không muốn uống",
+        "B. Do thấp đã hóa thành tân dịch nên không cần uống thêm",
+        "C. Do Tỳ hư không hấp thu được nước nên không muốn uống",
+        "D. Do Tâm hỏa vượng làm khát, nhưng Phế khí hư không muốn uống"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Triệu chứng \"khát nhưng không muốn uống\" (khẩu khát bất dục ẩm) là một biểu hiện khá đặc trưng của sự kết hợp giữa Nhiệt và Thấp:<br />- <b>\"Khát\":</b> Là do yếu tố <b>Nhiệt</b> làm hao tổn tân dịch, gây cảm giác khô miệng, muốn uống nước.<br />- <b>\"Không muốn uống\" (hoặc uống ít):</b> Là do yếu tố <b>Thấp</b>. Thấp tà có tính dính nhớt, nặng nề, làm cản trở sự vận hành của khí cơ và sự tiếp nhận thủy dịch. Mặc dù có cảm giác khát do nhiệt, nhưng sự hiện diện của thấp làm cho người bệnh cảm thấy đầy tức, nặng nề, không có ham muốn uống nước nhiều.<br />Đây là sự mâu thuẫn giữa hai yếu tố bệnh lý cùng tồn tại.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Bị Thấp Nhiệt",
+      "hints": [
+        "<b>Nhiệt gây khát</b>, nhưng <b>Thấp gây cảm giác đầy, không muốn nạp thêm</b> nước.",
+        "Đây là một dấu hiệu mâu thuẫn do sự kết hợp của hai loại tà khí có tính chất khác nhau."
+      ]
+    },
+    {
+      "id": 65,
+      "question": "Ca lâm sàng Nhiệt nhập Tâm Bào (Bệnh nhân Trần Văn B, 35 tuổi) bắt đầu với triệu chứng nào trước khi diễn biến nặng?",
+      "image": null,
+      "options": [
+        "A. Sốt cao, hôn mê ngay từ đầu",
+        "B. Tiêu chảy, nôn mửa",
+        "C. Cảm cúm 3 ngày, ban đầu sốt nhẹ, đau đầu, sợ gió",
+        "D. Ho khan, đau ngực"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Theo thông tin ca lâm sàng, bệnh nhân Trần Văn B ban đầu có biểu hiện của một bệnh ngoại cảm thông thường: <b>\"Bị cảm cúm 3 ngày, ban đầu sốt nhẹ, đau đầu, sợ gió.\"</b><br />Sau đó bệnh mới diễn biến nặng hơn, tà khí truyền sâu vào trong gây ra sốt cao, hôn mê, là các biểu hiện của Nhiệt nhập Tâm Bào. Điều này cho thấy quá trình phát triển của bệnh từ nông vào sâu, từ nhẹ đến nặng.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Nhiệt nhập Tâm Bào (Ca lâm sàng)",
+      "hints": [
+        "Nhiều bệnh nặng có thể khởi phát từ những triệu chứng <b>ngoại cảm ban đầu</b>.",
+        "\"Nhiệt nhập Tâm Bào\" thường là giai đoạn nặng của một bệnh ôn nhiệt (bệnh truyền nhiễm có sốt)."
+      ]
+    },
+    {
+      "id": 66,
+      "question": "Ngoài việc thấp tụ thành đàm, nguyên nhân nào khác có thể dẫn đến hình thành đàm trong hội chứng \"Đàm Trọc Che Lấp Tâm Khiếu\"?",
+      "image": null,
+      "options": [
+        "A. Do ăn nhiều đồ khô táo, làm tân dịch cô đặc thành đàm",
+        "B. Do tình chí uất kết làm khí trệ sinh đàm, đàm uất hóa hỏa",
+        "C. Do huyết hư không nuôi dưỡng được tân dịch, làm tân dịch biến thành đàm",
+        "D. Do phong tà từ bên ngoài xâm nhập trực tiếp vào Tâm khiếu gây đàm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tài liệu nêu hai cơ chế chính hình thành đàm trong hội chứng này:<br />1. <b>Do thấp tụ thành đàm:</b> Thủy thấp không được vận hóa bình thường sẽ ngưng tụ lại thành đàm.<br />2. <b>Do tình chí uất kết làm khí trệ sinh đàm, đàm uất hóa hỏa:</b> Khi cảm xúc (tình chí) bị dồn nén, uất kết, sẽ làm cho khí cơ vận hành không thông suốt (khí trệ). Khí trệ lâu ngày sẽ ảnh hưởng đến sự vận hóa tân dịch, làm tân dịch ngưng tụ lại thành đàm. Nếu đàm này bị uất kết lâu ngày, nó có thể hóa thành hỏa (nhiệt), gây ra chứng đàm hỏa.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Đàm Trọc Che Lấp Tâm Khiếu",
+      "hints": [
+        "<b>Tình chí (cảm xúc)</b> cũng là một nguyên nhân quan trọng gây bệnh, có thể làm <b>khí trệ rồi sinh đàm</b>.",
+        "Đàm không chỉ do \"thấp\" mà còn có thể do \"khí uất\" sinh ra."
+      ]
+    },
+    {
+      "id": 67,
+      "question": "Hạ Tiêu trong hệ thống Tam Tiêu được ví như \"kênh rãnh\" để mô tả chức năng chính nào?",
+      "image": null,
+      "options": [
+        "A. Chức năng thu nạp và phân bố khí và dinh dưỡng",
+        "B. Chức năng tiêu hóa, hấp thu và vận chuyển thủy cốc",
+        "C. Chức năng phân biệt thanh trọc và bài xuất chất cặn bã, nước tiểu",
+        "D. Chức năng tàng trữ tinh hoa và điều khiển các hoạt động sống"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Hạ Tiêu bao gồm Can, Thận, Bàng quang, Tiểu trường, Đại trường. Chức năng chính của khu vực này liên quan đến giai đoạn cuối của quá trình chuyển hóa và bài tiết:<br />- <b>Phân biệt thanh trọc:</b> Tách những gì còn hữu ích (thanh) ra khỏi chất thải (trọc). Ví dụ: Tiểu trường hấp thu phần tinh túy, đưa chất cặn xuống Đại trường.<br />- <b>Bài xuất chất cặn bã và nước tiểu:</b> Qua Đại trường và Bàng quang.<br />Chức năng này được ví như <b>\"kênh rãnh\"</b> (cống rãnh), nơi dẫn các chất thải đi ra ngoài.",
+      "difficulty": "easy",
+      "topic": "YHCT - Phủ Tam Tiêu - Đại cương về Tam Tiêu",
+      "hints": [
+        "<b>Hạ Tiêu = Phần dưới = Kênh rãnh (thoát thải)</b>.",
+        "Liên tưởng đến hệ thống \"thoát nước\" và \"xử lý chất thải\" của cơ thể."
+      ]
+    },
+    {
+      "id": 68,
+      "question": "Trong \"Biện chứng Thượng Tiêu Bất Lợi\", triệu chứng \"mất ngủ, hồi hộp\" thường là do yếu tố bệnh lý nào từ Tâm gây ra?",
+      "image": null,
+      "options": [
+        "A. Tâm huyết ứ trệ",
+        "B. Tâm dương hư suy",
+        "C. Tâm hỏa vượng (Tâm hỏa thượng viêm)",
+        "D. Tâm khí hư nhược"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Thượng Tiêu bao gồm Tâm và Phế. Khi có <b>Tâm hỏa vượng</b> (hay Tâm hỏa thượng viêm - lửa của Tâm bốc mạnh lên trên), nó sẽ gây nhiễu loạn \"Thần\" (tinh thần, ý thức) do Tâm tàng trữ. Sự nhiễu loạn này biểu hiện qua các triệu chứng:<br />- <b>Mất ngủ:</b> Do hỏa làm Thần không yên.<br />- <b>Hồi hộp:</b> Tim đập nhanh, không ổn định do hỏa nhiễu.<br />Đây là một trong những nguyên nhân gây ra tình trạng \"bất lợi\" ở Thượng Tiêu.",
+      "difficulty": "medium",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Thượng Tiêu Bất Lợi",
+      "hints": [
+        "<b>Tâm hỏa (lửa ở Tâm)</b> làm cho \"Thần\" không yên, gây <b>mất ngủ, hồi hộp</b>.",
+        "Lửa bốc lên trên sẽ gây rối loạn ở phần trên (Thượng Tiêu)."
+      ]
+    },
+    {
+      "id": 69,
+      "question": "Mạch nào sau đây <b>KHÔNG</b> được liệt kê là mạch thường gặp trong \"Biện chứng Trung Tiêu Ứ Trệ\" (Tỳ Vị Bất Hòa)?",
+      "image": null,
+      "options": [
+        "A. Mạch Hoạt",
+        "B. Mạch Nhu Hoãn",
+        "C. Mạch Trầm Trì",
+        "D. Mạch Sác"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Theo tài liệu, mạch của \"Biện chứng Trung Tiêu Ứ Trệ\" thường là:<br />- <b>Mạch Hoạt:</b> Nếu có thấp trệ hoặc thực tích (thức ăn ứ đọng) ở Trung Tiêu.<br />- <b>Mạch Nhu Hoãn:</b> Nếu Tỳ Vị hư yếu là chính, có thể kèm thấp.<br />- <b>Mạch Trầm Trì:</b> Nếu có hàn tà gây ứ trệ ở Trung Tiêu (dương khí bị cản trở hoặc suy yếu).<br /><b>Mạch Sác</b> (nhanh) thường chỉ có Nhiệt, không phải là đặc trưng chính của Trung Tiêu Ứ Trệ, trừ khi có biến chứng nhiệt hoặc thấp nhiệt.",
+      "difficulty": "medium",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Trung Tiêu Ứ Trệ",
+      "hints": [
+        "Trung Tiêu Ứ Trệ thường liên quan đến <b>Hư, Hàn, Thấp, hoặc Thực tích</b>.",
+        "Mạch Sác (nhanh) chủ yếu là dấu hiệu của <b>Nhiệt</b>, ít đặc trưng cho ứ trệ đơn thuần ở Trung Tiêu."
+      ]
+    },
+    {
+      "id": 70,
+      "question": "Trong \"Biện chứng Hạ Tiêu Thất Điều\", nếu bệnh nhân có biểu hiện của \"thấp nhiệt\", đặc điểm lưỡi thường là gì?",
+      "image": null,
+      "options": [
+        "A. Lưỡi nhạt bệu",
+        "B. Lưỡi đỏ ít rêu",
+        "C. Lưỡi rêu vàng nhớt",
+        "D. Lưỡi tím có điểm ứ huyết"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Khi Hạ Tiêu Thất Điều có yếu tố <b>thấp nhiệt</b> (thường là thấp nhiệt hạ chú, tức là thấp và nhiệt cùng đi xuống phần dưới của cơ thể):<br />- <b>Lưỡi rêu vàng:</b> \"Vàng\" là dấu hiệu của Nhiệt.<br />- <b>Lưỡi rêu nhớt:</b> \"Nhớt\" là dấu hiệu của Thấp.<br />Kết hợp lại, <b>lưỡi rêu vàng nhớt</b> là biểu hiện điển hình của thấp nhiệt. Các đặc điểm khác:<br />- Lưỡi nhạt bệu: Thường do dương hư.<br />- Lưỡi đỏ ít rêu: Thường do âm hư.",
+      "difficulty": "hard",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Hạ Tiêu Thất Điều",
+      "hints": [
+        "Công thức nhận biết thấp nhiệt qua lưỡi: Rêu <b>Vàng</b> (Nhiệt) + Rêu <b>Nhớt</b> (Thấp) = Rêu vàng nhớt.",
+        "Hãy phân biệt với lưỡi của dương hư (nhạt bệu) và âm hư (đỏ ít rêu)."
+      ]
+    },
+    {
+      "id": 71,
+      "question": "Theo bảng Mạch học, mạch \"Phù sác\" chủ bệnh gì?",
+      "image": null,
+      "options": [
+        "A. Biểu hàn, đau khớp do phong",
+        "B. Chứng biểu hàn có ra mồ hôi",
+        "C. Biểu nhiệt, phong nhiệt",
+        "D. Phong đàm, biểu chứng kèm thêm đàm thấp"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Phù sác\":<br />- <b>Mạch Phù:</b> Chủ bệnh ở Biểu (phần nông, bên ngoài).<br />- <b>Mạch Sác:</b> Mạch đập nhanh, chủ Nhiệt chứng.<br />Kết hợp lại, mạch <b>Phù sác</b> thường chỉ tình trạng <b>Biểu nhiệt</b> (nhiệt tà ở phần biểu của cơ thể) hoặc <b>phong nhiệt</b> (cảm mạo do gió và nhiệt).",
+      "difficulty": "easy",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Phù = Biểu</b> (bên ngoài).",
+        "<b>Sác = Nhiệt</b> (mạch nhanh).",
+        "Vậy, Phù Sác = Nhiệt ở bên ngoài."
+      ]
+    },
+    {
+      "id": 72,
+      "question": "Mạch \"Trầm khẩn\" theo bảng Mạch học thường là dấu hiệu của loại bệnh nào?",
+      "image": null,
+      "options": [
+        "A. Lý nhiệt",
+        "B. Đàm ẩm, thực tích",
+        "C. Lý hàn, đau",
+        "D. Ứ huyết"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Trầm khẩn\":<br />- <b>Mạch Trầm:</b> Chủ bệnh ở Lý (bên trong).<br />- <b>Mạch Khẩn:</b> Cảm giác như sợi dây thừng căng thẳng. Chủ Hàn chứng hoặc Đau.<br />Kết hợp lại, mạch <b>Trầm khẩn</b> thường chỉ tình trạng <b>Lý hàn</b> (hàn tà ở sâu bên trong) hoặc <b>Đau</b> ở bên trong do hàn hoặc do nguyên nhân khác gây co thắt, căng thẳng.",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Trầm = Lý</b> (bên trong).",
+        "<b>Khẩn = Hàn</b> (lạnh) hoặc <b>Đau</b> (căng thẳng).",
+        "Vậy, Trầm Khẩn = Lạnh ở bên trong, hoặc Đau ở bên trong."
+      ]
+    },
+    {
+      "id": 73,
+      "question": "Theo bảng Mạch học, mạch \"Huyền sác\" thường chủ bệnh gì?",
+      "image": null,
+      "options": [
+        "A. Hàn gây đau ở kinh mạch can",
+        "B. Can thận âm hư, âm hư can uất",
+        "C. Can nhiệt, can hoả",
+        "D. Hàn ứ trệ ở kinh mạch can, gây đau nhiều"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Huyền sác\":<br />- <b>Mạch Huyền:</b> Căng như dây đàn. Thường chủ các bệnh của Can (do Can chủ sơ tiết, khi Can uất hoặc Can nhiệt thì khí cơ căng thẳng), hoặc chủ chứng Đau.<br />- <b>Mạch Sác:</b> Mạch đập nhanh. Chủ Nhiệt chứng.<br />Kết hợp lại, mạch <b>Huyền sác</b> thường gặp trong các trường hợp <b>Can nhiệt</b> (nhiệt ở Can) hoặc <b>Can hoả</b> (lửa ở Can bốc lên).",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Huyền = Can</b> hoặc <b>Đau</b>.",
+        "<b>Sác = Nhiệt</b> (mạch nhanh).",
+        "Vậy, Huyền Sác = Nhiệt ở Can (Can nhiệt, Can hỏa)."
+      ]
+    },
+    {
+      "id": 74,
+      "question": "Trong phần khái niệm Tỳ khí hư, câu \"Tinh khí bị mất thì hư. Khí hoá sinh từ tinh, tinh sinh ra từ thủy cốc\" giải thích mối quan hệ nào?",
+      "image": null,
+      "options": [
+        "A. Mối quan hệ giữa Tỳ và Thận trong việc sinh khí",
+        "B. Mối quan hệ giữa chức năng vận hóa thủy cốc của Tỳ với sự hình thành tinh và khí",
+        "C. Mối quan hệ giữa Tâm và Tỳ trong việc sinh huyết và khí",
+        "D. Mối quan hệ giữa Phế và Tỳ trong việc điều hành khí"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Câu này giải thích nguồn gốc của Khí và vai trò của Tỳ trong đó:<br />- <b>\"Tinh sinh ra từ thủy cốc\":</b> \"Tinh\" ở đây là phần tinh hoa, dưỡng chất được tạo ra từ thức ăn và nước uống (thủy cốc).<br />- <b>\"Khí hoá sinh từ tinh\":</b> Khí được hình thành từ những chất tinh hoa này.<br />- <b>Sự vận hóa thủy cốc đều dựa vào Tỳ:</b> Chức năng tiêu hóa, hấp thu và chuyển hóa thức ăn (thủy cốc) để tạo ra tinh là do Tỳ đảm nhiệm.<br />Do đó, câu này nhấn mạnh rằng nếu Tỳ hư, không vận hóa được thủy cốc, thì sẽ không có đủ \"tinh\" để sinh ra \"khí\", dẫn đến \"tinh khí bị mất thì hư\".",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Khái niệm)",
+      "hints": [
+        "Sơ đồ đơn giản: <b>Thủy cốc (thức ăn) --(Tỳ vận hóa)--> Tinh --(hóa sinh)--> Khí</b>.",
+        "Tỳ là gốc để tạo ra cả tinh và khí từ thức ăn."
+      ]
+    },
+    {
+      "id": 75,
+      "question": "\"Sa các tạng phủ\" được xem là biểu hiện như thế nào của Tỳ khí hư?",
+      "image": null,
+      "options": [
+        "A. Biểu hiện nhẹ, giai đoạn đầu của Tỳ khí hư",
+        "B. Một biến chứng không liên quan trực tiếp đến Tỳ khí hư",
+        "C. Biểu hiện nặng của Tỳ hư hạ hãm (một thể của Tỳ khí hư)",
+        "D. Biểu hiện của Tỳ dương hư chứ không phải Tỳ khí hư"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tài liệu ghi: \"Sa các tạng phủ: Là biểu hiện nặng của Tỳ hư hạ hãm.\"<br /><b>Tỳ hư hạ hãm</b> là một thể lâm sàng đặc biệt và nặng của Tỳ khí hư, xảy ra khi khí của Tỳ quá yếu, không còn khả năng nâng đỡ (thăng đề) các tạng phủ ở vị trí bình thường, khiến chúng bị sa xuống. <b>Sa các tạng phủ</b> (như sa dạ dày, sa thận, sa tử cung, sa trực tràng...) là kết quả cuối cùng và nghiêm trọng nhất của tình trạng Tỳ hư hạ hãm.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Thể lâm sàng đặc biệt)",
+      "hints": [
+        "Tỳ khí có chức năng <b>nâng đỡ</b>. Khi Tỳ khí hư nặng (hạ hãm), khả năng nâng đỡ mất đi, gây <b>sa tạng phủ</b>.",
+        "Sa tạng phủ là dấu hiệu cho thấy Tỳ khí hư đã ở mức độ rất nghiêm trọng."
+      ]
+    },
+    {
+      "id": 76,
+      "question": "Theo khái niệm về Tỳ dương hư, yếu tố nào trong ăn uống có thể làm tổn thương trực tiếp Tỳ dương?",
+      "image": null,
+      "options": [
+        "A. Ăn nhiều đồ cay nóng",
+        "B. Ăn nhiều đồ dầu mỡ",
+        "C. Ăn nhiều đồ lạnh",
+        "D. Ăn không đúng bữa"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tài liệu nêu: \"Tỳ Dương Hư... hoặc do <b>ăn nhiều đồ lạnh làm tổn thương trực tiếp Tỳ dương</b>.\"<br />Tỳ dương là phần dương khí của Tỳ, có tính chất ấm áp, giúp Tỳ vận hóa thức ăn và thủy dịch. Đồ ăn lạnh có tính hàn. Khi ăn nhiều đồ lạnh, hàn tà từ thức ăn sẽ trực tiếp làm tổn thương, làm suy yếu phần dương khí ấm áp này của Tỳ, dẫn đến hoặc làm nặng thêm tình trạng Tỳ dương hư.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư (Khái niệm)",
+      "hints": [
+        "<b>Dương khí thích ấm, ghét lạnh</b>.",
+        "Ăn đồ lạnh trực tiếp đưa \"hàn\" vào Tỳ Vị, làm tổn thương Tỳ dương."
+      ]
+    },
+    {
+      "id": 77,
+      "question": "Chức năng \"thay Tâm tiếp nhận tà khí\" của Tâm Bào có ý nghĩa như thế nào trong việc bảo vệ Tâm?",
+      "image": null,
+      "options": [
+        "A. Tâm Bào lọc bỏ tà khí trước khi nó vào Tâm",
+        "B. Tâm Bào là lớp ngoài cùng, hứng chịu sự tấn công của tà khí trước, giảm bớt gánh nặng cho Tâm",
+        "C. Tâm Bào chuyển hóa tà khí thành chính khí để nuôi dưỡng Tâm",
+        "D. Tâm Bào đẩy tà khí ra khỏi cơ thể khi nó vừa xâm nhập"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tâm Bào được coi là \"ngoại vệ\" của Tâm. Khi tà khí (yếu tố gây bệnh) xâm nhập, nếu nó hướng đến Tâm (là cơ quan quân chủ, rất quan trọng), thì Tâm Bào với vai trò là lớp màng bọc bên ngoài sẽ <b>tiếp nhận, hứng chịu sự tấn công của tà khí trước</b>. <br />Điều này giống như một người lính gác đứng ở vòng ngoài, chịu đòn thay cho vị vua ở bên trong. Nhờ vậy, Tâm (cơ quan chủ thần minh) sẽ được bảo vệ, tránh bị tổn thương trực tiếp hoặc giảm bớt mức độ tổn thương.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tâm và Tâm Bào - Đại cương về Tâm Bào",
+      "hints": [
+        "Tâm Bào như một <b>\"lá chắn\"</b> hoặc <b>\"người lính tiên phong\"</b> cho Tâm.",
+        "Nó \"chịu trận\" trước để bảo vệ \"vua\" (Tâm)."
+      ]
+    },
+    {
+      "id": 78,
+      "question": "Trong các triệu chứng của \"Nhiệt nhập Tâm Bào\", ngoài sốt cao, hôn mê, nói sảng, tài liệu còn đề cập đến triệu chứng nào sau đây liên quan đến lưỡi hoặc vận động?",
+      "image": null,
+      "options": [
+        "A. Lưỡi bệu có hằn răng",
+        "B. Tay chân run rẩy không kiểm soát",
+        "C. Lưỡi rụt, co giật",
+        "D. Miệng méo, nói khó"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tài liệu liệt kê các triệu chứng lâm sàng của Nhiệt nhập Tâm Bào bao gồm:<br />- Toàn thân: Sốt cao, phiền táo, vật vã không yên.<br />- Thần chí: Hôn mê, nói sảng, gọi hỏi không biết.<br />- Triệu chứng khác: <b>Lưỡi rụt, co giật.</b> Da nóng nhưng có thể không có mồ hôi. Hơi thở nóng.<br />\"Lưỡi rụt\" (lưỡi co ngắn lại) và \"co giật\" (toàn thân hoặc cục bộ) là những biểu hiện nặng, cho thấy nhiệt tà đã gây động phong nội sinh hoặc ảnh hưởng nghiêm trọng đến thần kinh, cơ.",
+      "difficulty": "hard",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Nhiệt nhập Tâm Bào",
+      "hints": [
+        "\"Nhiệt cực sinh phong\" là một cơ chế bệnh sinh trong YHCT, có thể gây <b>co giật</b>.",
+        "<b>Lưỡi rụt</b> cũng là một dấu hiệu thần kinh nặng trong bệnh cảnh này."
+      ]
+    },
+    {
+      "id": 79,
+      "question": "Tâm Bào được mô tả là một \"phủ kỳ hằng\". Điều này có nghĩa là gì?",
+      "image": null,
+      "options": [
+        "A. Tâm Bào là một tạng chính, quan trọng như Tâm Can Tỳ Phế Thận",
+        "B. Tâm Bào là một phủ có chức năng đặc biệt, không hoàn toàn giống các phủ thông thường (Lục Phủ) và có mối liên hệ mật thiết với Não, Tủy, Mạch, Đởm, Tử cung",
+        "C. Tâm Bào là một phủ chỉ tồn tại ở trẻ em, sau đó thoái hóa",
+        "D. Tâm Bào là một phủ có khả năng tái tạo liên tục"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tài liệu ghi: \"Tâm Bào không phải là một tạng riêng biệt mà là một 'phủ kỳ hằng'\". <br />Trong YHCT, \"Phủ kỳ hằng\" (奇恆之腑) là một nhóm các cơ quan có hình thái giống Phủ (rỗng) nhưng chức năng lại giống Tạng (tàng trữ tinh khí, không bài tiết cặn bã). Chúng bao gồm: Não, Tủy, Cốt (xương), Mạch, Đởm (tuy là một trong Lục Phủ nhưng cũng được xếp vào đây do tàng Đởm trấp), và Tử cung (Nữ tử bào).<br />Tâm Bào được xếp vào nhóm này vì nó là một cấu trúc bao bọc (giống Phủ) nhưng lại bảo vệ Tâm và thực hiện một số chức năng của Tâm (liên quan đến thần chí, huyết mạch - giống Tạng).",
+      "difficulty": "hard",
+      "topic": "YHCT - Tâm và Tâm Bào - Đại cương về Tâm Bào",
+      "hints": [
+        "\"Kỳ hằng\" có nghĩa là đặc biệt, khác thường.",
+        "Phủ kỳ hằng là những cơ quan <b>vừa giống Phủ (hình thái rỗng) vừa giống Tạng (chức năng tàng trữ)</b>. Tâm Bào là một ví dụ."
+      ]
+    },
+    {
+      "id": 80,
+      "question": "Theo bảng Mạch học, mạch \"Phù hoạt\" chủ bệnh gì?",
+      "image": null,
+      "options": [
+        "A. Biểu hàn, đau khớp do phong",
+        "B. Chứng biểu hàn có ra mồ hôi",
+        "C. Biểu nhiệt, phong nhiệt",
+        "D. Phong đàm, biểu chứng kèm thêm đàm thấp"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Phân tích mạch \"Phù hoạt\":<br />- <b>Mạch Phù:</b> Chủ bệnh ở Biểu (phần nông, bên ngoài).<br />- <b>Mạch Hoạt:</b> Mạch đi trơn tru, như hạt châu lăn trên mâm. Chủ Đàm, hoặc Thực tích, hoặc Nhiệt.<br />Khi mạch Phù kết hợp với Hoạt, thường chỉ tình trạng bệnh ở Biểu có kèm theo yếu tố Đàm hoặc Thấp:<br />- <b>Phong đàm:</b> Phong tà (ở biểu) kết hợp với đàm.<br />- <b>Biểu chứng kèm thêm đàm thấp:</b> Bệnh ở phần biểu nhưng có sự đình trệ của đàm và thấp.",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
+      "hints": [
+        "<b>Phù = Biểu</b> (bên ngoài).",
+        "<b>Hoạt = Trơn tuột</b>, gợi ý có <b>Đàm</b> hoặc <b>Thấp</b> (trong trường hợp này ở Biểu).",
+        "Vậy, Phù Hoạt = Bệnh ở ngoài có kèm Đàm/Thấp."
+      ]
     }
-    
+  
     
   ]
 }
