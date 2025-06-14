@@ -6,11 +6,7 @@ export default function LoginPage() {
   const router = useRouter()
 
   const handleStart = () => {
-    // Thêm một khoảng thời gian nhỏ trước khi chuyển trang
-    setTimeout(() => {
-      // Sử dụng replace thay vì href để tránh lưu vào history
-      window.location.replace("/select-exam")
-    }, 100)
+    router.push("/select-exam")
   }
 
   return (
