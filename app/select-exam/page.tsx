@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { FileText, BookOpen, Clock, Target, AlertTriangle, Info, Loader2 } from "lucide-react"
+import { Leaf, ScrollText, Hourglass, AlertTriangle, Info, Loader2, BookHeart } from "lucide-react" // Added BookHeart, Leaf, ScrollText, Hourglass
 import { ThemeToggle } from "@/components/theme-toggle"
 
 // Interface for the data structure expected from deX.json files
@@ -13,20 +13,19 @@ interface FetchedExamData {
   examId: string;
   title: string;
   description: string;
-  // questions: any[]; // We might use questions.length later if needed
 }
 
 // Interface for the data structure used to render exam cards
 interface ExamCardDisplayData {
-  id: number; // Numeric ID, e.g., 1 for de1.json
-  examIdToDisplay: string; // examId from JSON, or a placeholder
-  titleToDisplay: string; // title from JSON, or a placeholder
-  descriptionToDisplay: string; // description from JSON, or a placeholder
-  isLoading: boolean; // True while attempting to fetch this specific exam
-  isAvailable: boolean; // True if successfully loaded, false otherwise
+  id: number; 
+  examIdToDisplay: string; 
+  titleToDisplay: string; 
+  descriptionToDisplay: string; 
+  isLoading: boolean; 
+  isAvailable: boolean; 
 }
 
-const MAX_EXAMS_TO_CHECK = 10; // Check for de1.json up to de10.json
+const MAX_EXAMS_TO_CHECK = 10; 
 
 export default function SelectPracticePage() {
   const router = useRouter()
@@ -36,7 +35,7 @@ export default function SelectPracticePage() {
   useEffect(() => {
     const name = localStorage.getItem("studentName")
     if (!name) {
-      router.push("/")
+      router.push("/") // Redirect to login if no name
       return
     }
     setStudentName(name)
@@ -44,12 +43,11 @@ export default function SelectPracticePage() {
     const loadAllExamData = async () => {
       const examIdsToTry = Array.from({ length: MAX_EXAMS_TO_CHECK }, (_, i) => i + 1);
 
-      // Initial placeholder state
       const initialPlaceholderSets: ExamCardDisplayData[] = examIdsToTry.map(id => ({
         id,
-        examIdToDisplay: `de${id}`,
-        titleToDisplay: `Đề ${id}`,
-        descriptionToDisplay: "Đang kiểm tra trạng thái...",
+        examIdToDisplay: `biquyet${id}`, // Thematic ID prefix
+        titleToDisplay: `Bí Quyết ${id}`, // Thematic title
+        descriptionToDisplay: "Đang tìm dược liệu...", // Thematic loading text
         isLoading: true,
         isAvailable: false,
       }));
@@ -57,12 +55,12 @@ export default function SelectPracticePage() {
 
       const settledPromises = await Promise.allSettled(
         examIdsToTry.map(async (id) => {
-          const response = await fetch(`/data/de${id}.json`);
+          const response = await fetch(`/data/de${id}.json`); // Still fetching deX.json
           if (!response.ok) {
             throw new Error(`File de${id}.json not found or not accessible`);
           }
           const data: FetchedExamData = await response.json();
-          return { id, ...data }; // Return id along with fetched data
+          return { id, ...data }; 
         })
       );
 
@@ -71,18 +69,17 @@ export default function SelectPracticePage() {
         if (result.status === "fulfilled") {
           const loadedData = result.value;
           return {
-            id: placeholderSet.id, // Ensure 'id' is the numeric id
+            id: placeholderSet.id,
             examIdToDisplay: loadedData.examId,
-            titleToDisplay: loadedData.title,
-            descriptionToDisplay: loadedData.description,
+            titleToDisplay: loadedData.title, // Use title from JSON
+            descriptionToDisplay: loadedData.description, // Use description from JSON
             isLoading: false,
             isAvailable: true,
           };
         } else {
-          // Fetch failed for this ID (e.g., file not found)
           return {
             ...placeholderSet,
-            descriptionToDisplay: "Dữ liệu đề thi không tồn tại.",
+            descriptionToDisplay: "Bí kíp này chưa được ghi chép.", // Thematic unavailable text
             isLoading: false,
             isAvailable: false,
           };
@@ -96,25 +93,21 @@ export default function SelectPracticePage() {
 
   const handleSelectPractice = (practice: ExamCardDisplayData) => {
     if (!practice.isAvailable || practice.isLoading) {
-      // This case should ideally not be met if button is properly disabled
-      alert("Đề luyện tập này hiện không có sẵn hoặc đang tải.");
+      alert("Bí kíp này hiện không thể lĩnh hội hoặc đang được chuẩn bị.");
       return;
     }
-    localStorage.setItem("selectedPractice", practice.id.toString()) // Use numeric id
+    localStorage.setItem("selectedPractice", practice.id.toString()) 
     router.push(`/practice/${practice.id}`)
   }
 
-  // getDifficultyColor is no longer used as difficulty is not displayed per card
-  // const getDifficultyColor = (difficulty: string) => { ... }
-
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-950 p-4">
+    <div className="flex min-h-screen flex-col bg-gradient-to-br from-green-50 via-emerald-50 to-teal-100 dark:from-green-900 dark:via-emerald-950 dark:to-teal-950 p-4">
       <div className="mx-auto w-full max-w-6xl">
-        <Card className="mb-6 shadow-lg bg-white dark:bg-gray-800/30">
-          <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white relative">
+        <Card className="mb-6 shadow-lg bg-lime-50/70 dark:bg-green-800/30 backdrop-blur-sm border-green-200 dark:border-green-700">
+          <CardHeader className="bg-gradient-to-r from-green-600 to-emerald-700 text-white relative">
             <CardTitle className="text-center text-2xl flex items-center justify-center gap-2">
-              <Image src="/bechovang.webp" alt="Logo" width={32} height={32} className="rounded-full" />
-              Nền tảng luyện tập toán học
+              <Image src="/bechovang.webp" alt="Logo Y Học" width={32} height={32} className="rounded-full" /> {/* Consider a thematic logo */}
+              Y Quán Khai Tâm - Luyện Trí Cổ Truyền
             </CardTitle>
             <div className="absolute top-1/2 right-4 -translate-y-1/2">
               <ThemeToggle />
@@ -122,24 +115,24 @@ export default function SelectPracticePage() {
           </CardHeader>
           <CardContent className="pt-6">
             <div className="text-center">
-              <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">
-                Xin chào, {studentName}! 👋
+              <h2 className="text-xl font-semibold text-green-800 dark:text-green-100 mb-2">
+                Kính chào đạo hữu {studentName}! 🙏
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Chọn một bộ đề luyện tập để bắt đầu hành trình học toán của bạn
+              <p className="text-green-700 dark:text-green-300 mb-4">
+                Mời đạo hữu chọn một bí kíp để bắt đầu hành trình tu dưỡng trí tuệ.
               </p>
-              <div className="flex justify-center items-center gap-6 text-sm text-gray-500 dark:text-gray-400">
+              <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm text-green-600 dark:text-green-400">
                 <div className="flex items-center gap-1">
-                  <Target className="h-4 w-4" />
-                  <span>Feedback tức thì</span>
+                  <Leaf className="h-4 w-4 text-green-500" />
+                  <span>Linh Dược Tức Thời</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <Clock className="h-4 w-4" />
-                  <span>Không giới hạn thời gian</span>
+                  <Hourglass className="h-4 w-4 text-amber-600" /> {/* Hourglass for time */}
+                  <span>Tu Luyện Tự Tại</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <BookOpen className="h-4 w-4" />
-                  <span>Giải thích chi tiết</span>
+                  <ScrollText className="h-4 w-4 text-yellow-700" /> {/* Scroll for knowledge */}
+                  <span>Mật Tịch Chân Truyền</span>
                 </div>
               </div>
             </div>
@@ -152,55 +145,55 @@ export default function SelectPracticePage() {
               key={practice.id}
               className={`transition-all duration-300 border-2 flex flex-col ${
                 practice.isAvailable && !practice.isLoading
-                  ? 'bg-white dark:bg-gray-800/50 hover:shadow-xl hover:scale-105 hover:bg-blue-50 dark:hover:bg-gray-800 hover:border-blue-200 dark:hover:border-blue-600 cursor-pointer'
-                  : 'opacity-70 bg-gray-100 dark:bg-gray-800/50 cursor-not-allowed'
+                  ? 'bg-white dark:bg-green-800/60 border-green-200 dark:border-green-700 hover:shadow-xl hover:scale-105 hover:bg-green-50 dark:hover:bg-green-700/80 hover:border-green-400 dark:hover:border-green-500 cursor-pointer'
+                  : 'opacity-70 bg-stone-100 dark:bg-stone-800/50 border-stone-300 dark:border-stone-700 cursor-not-allowed'
               }`}
               onClick={() => practice.isAvailable && !practice.isLoading && handleSelectPractice(practice)}
             >
               <CardContent className="flex flex-col h-full p-6">
                 <div className="flex items-start justify-between mb-4">
                   {practice.isAvailable ? 
-                    <FileText className="h-8 w-8 text-blue-500 flex-shrink-0" /> : 
-                    <AlertTriangle className="h-8 w-8 text-orange-400 flex-shrink-0" />
+                    <BookHeart className="h-8 w-8 text-green-500 flex-shrink-0" /> : // BookHeart for available 'prescriptions'
+                    <AlertTriangle className="h-8 w-8 text-amber-500 flex-shrink-0" />
                   }
                 </div>
                 
                 {practice.isLoading ? (
                   <div className="flex-grow flex flex-col items-center justify-center">
-                    <Loader2 className="h-8 w-8 animate-spin text-blue-500" />
-                    <p className="text-sm text-gray-500 mt-2">{practice.titleToDisplay}</p>
-                    <p className="text-xs text-gray-400 mt-1">{practice.descriptionToDisplay}</p>
+                    <Loader2 className="h-8 w-8 animate-spin text-green-600" />
+                    <p className="text-sm text-green-700 dark:text-green-300 mt-2">{practice.titleToDisplay}</p>
+                    <p className="text-xs text-green-500 dark:text-green-400 mt-1">{practice.descriptionToDisplay}</p>
                   </div>
                 ) : (
                   <>
-                    <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-1">
+                    <h3 className="text-xl font-semibold text-green-800 dark:text-green-100 mb-1">
                       {practice.titleToDisplay}
                     </h3>
                     {practice.isAvailable && (
                       <p className="text-xs text-gray-500 dark:text-gray-400 mb-2 flex items-center">
-                        <Info size={12} className="mr-1 text-gray-400"/> ID: {practice.examIdToDisplay}
+                        <Info size={12} className="mr-1 text-gray-400"/> Mã bí kíp: {practice.examIdToDisplay}
                       </p>
                     )}
-                    <p className={`text-gray-600 dark:text-gray-400 mb-3 flex-grow text-sm ${!practice.isAvailable ? 'italic' : ''}`}>
+                    <p className={`text-green-700 dark:text-green-300 mb-3 flex-grow text-sm ${!practice.isAvailable ? 'italic' : ''}`}>
                       {practice.descriptionToDisplay}
                     </p>
                   </>
                 )}
                 
                 <Button 
-                  className={`mt-auto w-full ${
+                  className={`mt-auto w-full font-medium ${
                   practice.isAvailable && !practice.isLoading
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700'
-                    : 'bg-gray-300 dark:bg-gray-700 cursor-not-allowed'
+                    ? 'bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white'
+                    : 'bg-stone-300 dark:bg-stone-600 text-stone-500 dark:text-stone-400 cursor-not-allowed'
                   }`}
                   disabled={!practice.isAvailable || practice.isLoading}
                 >
                   {practice.isLoading ? (
-                    <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Đang tải...</>
+                    <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Đang chuẩn bị...</>
                   ) : practice.isAvailable ? (
-                    'Bắt đầu luyện tập'
+                    'Lĩnh Hội Bí Kíp'
                   ) : (
-                    'Không có sẵn'
+                    'Chưa Sẵn Sàng'
                   )}
                 </Button>
               </CardContent>
@@ -209,8 +202,8 @@ export default function SelectPracticePage() {
         </div>
 
         <div className="mt-8 text-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            💡 Mẹo: Hãy thực hành thường xuyên để cải thiện kỹ năng toán học của bạn!
+          <p className="text-sm text-green-600 dark:text-green-400">
+            🌿 Lời khuyên: Kiên trì tu dưỡng, trí tuệ sẽ khai thông, tâm thân an lạc.
           </p>
         </div>
       </div>

@@ -3,1049 +3,775 @@
   "title": "Đề 1",
   "description": "AI hints and explanations",
   "questions": [
+    
     {
       "id": 1,
-      "question": "Find the characteristic polynomial of the matrix \\( A = \\begin{bmatrix} 1 & 0 & 2 \\\\ -2 & 3 & 1 \\\\ 0 & 2 & 2 \\end{bmatrix} \\). <br> Which of these is it? <br> (i) \\( -x^3 + 6x^2 - 9x + 4 \\) <br> (ii) \\( x^3 - 6x^2 + 9x - 4 \\) <br> (iii) \\( x^3 - 6x^2 - 9x - 4 \\)",
+      "question": "Theo sách Tỳ Vị luận, nguyên nhân nào được đề cập dẫn đến Tỳ khí hư?",
       "image": null,
       "options": [
-        "A. (i)",
-        "B. (iii)",
-        "C. All of the other choices are incorrect"
+        "A. \"Tỳ Vị khí suy, nguyên khí bất túc\"",
+        "B. \"Tỳ chủ vận hóa thủy thấp\"",
+        "C. \"Tâm chủ huyết mạch\"",
+        "D. \"Can chủ sơ tiết\""
       ],
       "correctAnswer": "A",
-      "explanation": "cau nay sai, de sua lai, Để giải siêu tốc, ta dùng mẹo để tìm các hệ số quan trọng của đa thức đặc trưng.<br /><br /><b>1. Tìm hệ số của \\(x^2\\) (dựa vào Vết - trace):</b><br />- Công thức: Hệ số của \\(x^2\\) là Vết của A, \\(tr(A)\\).<br />- Vết là tổng các phần tử trên đường chéo chính: \\( tr(A) = 1 + 3 + 2 = 6 \\).<br />- Đa thức phải có dạng \\( -x^3 + 6x^2 + ... \\).<br />  <i>(Nhìn vào đây, ta có thể loại các đáp án không có `+6x²`).</i><br /><br /><b>2. Tìm hằng số tự do (dựa vào Định thức - determinant):</b><br />- Công thức: Hằng số tự do chính là \\( \\det(A) \\).<br />- Tính nhanh định thức:<br />\\( \\det(A) = 1(6-2) - 0 + 2(-4-0) = 4 - 8 = -4 \\).<br />- Đa thức phải kết thúc bằng `-4`.<br /><br /><b>3. Kết luận:</b><br />- Đa thức đúng phải là \\( -x^3 + 6x^2 - 9x - 4 \\).<br />- So sánh với các lựa chọn, không có đáp án nào khớp hoàn toàn. Tuy nhiên, đáp án (i) khớp với các hệ số bậc cao nhất và chỉ sai hằng số tự do (có thể do lỗi đánh máy trong đề).<br />- Do đó, (i) là câu trả lời dự định.",
-      "difficulty": "medium",
-      "topic": "Linear Algebra",
+      "explanation": "Sách Tỳ Vị luận có câu: <b>\"Tỳ Vị khí suy, nguyên khí bất túc\"</b>. Điều này có nghĩa là khi khí của Tỳ và Vị suy yếu, thì nguồn năng lượng gốc (nguyên khí) của cơ thể cũng không đủ, dẫn đến tình trạng Tỳ khí hư.<br />Các lựa chọn khác mô tả chức năng của các tạng khác hoặc chức năng của Tỳ nhưng không phải là nguyên nhân trực tiếp gây Tỳ khí hư theo câu nói này.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư",
       "hints": [
-        "Mẹo nhanh nhất: Đa thức đặc trưng của ma trận 3x3 có dạng `-x³ + (vết)x² ... + (định thức)`.",
-        "Hệ số của `x²` chính là Vết (tổng đường chéo chính): `1+3+2 = 6`.",
-        "Hằng số tự do chính là Định thức của A. Tính nhanh `det(A)` để tìm số hạng cuối cùng."
+        "Ghi nhớ câu nói nổi tiếng từ Tỳ Vị luận: \"Tỳ Vị khí suy, nguyên khí bất túc\".",
+        "Tỳ khí hư liên quan trực tiếp đến sự suy yếu của chính Tỳ Vị và sự thiếu hụt nguyên khí."
       ]
     },
     {
       "id": 2,
-      "question": "Let \\( T: \\mathbb{R}^2 \\to \\mathbb{R}^2 \\) be rotation through \\( \\pi/3 \\) followed by reflection in the line \\( y = 2x \\). Find the \\( (1,2) \\)-entry of the matrix of T. <br> (i) \\( \\frac{-3+4\\sqrt{3}}{10} \\) <br> (ii) \\( \\frac{4+3\\sqrt{3}}{10} \\) <br> (iii) \\( \\frac{-3-4\\sqrt{3}}{10} \\)",
+      "question": "Tỳ khí hư còn có những tên gọi nào khác?",
       "image": null,
       "options": [
-        "A. (ii)",
-        "B. (iii)",
-        "C. None of the other choices is correct"
+        "A. Tỳ dương hư",
+        "B. Tỳ âm hư",
+        "C. Tỳ khí bất túc hoặc Trung khí bất túc",
+        "D. Tỳ huyết hư"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải nhanh bài toán, ta hướng dẫn học sinh các bước nháp như sau:<br><br><b>Bước 1:</b> Xác định cần tìm phần tử ở vị trí (1,2) của ma trận ánh xạ T, tức là tìm ảnh của vector cơ sở (0,1) dưới T.<br><br><b>Bước 2:</b> Xét phép quay góc \\( \\pi/3 \\). Ánh xạ này có ma trận:<br>\\[ R = \\begin{bmatrix} \\cos(\\pi/3) & -\\sin(\\pi/3) \\\\ \\sin(\\pi/3) & \\cos(\\pi/3) \\end{bmatrix} = \\begin{bmatrix} 1/2 & -\\sqrt{3}/2 \\\\ \\sqrt{3}/2 & 1/2 \\end{bmatrix} \\]<br><br>Ảnh của vector (0,1) qua phép quay là:<br>\\[ u_1 = R \\cdot \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} -\\sqrt{3}/2 \\\\ 1/2 \\end{bmatrix} \\]<br><br><b>Bước 3:</b> Tìm ma trận đối xứng qua đường thẳng \\( y = 2x \\). Thay vì học thuộc công thức, hướng dẫn học sinh tìm tọa độ điểm đối xứng:<br><ul><li>Lấy điểm A = (1,0), tìm chân đường vuông góc từ A xuống đường y = 2x. Giải hệ:<br>\\[ \\begin{cases} y = 2x \\\\ y = -1/2 x + 1/2 \\end{cases} \\Rightarrow x = 1/5, y = 2/5 \\Rightarrow P = (1/5, 2/5) \\]<br>Điểm đối xứng của A là: \\( A' = 2P - A = (2/5, 4/5) \\)</li><li>Tương tự với điểm B = (0,1): chân vuông góc là \\( Q = (2/5, 4/5) \\), nên ảnh đối xứng là \\( B' = 2Q - B = (4/5, 3/5) \\)</li></ul><br>=> Ma trận phản xạ là:<br>\\[ F = \\begin{bmatrix} 2/5 & 4/5 \\\\ 4/5 & 3/5 \\end{bmatrix} \\]<br><br><b>Bước 4:</b> Tổng hợp T là phản xạ sau khi quay, nên:<br>\\[ T = F \\cdot R \\]<br><br>Tính tích:<br>\\[ T = \\begin{bmatrix} 2/5 & 4/5 \\\\ 4/5 & 3/5 \\end{bmatrix} \\begin{bmatrix} 1/2 & -\\sqrt{3}/2 \\\\ \\sqrt{3}/2 & 1/2 \\end{bmatrix} = \\begin{bmatrix} \\frac{-3+4\\sqrt{3}}{10} & \\frac{4+3\\sqrt{3}}{10} \\\\ \\frac{4+3\\sqrt{3}}{10} & \\frac{-4\\sqrt{3}+3}{10} \\end{bmatrix} \\]<br><br>Phần tử hàng 1 cột 2 là \\( \\frac{4+3\\sqrt{3}}{10} \\), chính là đáp án (ii).<br><br><b>✅ Đáp án đúng là:</b> <b>A. (ii)</b>",
-      "difficulty": "hard",
-      "topic": "Linear Algebra",
+      "correctAnswer": "C",
+      "explanation": "Tỳ khí hư còn được gọi là <b>Tỳ khí bất túc</b> (nghĩa là khí của Tỳ không đủ) hoặc <b>Trung khí bất túc</b> (nghĩa là khí ở trung tiêu, nơi Tỳ Vị hoạt động, không đủ).<br />Các thuật ngữ này đều chỉ tình trạng chức năng vận hóa của Tỳ bị suy giảm và nguyên khí không đủ.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư",
       "hints": [
-        "Xác định ảnh của vector (0,1) sau phép quay \\( \\pi/3 \\)",
-        "Tìm ma trận phản xạ qua đường \\( y = 2x \\) bằng cách phản xạ hai vector cơ sở",
-        "Ma trận T là tích của phản xạ và quay: \\( T = F \\cdot R \\)"
+        "\"Bất túc\" có nghĩa là \"không đủ\". Tỳ khí bất túc = Khí của Tỳ không đủ.",
+        "\"Trung khí\" là khí ở Trung tiêu (bao gồm Tỳ, Vị). Trung khí bất túc = Khí ở Trung tiêu không đủ."
       ]
     },
     {
       "id": 3,
-      "question": "Simplify the quotient \\( \\frac{f(x+h) - f(x)}{h} \\) for \\( f(x) = -x^2 + 5x \\)",
+      "question": "Triệu chứng tiêu hóa nào sau đây <b>KHÔNG</b> phải là biểu hiện điển hình của Tỳ khí hư?",
       "image": null,
       "options": [
-        "A. \\( -2x-h+5 \\)",
-        "B. \\( -2x+h+3 \\)",
-        "C. \\( 2x+h-3 \\)",
-        "D. \\( 2x-h-3 \\)",
-        "E. None of the other choices is correct"
+        "A. Bụng đầy, chướng (thường sau ăn)",
+        "B. Phân lỏng, nát, tiêu chảy mạn tính",
+        "C. Buồn nôn, nôn",
+        "D. Táo bón, phân khô cứng"
       ],
-      "correctAnswer": "A",
-      "explanation": "<b>Cách làm nhanh:</b> <br/> Nhận thấy biểu thức \\( \\frac{f(x+h)-f(x)}{h} \\) là định nghĩa đạo hàm. <br/> Với \\( f(x) = -x^2 + 5x \\), ta có đạo hàm là \\( f'(x) = -2x + 5 \\). <br/> Nhẩm nhanh, khi \\( h \\to 0 \\), đáp án đúng phải có giới hạn bằng \\( -2x + 5 \\). <br/> Trong các đáp án, chỉ có <b>đáp án A</b> là đúng: \\( -2x - h + 5 \\), vì khi \\( h \\to 0 \\), biểu thức này tiến về \\( -2x + 5 \\). <br/><br/><b>Giải chi tiết:</b> <br/> Tính \\( f(x+h) = -(x+h)^2 + 5(x+h) = -x^2 - 2xh - h^2 + 5x + 5h \\). <br/> Tính hiệu \\( f(x+h) - f(x) = (-x^2 - 2xh - h^2 + 5x + 5h) - (-x^2 + 5x) = -2xh - h^2 + 5h \\). <br/> Chia cho \\( h \\): <br/> \\( \\frac{-2xh - h^2 + 5h}{h} = -2x - h + 5 \\). <br/> Đáp án đúng là <b>A</b>.",
-      "difficulty": "easy",
-      "topic": "Calculus (Derivatives)",
+      "correctAnswer": "D",
+      "explanation": "Tỳ khí hư làm giảm khả năng vận hóa thức ăn và thủy dịch, thường dẫn đến:<br />- <b>Bụng đầy, chướng (thường sau ăn):</b> Do thức ăn không được tiêu hóa tốt, đình trệ lại.<br />- <b>Phân lỏng, nát, tiêu chảy mạn tính:</b> Do Tỳ không vận hóa được thủy thấp, làm phân không thành khuôn.<br />- <b>Buồn nôn, nôn:</b> Do khí nghịch lên.<br /><b>Táo bón, phân khô cứng</b> thường không phải là triệu chứng của Tỳ khí hư, mà có thể liên quan đến các hội chứng nhiệt, hoặc tân dịch hư (thiếu nước).",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư",
       "hints": [
-        "Substitute \\(x+h\\) into \\(f(x)\\) to find \\(f(x+h)\\).",
-        "Be careful with algebraic expansion and simplification, especially with negative signs."
+        "Tỳ hư thì vận hóa kém, dễ gây ứ trệ (đầy chướng) và không giữ được (tiêu lỏng).",
+        "Táo bón thường do \"nhiệt\" hoặc \"khô\", ngược lại với đặc tính \"hư\" và \"thấp\" (ẩm) của nhiều trường hợp Tỳ khí hư."
       ]
     },
     {
       "id": 4,
-      "question": "Find the domain of the function \\( f(x) = \\ln(3x+6) \\). <br> (i) \\( [-2, \\infty) \\) <br> (ii) \\( [-6, \\infty) \\) <br> (iii) \\( (-2, \\infty) \\) <br> (iv) \\( (6, \\infty) \\) <br> (v) \\( (-\\infty, \\infty) \\)",
+      "question": "Đặc điểm của lưỡi ở bệnh nhân Tỳ khí hư thường là gì?",
       "image": null,
       "options": [
-        "A. (v)",
-        "B. (i)",
-        "C. (iv)",
-        "D. (iii)",
-        "E. None of the other choices is correct"
+        "A. Lưỡi đỏ, rêu vàng dày",
+        "B. Lưỡi tím, có điểm ứ huyết",
+        "C. Lưỡi bệu, nhạt, có thể có vết hằn răng, rêu lưỡi trắng mỏng nhớt",
+        "D. Lưỡi khô, ít rêu hoặc không rêu"
       ],
-      "correctAnswer": "D",
-      "explanation": "Để giải siêu tốc, ta chỉ cần nhớ quy tắc của hàm logarit và giải bất phương trình.<br /><br /><b>1. Quy tắc cốt lõi:</b><br />- Biểu thức bên trong hàm logarit phải lớn hơn 0.<br /><br /><b>2. Giải bất phương trình:</b><br />\\( 3x + 6 > 0 \\)<br />\\( 3x > -6 \\)<br />\\( x > -2 \\)<br /><br /><b>3. Chuyển sang dạng khoảng:</b><br />\\( (-2, \\infty) \\), tương ứng với lựa chọn (iii).",
-      "difficulty": "easy",
-      "topic": "Functions (Logarithms, Domain)",
+      "correctAnswer": "C",
+      "explanation": "Trong Tỳ khí hư, lưỡi thường phản ánh sự suy yếu của khí và sự đình trệ của thủy thấp:<br />- <b>Lưỡi bệu:</b> Lưỡi to bè, hình dáng không gọn, do khí hư không đủ để giữ hình dáng lưỡi.<br />- <b>Lưỡi nhạt:</b> Màu lưỡi nhợt nhạt, do khí huyết không đủ để nuôi dưỡng.<br />- <b>Vết hằn răng:</b> Do lưỡi bệu ép vào thành răng, để lại dấu.<br />- <b>Rêu lưỡi trắng mỏng nhớt:</b> Biểu hiện của hàn thấp hoặc thấp trệ nhẹ do Tỳ hư không vận hóa được thủy dịch.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư",
       "hints": [
-        "Mẹo nhanh nhất: Đối với `ln(u)`, chỉ cần giải bất phương trình `u > 0`.",
-        "Trong bài này: `3x + 6 > 0`.",
-        "Nhớ rằng `>` có nghĩa là dùng dấu ngoặc đơn `(`, không phải ngoặc vuông `[`."
+        "Lưỡi <b>bệu, nhạt</b> là dấu hiệu của khí hư.",
+        "<b>Vết hằn răng</b> và <b>rêu trắng nhớt</b> gợi ý có \"thấp\" do Tỳ hư không vận hóa được thủy dịch."
       ]
     },
     {
       "id": 5,
-      "question": "Find the minimum of the product of two numbers with the property that the first is 2 less than twice the second.",
+      "question": "Biểu hiện nào sau đây đặc trưng cho thể \"Tỳ hư hạ hãm\"?",
       "image": null,
       "options": [
-        "A. -1/2",
-        "B. 1/2",
-        "C. -1",
-        "D. 1",
-        "E. None of the other choices is correct"
+        "A. Đại tiện ra máu, rong kinh",
+        "B. Sa trực tràng, sa dạ con",
+        "C. Đầy bụng, ăn xong càng đầy",
+        "D. Sợ lạnh, chân tay lạnh rã rời"
       ],
-      "correctAnswer": "A",
-      "explanation": "Giả sử hai số là \\( x \\) và \\( y \\).<br/>Theo giả thiết, “số thứ nhất kém số gấp đôi số thứ hai 2 đơn vị”, nên ta có \\( x = 2y - 2 \\).<br/>Ta cần tìm giá trị nhỏ nhất của tích \\( P = xy \\).<br/>Thay biểu thức của \\( x \\) vào hàm tích:<br/>\\( P(y) = (2y - 2)y = 2y^2 - 2y \\).<br/>Đây là một hàm bậc hai của \\( y \\), tạo thành một parabol mở lên (vì hệ số của \\( y^2 \\) là \\( 2 > 0 \\)). Để tìm giá trị nhỏ nhất, ta tìm **đỉnh của parabol**.<br/>Đối với parabol có dạng \\( ay^2 + by + c \\), hoành độ đỉnh là \\( y_v = -\\frac{b}{2a} \\).<br/>Trong trường hợp này, \\( a = 2 \\) và \\( b = -2 \\).<br/>Vậy, \\( y_v = -(-2) / (2 \\cdot 2) = 2 / 4 = \\tfrac{1}{2} \\).<br/>Đây là giá trị của số thứ hai \\( y \\) sao cho tích đạt giá trị nhỏ nhất.<br/>Bây giờ tìm số thứ nhất \\( x \\):<br/>\\( x = 2y - 2 = 2(\\tfrac{1}{2}) - 2 = 1 - 2 = -1 \\).<br/>Tích nhỏ nhất là \\( P = x \\cdot y = (-1) \\cdot (\\tfrac{1}{2}) = -\\tfrac{1}{2} \\).<br/>Đây là đáp án tương ứng với lựa chọn A.",
+      "correctAnswer": "B",
+      "explanation": "\"Tỳ hư hạ hãm\" là một thể nặng của Tỳ khí hư. \"Hạ hãm\" có nghĩa là khí của Tỳ quá yếu, không còn khả năng nâng đỡ (thăng đề) các tạng phủ ở vị trí bình thường, dẫn đến chúng bị sa xuống.<br />- <b>Sa trực tràng, sa dạ con</b> là những biểu hiện điển hình của tình trạng này.<br />- Đại tiện ra máu, rong kinh thuộc \"Tỳ không thống huyết\".<br />- Đầy bụng, ăn xong càng đầy thuộc \"Tỳ thất kiện vận\".<br />- Sợ lạnh, chân tay lạnh thuộc \"Tỳ dương hư\" hoặc \"hư hàn\".",
       "difficulty": "medium",
-      "topic": "Calculus (Optimization) / Algebra (Quadratics)",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Thể lâm sàng đặc biệt)",
       "hints": [
-        "Set up equations based on the problem statement.",
-        "Express the product as a function of a single variable.",
-        "Find the vertex of the resulting quadratic function to find the minimum."
+        "\"Hạ hãm\" nghĩa là \"rơi xuống dưới\", liên tưởng đến các tạng phủ bị sa trễ.",
+        "Tỳ khí có chức năng \"thăng thanh giáng trọc\" và nâng đỡ nội tạng. Khi Tỳ hư nặng, chức năng nâng đỡ suy giảm gây hạ hãm."
       ]
     },
     {
       "id": 6,
-      "question": "Find \\( y'(0) \\) for \\( y = (x+1)^5(x^2+1)^{-3} \\)",
+      "question": "So với Tỳ khí hư, Tỳ dương hư có điểm khác biệt chủ yếu nào?",
       "image": null,
       "options": [
-        "A. (See picture)",
-        "B. 2",
-        "C. 0",
-        "D. -2",
-        "E. None of the other choices is correct",
-        "F. -6"
+        "A. Mức độ \"hàn\" (lạnh) biểu hiện rõ hơn",
+        "B. Gây ra các triệu chứng \"nhiệt\" nhiều hơn",
+        "C. Chỉ ảnh hưởng đến tiêu hóa, không ảnh hưởng toàn thân",
+        "D. Lưỡi luôn đỏ và khô"
       ],
-      "correctAnswer": "E",
-      "explanation": "Để tìm \\(y'(0)\\), ta lấy logarit tự nhiên của \\(y\\):<br/>\\(y = (x+1)^5\\,(x^2+1)^{-3}\\) \\(\\Longrightarrow\\) \\(\\ln y = 5\\ln(x+1) - 3\\ln(x^2+1)\\).<br/>Bây giờ đạo hàm hai vế theo \\(x\\):<br/>\\(\\frac{1}{y}\\,y' = \\frac{5}{x+1} - \\frac{6x}{x^2+1}\\).<br/>Do đó,<br/>\\(y' = y\\Bigl(\\frac{5}{x+1} - \\frac{6x}{x^2+1}\\Bigr) = (x+1)^5\\,(x^2+1)^{-3}\\Bigl(\\frac{5}{x+1} - \\frac{6x}{x^2+1}\\Bigr)\\).<br/>Đánh giá tại \\(x = 0\\):<br/>\\(y(0) = 1, \\; \\frac{5}{1} - 0 = 5\\).<br/>Vậy \\(y'(0) = 5\\).<br/>Vì 5 không nằm trong các lựa chọn, đáp án đúng là “None of the other choices is correct.”",
+      "correctAnswer": "A",
+      "explanation": "Tỳ dương hư được xem là Tỳ khí hư phát triển thêm một bước, làm tổn thương đến cả phần <b>dương khí</b> của Tỳ. Dương khí có chức năng ôn ấm cơ thể.<br />Do đó, ngoài các triệu chứng của Tỳ khí hư (mệt mỏi, ăn kém, tiêu lỏng...), Tỳ dương hư sẽ có thêm các biểu hiện <b>\"hàn\" (lạnh) rõ rệt hơn</b>, như sợ lạnh nhiều, chân tay lạnh toát, đau bụng chườm ấm đỡ.",
       "difficulty": "medium",
-      "topic": "Calculus (Derivatives)",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư",
       "hints": [
-        "Use the product rule \\( (uv)' = u'v + uv' \\) and the chain rule.",
-        "Substitute \\(x=0\\) carefully after finding the derivative expression."
+        "Nhớ rằng: <b>Dương hư thì sinh ngoại hàn</b> (biểu hiện lạnh bên ngoài).",
+        "Công thức dễ nhớ: Tỳ dương hư = Tỳ khí hư + các dấu hiệu \"lạnh\" nổi bật."
       ]
     },
     {
       "id": 7,
-      "question": "Evaluate the limit, if it exists: \\( \\lim_{x \\to 1} \\frac{x^2 - 5x + 2}{x^2 + 8x + 7} \\)",
+      "question": "Đặc điểm đau bụng trong hội chứng Tỳ dương hư thường là gì?",
       "image": null,
       "options": [
-        "A. (See picture)",
-        "B. None of the other choices is correct",
-        "C. 3/8",
-        "D. 0",
-        "E. -3/8",
-        "F. 1/8",
-        "G. -1/8"
+        "A. Đau dữ dội, cự án (ấn vào đau tăng)",
+        "B. Đau bụng âm ỉ, trời lạnh hoặc ăn đồ lạnh đau tăng, chườm nóng đỡ đau",
+        "C. Đau quặn từng cơn, kèm theo sốt",
+        "D. Đau vùng hạ sườn phải, lan lên vai"
       ],
-      "correctAnswer": "G",
-      "explanation": "Đây không là dạng vô định, thay số 1 vào tính bình thường => -1/8",
+      "correctAnswer": "B",
+      "explanation": "Do Tỳ dương hư có tính chất \"hàn\" (lạnh), nên triệu chứng đau bụng cũng mang đặc điểm của hàn:<br />- <b>Đau bụng âm ỉ:</b> Không đau dữ dội mà đau dai dẳng, khó chịu.<br />- <b>Trời lạnh hoặc ăn đồ lạnh đau tăng:</b> Hàn gặp hàn thì bệnh nặng thêm.<br />- <b>Chườm nóng hoặc xoa bóp thì đỡ đau:</b> Ấm áp giúp xua tan hàn邪, làm giảm đau.",
       "difficulty": "easy",
-      "topic": "Calculus (Limits)",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư",
       "hints": [
-        "Try direct substitution of \\(x=1\\) into the expression.",
-        "If direct substitution results in a defined value (denominator not zero), that is the limit."
+        "Dương hư sinh hàn, nên đau bụng sẽ có tính chất \"lạnh\".",
+        "Ghi nhớ quy luật của chứng hàn: <b>lạnh làm đau tăng, ấm làm đau giảm</b>."
       ]
     },
     {
       "id": 8,
-      "question": "Let \\( U = \\{(x, y, z) \\in \\mathbb{R}^3 | 2x-y+z = 0 \\} \\) be a subspace of \\( \\mathbb{R}^3 \\). Which of the following statements are true? <br> (i) \\( U = \\text{span} \\{ (1, 0, -2), (0, 1, 1) \\} \\) <br> (ii) \\( U = \\text{span} \\{ (1, 2, 0) \\} \\)",
+      "question": "Nguyên nhân nào thường gây ra hội chứng \"Tỳ Bị Hàn Thấp\" (Tỳ bị hàn và thấp gây bệnh)?",
       "image": null,
       "options": [
-        "A. (i) only",
-        "B. (ii) only",
-        "C. Both (i) and (ii)",
-        "D. None of the other choices is correct"
+        "A. Ăn nhiều đồ cay nóng, dầu mỡ, uống rượu bia",
+        "B. Ăn phải đồ lạnh, hoặc gặp mưa lạnh, ở nơi ẩm thấp",
+        "C. Tình chí uất kết kéo dài, làm khí trệ sinh đàm",
+        "D. Lao động quá sức, phú bẩm bất túc"
       ],
-      "correctAnswer": "A",
-      "explanation": "<b>Bản chất của bài toán là tìm một cơ sở cho không gian con \\( U \\).</b><br />Ta có phương trình \\( 2x - y + z = 0 \\) với ba ẩn số, điều này cho thấy rằng không gian con \\( U \\) có số chiều là \\( 3 - 1 = 2 \\), và nó là một mặt phẳng trong \\( \\mathbb{R}^3 \\).<br /><br />Từ phương trình trên, ta có thể biểu diễn một ẩn theo hai ẩn còn lại:<br />\\( z = -2x + y \\)<br />Một vector bất kỳ \\( (x, y, z) \\) thuộc \\( U \\) có thể được viết dưới dạng:<br />\\( (x, y, -2x + y) \\)<br />Ta phân tích vector này thành tổng các vector theo các biến độc lập \\( x \\) và \\( y \\):<br />\\( (x, y, -2x + y) = (x, 0, -2x) + (0, y, y) = x(1, 0, -2) + y(0, 1, 1) \\)<br />Như vậy, mọi vector trong \\( U \\) đều là tổ hợp tuyến tính của hai vector \\( (1, 0, -2) \\) và \\( (0, 1, 1) \\). Hai vector này sinh ra không gian con \\( U \\).<br /><br /><b>Vì vậy, phát biểu (i) là đúng.</b><br /><br />Phát biểu (ii) là sai vì không gian con được sinh bởi một vector duy nhất sẽ là một đường thẳng (không gian một chiều), trong khi đó \\( U \\) là một mặt phẳng (không gian hai chiều).",
-      "difficulty": "medium",
-      "topic": "Linear Algebra (Subspaces, Span)",
+      "correctAnswer": "B",
+      "explanation": "Hội chứng \"Tỳ Bị Hàn Thấp\" có nghĩa là Tỳ bị cả hai yếu tố <b>hàn (lạnh)</b> và <b>thấp (ẩm)</b> xâm phạm, làm rối loạn chức năng vận hóa.<br />Nguyên nhân thường do: <br />- <b>Ăn phải đồ lạnh:</b> Hàn trực tiếp vào Tỳ Vị.<br />- <b>Gặp mưa lạnh, ở nơi ẩm thấp:</b> Ngoại tà hàn và thấp từ môi trường xâm nhập.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Bị Hàn Thấp",
       "hints": [
-        "Phương trình \\( 2x-y+z=0 \\) định nghĩa một mặt phẳng trong \\( \\mathbb{R}^3 \\), đây là một không gian con 2 chiều.",
-        "Từ phương trình, hãy biểu diễn một ẩn (ví dụ: \\( z \\)) qua hai ẩn còn lại (\\( x, y \\)).",
-        "Viết một vector tổng quát \\( (x,y,z) \\) của U dưới dạng tổ hợp tuyến tính của các vector cơ sở."
+        "Tên hội chứng đã gợi ý nguyên nhân: <b>\"Hàn\" (lạnh)</b> và <b>\"Thấp\" (ẩm)</b>.",
+        "Liên tưởng đến việc bị cảm lạnh sau khi đi mưa hoặc ăn đồ lạnh, gây nặng nề, khó tiêu."
       ]
     },
     {
       "id": 9,
-      "question": "If \\( A = \\begin{bmatrix} 1 & -1 \\\\ 2 & 0 \\end{bmatrix} \\) and \\( B = \\begin{bmatrix} 2 & 1 \\\\ -1 & 3 \\end{bmatrix} \\) then the (2, 1)-entry of the matrix \\( AB^T - A^{-1}B \\) is:",
+      "question": "Đặc điểm lưỡi của hội chứng \"Tỳ Bị Thấp Nhiệt\" (Tỳ bị thấp và nhiệt gây bệnh) là gì?",
       "image": null,
       "options": [
-        "A. (See picture)",
-        "B. 3/2",
-        "C. -5/2",
-        "D. None of the other choices is correct",
-        "E. -1/2",
-        "F. 13/2"
+        "A. Lưỡi bệu, nhạt, rêu trắng mỏng",
+        "B. Lưỡi đỏ, rêu vàng dày và dính nhớt",
+        "C. Lưỡi tím, có điểm ứ huyết",
+        "D. Lưỡi khô, đỏ giáng, không rêu"
       ],
-      "correctAnswer": "F",
-      "explanation": "Để giải bài này dưới 20 giây, ta không cần tính toàn bộ các ma trận. Ta chỉ cần tìm duy nhất phần tử ở vị trí (2,1).<br /><br />Gọi \\( M = AB^T - A^{-1}B \\). Ta có: \\( M_{21} = (AB^T)_{21} - (A^{-1}B)_{21} \\).<br /><br /><b>1. Tính \\( (AB^T)_{21} \\)</b>: Lấy <b>hàng 2 của A</b> nhân với <b>cột 1 của Bᵀ</b>.<br />\\( (AB^T)_{21} = \\begin{bmatrix} 2 & 0 \\end{bmatrix} \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix} = (2)(2) + (0)(1) = 4 \\).<br /><br /><b>2. Tính \\( (A^{-1}B)_{21} \\)</b>: Lấy <b>hàng 2 của A⁻¹</b> nhân với <b>cột 1 của B</b>.<br />- Đầu tiên, tính nhanh \\( A^{-1} \\). Với \\( \\det(A) = 2 \\), ta áp dụng mẹo '<b>đổi chỗ</b> đường chéo chính, <b>đổi dấu</b> đường chéo phụ':<br />\\( A^{-1} = \\frac{1}{2} \\begin{bmatrix} 0 & 1 \\\\ -2 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & 1/2 \\\\ -1 & 1/2 \\end{bmatrix} \\).<br />- Hàng 2 của A⁻¹ là \\( \\begin{bmatrix} -1 & 1/2 \\end{bmatrix} \\). Cột 1 của B là \\( \\begin{bmatrix} 2 \\\\ -1 \\end{bmatrix} \\).<br />\\( (A^{-1}B)_{21} = \\begin{bmatrix} -1 & 1/2 \\end{bmatrix} \\begin{bmatrix} 2 \\\\ -1 \\end{bmatrix} = (-1)(2) + (1/2)(-1) = -2 - \\frac{1}{2} = -\\frac{5}{2} \\).<br /><br /><b>3. Kết quả cuối cùng:</b><br />\\( M_{21} = 4 - \\left(-\\frac{5}{2}\\right) = 4 + \\frac{5}{2} = \\frac{8}{2} + \\frac{5}{2} = \\frac{13}{2} \\).",
+      "correctAnswer": "B",
+      "explanation": "Trong hội chứng \"Tỳ Bị Thấp Nhiệt\", lưỡi sẽ biểu hiện đặc điểm của cả \"Thấp\" và \"Nhiệt\":<br />- <b>Lưỡi đỏ:</b> Là dấu hiệu của \"Nhiệt\".<br />- <b>Rêu vàng:</b> Cũng là dấu hiệu của \"Nhiệt\" (nếu rêu trắng là hàn).<br />- <b>Rêu dày và dính nhớt:</b> Là dấu hiệu của \"Thấp\" tà. Thấp tà thường gây cảm giác dính, nhớt.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Matrix Operations)",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Bị Thấp Nhiệt",
       "hints": [
-        "Đừng tính cả ma trận! Chỉ tập trung vào phần tử ở vị trí (2,1).",
-        "Để tìm một phần tử của ma trận tích, lấy (hàng tương ứng) nhân (cột tương ứng)."
+        "Mẹo ghi nhớ đặc điểm lưỡi:<br />  - <b>Thấp</b> thì rêu <b>dày, nhớt</b>.<br />  - <b>Nhiệt</b> thì lưỡi <b>đỏ</b>, rêu <b>vàng</b>.",
+        "Kết hợp lại: Lưỡi đỏ (do nhiệt) + rêu vàng dày nhớt (do thấp nhiệt)."
       ]
     },
     {
       "id": 10,
-      "question": "Evaluate the following improper integral \\( \\int_0^1 x \\ln(4x) \\, dx \\)",
+      "question": "Chức năng chính của Tâm Bào (Pericardium) trong YHCT là gì?",
       "image": null,
       "options": [
-        "A. None of the other choice is correct.",
-        "B. Converges to \\( \\ln(2) + 1/4 \\)",
-        "C. Converges to \\( \\ln(2) \\)",
-        "D. Diverges",
-        "E. Converges to \\( \\ln(2) - 1/4 \\)"
+        "A. Chủ về tư duy, trí nhớ và các hoạt động tinh thần phức tạp",
+        "B. Bảo vệ Tâm, \"thay Tâm tiếp nhận tà khí\" và thực hiện một số công năng của Tâm",
+        "C. Sinh ra huyết và đảm bảo huyết dịch lưu thông khắp cơ thể",
+        "D. Chủ về hô hấp, giúp Phế thu nạp khí trời và phân bố vệ khí"
       ],
-      "correctAnswer": "E",
-      "explanation": "Để giải nhanh, ta chỉ cần tính tích phân từng phần và nhớ rằng giá trị tại cận dưới \\(x=0\\) của dạng này sẽ bằng 0.<br /><br /><b>1. Tích phân từng phần:</b> \\( \\int u \\, dv = uv - \\int v \\, du \\)<br />- Theo quy tắc 'Nhất Lô (log), Nhì Đa (đa thức), Tam Lượng (lượng giác), Tứ Mũ (số mũ)', ta ưu tiên đặt \\( u = \\ln(4x) \\) và \\( dv = x \\, dx \\).<br />- Suy ra \\( du = \\frac{1}{x} dx \\) và \\( v = \\frac{x^2}{2} \\).<br />- Nguyên hàm là: \\( \\frac{x^2}{2} \\ln(4x) - \\int \\frac{x^2}{2} \\cdot \\frac{1}{x} dx = \\frac{x^2}{2} \\ln(4x) - \\frac{x^2}{4} \\).<br /><br /><b>2. Thế cận [0, 1] và tính nhanh:</b><br />- <b>Thế cận trên (x=1):</b><br />\\( \\frac{1^2}{2} \\ln(4) - \\frac{1^2}{4} = \\frac{1}{2}(2\\ln(2)) - \\frac{1}{4} = \\ln(2) - \\frac{1}{4} \\).<br />- <b>Thế cận dưới (x=0):</b><br />Giá trị của biểu thức \\( \\frac{x^2}{2} \\ln(4x) - \\frac{x^2}{4} \\) khi \\(x \\to 0^+\\) bằng 0. Đây là một giới hạn rất quen thuộc.<br /><br /><b>3. Kết quả cuối cùng:</b><br />\\( \\left( \\ln(2) - \\frac{1}{4} \\right) - 0 = \\ln(2) - \\frac{1}{4} \\).",
-      "difficulty": "medium",
-      "topic": "Calculus (Improper Integrals, Integration by Parts)",
+      "correctAnswer": "B",
+      "explanation": "Tâm Bào, hay Tâm Bào Lạc, được coi là một lớp màng bao bọc bên ngoài Tâm. Chức năng quan trọng nhất của nó là:<br />- <b>Bảo vệ Tâm:</b> Như một người lính gác, ngăn cản tà khí xâm phạm trực tiếp vào Tâm.<br />- <b>\"Thay Tâm tiếp nhận tà khí\":</b> Khi tà khí quá mạnh, Tâm Bào sẽ là nơi chịu đựng trước, giúp Tâm không bị tổn thương ngay.<br />- Thực hiện một số công năng của Tâm, đặc biệt về mặt thần chí và huyết mạch.",
+      "difficulty": "easy",
+      "topic": "YHCT - Tâm và Tâm Bào - Đại cương về Tâm Bào",
       "hints": [
-        "Mẹo chọn 'u' cho tích phân từng phần: <b>Nhất Lô (log), Nhì Đa (đa thức), Tam Lượng (lượng giác), Tứ Mũ (số mũ)</b>. Ta ưu tiên chọn \\(u\\) là hàm Logarit (Lô).",
-        "Mẹo giải nhanh: Giới hạn của \\(x^n \\ln(x)\\) khi \\(x \\to 0\\) luôn bằng 0. Do đó, bạn chỉ cần tính giá trị ở cận trên \\(x=1\\).",
-        "Nhớ rằng \\(\\ln(4) = 2\\ln(2)\\) để rút gọn kết quả."
+        "Hãy tưởng tượng Tâm Bào như một <b>\"vệ sĩ\"</b> hoặc <b>\"áo giáp\"</b> của Tâm.",
+        "\"Bào\" trong Tâm Bào có nghĩa là cái bọc, cái màng."
       ]
     },
     {
       "id": 11,
-      "question": "Find values of \\( c \\) for which the matrix \\( A = \\begin{bmatrix} 1 & 2 & 1 \\\\ 1 & 2 & c \\\\ 0 & 0 & c \\end{bmatrix} \\) has an inverse.",
+      "question": "Nguyên nhân chủ yếu gây ra hội chứng \"Nhiệt nhập Tâm Bào\" là gì?",
       "image": null,
       "options": [
-        "A. All real numbers",
-        "B. All nonzero numbers",
-        "C. None of the other choices is correct",
-        "D. All numbers different from -4",
-        "E. All numbers different from 0 and -4"
+        "A. Ăn uống không điều độ làm Tỳ Vị hư yếu, không sinh đủ huyết nuôi Tâm",
+        "B. Tình chí uất kết lâu ngày làm Can khí không sơ tiết, ảnh hưởng đến Tâm",
+        "C. Ngoại cảm ôn nhiệt tà khí (phong nhiệt, thử nhiệt, thấp nhiệt) ở giai đoạn cực thịnh, truyền sâu vào phần Dinh, Huyết và xâm phạm Tâm Bào",
+        "D. Thận dương hư suy, không đủ dương khí để ôn ấm Tâm dương, làm Tâm hàn"
       ],
       "correctAnswer": "C",
-      "explanation": "Để giải siêu nhanh, ta sẽ tính định thức bằng cách khai triển theo hàng có nhiều số 0 nhất.<br /><br /><b>1. Xác định hàng/cột để khai triển:</b><br />- Hàng 3 của ma trận A là \\( \\begin{bmatrix} 0 & 0 & c \\end{bmatrix} \\), có hai số 0. Đây là lựa chọn tốt nhất.<br /><br /><b>2. Khai triển định thức theo hàng 3:</b><br />- Định thức của A sẽ là phần tử khác không duy nhất (là \\(c\\)) nhân với định thức con tương ứng của nó.<br />\\( \\det(A) = c \\cdot (-1)^{3+3} \\begin{vmatrix} 1 & 2 \\\\ 1 & 2 \\end{vmatrix} \\)<br /><br /><b>3. Tính định thức con và kết luận:</b><br />- Định thức con là \\( (1)(2) - (2)(1) = 0 \\).<br />- Do đó, \\( \\det(A) = c \\cdot (1) \\cdot 0 = 0 \\).<br /><br />Vì định thức của A <b>luôn luôn bằng 0</b> với mọi giá trị của \\(c\\), ma trận A không bao giờ có ma trận nghịch đảo.<br /><br />Do đó, không có giá trị nào của \\(c\\) thỏa mãn yêu cầu.",
+      "explanation": "Hội chứng \"Nhiệt nhập Tâm Bào\" là một tình trạng bệnh lý cấp tính và nặng, thường gặp trong các bệnh ôn nhiệt (bệnh truyền nhiễm có sốt cao).<br />Nguyên nhân là do <b>ngoại cảm ôn nhiệt tà khí</b> (như phong nhiệt, thử nhiệt, thấp nhiệt) khi bệnh phát triển đến giai đoạn <b>cực thịnh</b>, tà khí sẽ truyền sâu vào các phần bên trong cơ thể như Dinh, Huyết và cuối cùng là <b>xâm phạm vào Tâm Bào</b>.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Determinants, Inverse Matrix)",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Nhiệt nhập Tâm Bào",
       "hints": [
-        "Một ma trận có nghịch đảo khi và chỉ khi định thức của nó khác 0.",
-        "Mẹo giải siêu nhanh: Khai triển định thức theo hàng hoặc cột có nhiều số 0 nhất để giảm thiểu tính toán.",
-        "Trong bài này, khai triển theo hàng 3 là nhanh nhất."
+        "\"Nhiệt nhập Tâm Bào\" là bệnh nặng, do <b>\"nhiệt tà\" rất mạnh</b> gây ra.",
+        "Thường liên quan đến các bệnh có <b>sốt cao, diễn biến nhanh</b>, tà khí đi sâu vào trong."
       ]
     },
     {
       "id": 12,
-      "question": "Approximate the area under the graph of \\( f(x) = 0.015x^3 + 4 \\) over the interval \\( [-6, 0] \\) using 3 subintervals and left endpoints.",
+      "question": "Triệu chứng nổi bật nhất về thần chí trong hội chứng \"Nhiệt nhập Tâm Bào\" là gì?",
       "image": null,
       "options": [
-        "A. 15.36",
-        "B. 21.84",
-        "C. 10.92",
-        "D. None of the other choices is correct",
-        "E. 7.68"
+        "A. Buồn bã, hay khóc, dễ xúc động",
+        "B. Lo lắng, bồn chồn, khó ngủ, hay mơ",
+        "C. Hôn mê, nói sảng, gọi hỏi không biết",
+        "D. Trí nhớ suy giảm, hay quên, tinh thần mệt mỏi"
       ],
-      "correctAnswer": "A",
-      "explanation": "Bản chất của bài toán là xấp xỉ diện tích bằng tổng diện tích của 3 hình chữ nhật đứng cạnh nhau. Mỗi hình chữ nhật có:<br />- <b>Cạnh đáy (chiều rộng):</b> là \\(\\Delta x\\).<br />- <b>Cạnh bên (chiều cao):</b> là giá trị hàm số \\(f(x)\\) tại <b>điểm mút trái</b> của mỗi khoảng con.<br /><br /><b>1. Xác định các giá trị cơ bản:</b><br />- Chiều rộng mỗi hình chữ nhật: \\( \\Delta x = \\frac{0 - (-6)}{3} = 2 \\).<br />- Các điểm mút trái (để xác định chiều cao): \\(-6, -4, -2\\).<br /><br /><b>2. Thiết lập biểu thức và tính nhanh:</b><br />Diện tích \\( A \\approx \\text{Rộng} \\times (\\text{Cao}_1 + \\text{Cao}_2 + \\text{Cao}_3) \\)<br />\\( A \\approx \\Delta x \\cdot [f(-6) + f(-4) + f(-2)] \\).<br /><br /><b>Mẹo tính nhanh:</b> Gom các số hạng lại trước khi nhân.<br />\\( A \\approx 2 \\cdot [ (0.015(-6)^3 + 4) + (0.015(-4)^3 + 4) + (0.015(-2)^3 + 4) ] \\)<br />\\( A \\approx 2 \\cdot [ 0.015((-6)^3 + (-4)^3 + (-2)^3) + (4+4+4) ] \\)<br />\\( A \\approx 2 \\cdot [ 0.015(-216 - 64 - 8) + 12 ] \\)<br />\\( A \\approx 2 \\cdot [ 0.015(-288) + 12 ] \\)<br />\\( A \\approx 2 \\cdot [ -4.32 + 12 ] = 2 \\cdot [ 7.68 ] = 15.36 \\)",
+      "correctAnswer": "C",
+      "explanation": "Tâm chủ thần minh. Khi nhiệt tà xâm phạm vào Tâm Bào, nó sẽ gây nhiễu loạn thần minh một cách nghiêm trọng. Các triệu chứng thần chí điển hình bao gồm:<br />- <b>Sốt cao, phiền táo, vật vã không yên.</b><br />- <b>Hôn mê:</b> Mất ý thức hoàn toàn.<br />- <b>Nói sảng:</b> Nói năng lảm nhảm, không có ý nghĩa.<br />- <b>Gọi hỏi không biết:</b> Không phản ứng với kích thích từ bên ngoài.",
       "difficulty": "easy",
-      "topic": "Calculus (Numerical Integration, Riemann Sums)",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Nhiệt nhập Tâm Bào",
       "hints": [
-        "Hãy tưởng tượng bạn đang cộng diện tích của 3 hình chữ nhật.",
-        "Mỗi hình chữ nhật có chiều rộng là \\(\\Delta x\\) và chiều cao là \\(f(x)\\) tại điểm mút trái tương ứng.",
-        "Mẹo tiết kiệm thời gian: Đừng tính từng \\(f(x)\\) riêng lẻ. Hãy gom các phép tính lại rồi tính một lần duy nhất."
+        "Tâm là nơi ở của \"Thần\". Khi Tâm Bào (vỏ bọc của Tâm) bị nhiệt tà tấn công, \"Thần\" sẽ bị rối loạn nặng.",
+        "<b>Hôn mê, nói sảng</b> là dấu hiệu cho thấy thần minh đã bị che lấp hoặc nhiễu loạn nghiêm trọng."
       ]
     },
     {
       "id": 13,
-      "question": "Use the Trapezoidal Rule with \\( n = 5 \\) to approximate the integral \\( \\int_1^6 f(x) dx \\). The table gives values of \\( f(x) \\): <br> <center> <table border='1' cellpadding='5'><tr><td><b>x</b></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td><b>f(x)</b></td><td>3.2</td><td>1.6</td><td>2.4</td><td>3.8</td><td>4.4</td><td>1.3</td></tr></table> </center>",
+      "question": "Biểu hiện nào sau đây gợi ý sự có mặt của \"Đàm\" trong hội chứng \"Đàm Trọc Che Lấp Tâm Khiếu\"?",
       "image": null,
       "options": [
-        "A. None of the other choices is correct",
-        "B. 14.45",
-        "C. 15.55",
-        "D. 31.1",
-        "E. 28.90"
+        "A. Lưỡi đỏ giáng, khô, không rêu",
+        "B. Mạch Tế Sác hoặc Huyền Sác",
+        "C. Trong họng có tiếng đờm khò khè, buồn nôn, nôn ra đờm dãi",
+        "D. Chân tay quyết lạnh (chứng \"chân hàn giả nhiệt\")"
       ],
-      "correctAnswer": "B",
-      "explanation": "Bản chất của bài toán là xấp xỉ diện tích bằng tổng diện tích của 5 hình thang. Công thức diện tích một hình thang là: \\( \\frac{(\\text{đáy lớn} + \\text{đáy bé}) \\times \\text{cao}}{2} \\).<br /><br />- <b>Đường cao</b> của mỗi hình thang chính là độ rộng khoảng con \\(\\Delta x\\).<br />- <b>Các đáy</b> là giá trị \\(f(x)\\).<br /><br />Khi cộng dồn diện tích, các giá trị \\(f(x)\\) ở giữa được dùng làm đáy cho <b>hai</b> hình thang liền kề, vì vậy chúng được nhân 2. Các giá trị ở hai đầu mút chỉ được dùng một lần. Đây là lý do công thức có dạng:<br />\\( A \\approx \\frac{\\Delta x}{2} [y_0 + 2y_1 + 2y_2 + 2y_3 + 2y_4 + y_5] \\)<br /><br /><b>1. Xác định các giá trị cơ bản:</b><br />- Đường cao mỗi hình thang: \\( \\Delta x = \\frac{6-1}{5} = 1 \\).<br /><br /><b>2. Thiết lập và tính toán nhanh:</b><br />Áp dụng logic trên, ta gom các số hạng lại:<br />\\( T_5 = \\frac{1}{2} [ (y_0 + y_5) + 2(y_1 + y_2 + y_3 + y_4) ] \\)<br /><br />- <b>Tổng hai đáy ngoài cùng:</b> \\( 3.2 + 1.3 = 4.5 \\)<br />- <b>Tổng các đáy ở giữa:</b> \\( 1.6 + 2.4 + 3.8 + 4.4 = 12.2 \\)<br /><br />- <b>Thay vào công thức:</b><br />\\( T_5 = \\frac{1}{2} [ 4.5 + 2(12.2) ] \\)<br />\\( T_5 = \\frac{1}{2} [ 4.5 + 24.4 ] = \\frac{1}{2} [ 28.9 ] = 14.45 \\)",
-      "difficulty": "easy",
-      "topic": "Calculus (Numerical Integration, Trapezoidal Rule)",
+      "correctAnswer": "C",
+      "explanation": "Hội chứng \"Đàm Trọc Che Lấp Tâm Khiếu\" có nguyên nhân chính là do <b>\"Đàm\"</b> (đàm trọc hoặc đàm hỏa) tích tụ lại và che lấp các \"khiếu\" (lỗ thông) của Tâm, làm rối loạn thần minh.<br />Do đó, các biểu hiện của Đàm sẽ rất rõ ràng:<br />- <b>Trong họng có tiếng đờm khò khè.</b><br />- <b>Ngực bụng đầy tức</b> (do đàm ngăn trở khí cơ).<br />- <b>Buồn nôn, nôn ra đờm dãi.</b>",
+      "difficulty": "medium",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Đàm Trọc Che Lấp Tâm Khiếu",
       "hints": [
-        "Hãy tưởng tượng bạn đang cộng diện tích 5 hình thang. Diện tích = (tổng 2 đáy) * cao / 2.",
-        "Các giá trị f(x) ở giữa được nhân 2 vì chúng là đáy chung của hai hình thang liền kề.",
-        "Công thức nhanh: \\( \\frac{\\Delta x}{2} \\) × [ (điểm đầu + điểm cuối) + 2 × (tổng các điểm ở giữa) ]."
+        "Khi thấy chữ <b>\"Đàm Trọc\"</b> trong tên hội chứng, hãy tìm các triệu chứng liên quan trực tiếp đến <b>đờm</b>.",
+        "Tiếng đờm khò khè trong họng, hoặc nôn ra đờm là những dấu hiệu rất đặc trưng."
       ]
     },
     {
       "id": 14,
-      "question": "Given two vectors \\( X, Y \\) such that the vectors \\( \\frac{1}{3}X \\) and \\( \\frac{1}{2}Y \\) are orthonormal. Compute \\( (X - 2Y) \\cdot (2X + Y) \\).",
+      "question": "Đặc điểm nào sau đây <b>KHÔNG</b> đúng khi mô tả về Phủ Tam Tiêu trong YHCT?",
       "image": null,
       "options": [
-        "A. 12",
-        "B. 4",
-        "C. 10",
-        "D. 8",
-        "E. 6"
+        "A. Tam Tiêu là một trong Lục Phủ.",
+        "B. Tam Tiêu là một cơ quan thực thể rõ ràng, có hình thái giải phẫu cụ thể như Dạ dày hay Ruột non.",
+        "C. Tam Tiêu là đường thông hành của nguyên khí và các loại khí khác trong cơ thể.",
+        "D. Tam Tiêu là con đường vận hành và bài tiết thủy dịch trong cơ thể."
       ],
-      "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta cần nhẩm nhanh các giá trị từ cụm từ 'trực chuẩn'.<br /><br /><b>1. Phân tích 'Trực chuẩn' (Orthonormal):</b><br />- <b>Trực (giao):</b> Tích vô hướng của chúng bằng 0 \\( \\Rightarrow \\frac{1}{6}(X \\cdot Y) = 0 \\Rightarrow X \\cdot Y = 0 \\).<br />- <b>Chuẩn (hóa):</b> Độ dài của chúng bằng 1.<br />  \\( ||\\frac{1}{3}X|| = 1 \\Rightarrow ||X|| = 3 \\).<br />  \\( ||\\frac{1}{2}Y|| = 1 \\Rightarrow ||Y|| = 2 \\).<br /><br /><b>2. Khai triển và thế số:</b><br />Khai triển biểu thức theo quy tắc nhân phân phối:<br />\\( (X - 2Y) \\cdot (2X + Y) = 2(X \\cdot X) - 3(X \\cdot Y) - 2(Y \\cdot Y) \\)<br />\\( = 2||X||^2 - 3(X \\cdot Y) - 2||Y||^2 \\)<br /><br />Thay các giá trị đã tìm được vào:<br />\\( = 2(3^2) - 3(0) - 2(2^2) \\)<br />\\( = 2(9) - 0 - 2(4) = 18 - 8 = 10 \\).",
+      "correctAnswer": "B",
+      "explanation": "Trong YHCT, Tam Tiêu là một trong Lục Phủ (Đởm, Vị, Tiểu trường, Đại trường, Bàng quang, Tam tiêu). Tuy nhiên, khác với các phủ khác, Tam Tiêu <b>không phải là một cơ quan có hình thái giải phẫu cụ thể, rõ ràng</b> mà người ta có thể chỉ ra. Nó mang tính khái quát về chức năng hơn là một cấu trúc thực thể.<br />Chức năng chính của Tam Tiêu là đường vận hành của khí và thủy dịch.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Vectors, Orthonormality, Dot Product)",
+      "topic": "YHCT - Phủ Tam Tiêu - Đại cương về Tam Tiêu",
       "hints": [
-        "Mẹo: 'Trực chuẩn' = 'Trực giao' (tích vô hướng = 0) + 'Chuẩn hóa' (độ dài = 1).",
-        "Từ định nghĩa, bạn có ngay: \\(||X|| = 3, ||Y|| = 2, X \\cdot Y = 0\\).",
-        "Chỉ cần thế các giá trị này vào biểu thức đã khai triển: \\( 2||X||^2 - 3(X \\cdot Y) - 2||Y||^2 \\)."
+        "Hãy nhớ rằng Tam Tiêu là một phủ <b>\"vô hình\"</b>, tức là không có hình dạng cụ thể, mà chủ yếu nói về chức năng.",
+        "Tam Tiêu được ví như \"cống rãnh\" hoặc \"đường dẫn\" cho khí và nước trong toàn bộ cơ thể."
       ]
     },
     {
       "id": 15,
-      "question": "Solve the system of equations for \\( y \\): <br/> \\( x + 4y + 2z = 1 \\)<br /> \\( 2x + 3y + 3z = -1 \\)<br /> \\( 4x + y + 4z = 0 \\)",
+      "question": "Trung Tiêu trong hệ thống Tam Tiêu của YHCT bao gồm những tạng phủ nào và chủ về chức năng gì?",
       "image": null,
       "options": [
-        "A. -4/5",
-        "B. 8/5",
-        "C. -8/5",
-        "D. 4/5",
-        "E. All of the other choices are incorrect"
+        "A. Bao gồm Tâm và Phế; chủ về thu nạp khí trời và phân bố dinh dưỡng.",
+        "B. Bao gồm Tỳ và Vị; chủ về tiêu hóa, hấp thu và vận chuyển thủy cốc.",
+        "C. Bao gồm Can và Thận; chủ về tàng trữ tinh và điều tiết nước.",
+        "D. Bao gồm Bàng quang, Tiểu trường, Đại trường; chủ về bài tiết chất cặn bã và nước tiểu."
       ],
       "correctAnswer": "B",
-      "explanation": "Để giải nhanh và chắc chắn, ta dùng Quy tắc Cramer và tối ưu hóa việc tính toán.<br /><br /><b>1. Phân tích định thức (Để khẳng định có nghiệm duy nhất)</b><br />- Đầu tiên, tính định thức của ma trận hệ số D để đảm bảo hệ có nghiệm duy nhất.<br />\\( D = \\begin{vmatrix} 1 & 4 & 2 \\\\ 2 & 3 & 3 \\\\ 4 & 1 & 4 \\end{vmatrix} = 5 \\).<br />- Vì \\( D \\neq 0 \\), hệ chắc chắn có một và chỉ một nghiệm duy nhất.<br /><br /><b>2. Tính Dy bằng cách siêu nhanh</b><br />- Bây giờ, ta tính \\( D_y \\) bằng cách thay cột y bằng vế phải:<br />\\( D_y = \\begin{vmatrix} 1 & 1 & 2 \\\\ 2 & -1 & 3 \\\\ 4 & 0 & 4 \\end{vmatrix} \\)<br />- <b>Mẹo để tính siêu nhanh</b> là khai triển theo hàng hoặc cột có số 0. Ta sẽ khai triển theo <b>hàng 3</b>:<br />\\( D_y = 4 \\cdot \\begin{vmatrix} 1 & 2 \\\\ -1 & 3 \\end{vmatrix} - 0 + 4 \\cdot \\begin{vmatrix} 1 & 1 \\\\ 2 & -1 \\end{vmatrix} \\)<br />\\( D_y = 4(5) + 4(-3) = 20 - 12 = 8 \\).<br /><br /><b>3. Kết quả cuối cùng</b><br />\\( y = \\frac{D_y}{D} = \\frac{8}{5} \\).",
-      "difficulty": "medium",
-      "topic": "Linear Algebra (Systems of Equations, Cramer's Rule)",
+      "explanation": "Tam Tiêu được chia làm 3 phần:<br />- <b>Thượng Tiêu:</b> Bao gồm Tâm và Phế. Chủ về thu nạp và phân bố (như sương mù).<br />- <b>Trung Tiêu:</b> Bao gồm Tỳ và Vị. Chủ về tiêu hóa, hấp thu, vận chuyển thủy cốc (như vũng bùn/bọt nước, nơi ủ chín thức ăn).<br />- <b>Hạ Tiêu:</b> Bao gồm Can, Thận, Bàng quang, Tiểu trường, Đại trường. Chủ về bài tiết (như kênh rãnh).",
+      "difficulty": "easy",
+      "topic": "YHCT - Phủ Tam Tiêu - Đại cương về Tam Tiêu",
       "hints": [
-        "Đầu tiên, tính định thức D để chắc chắn có nghiệm duy nhất (nếu D khác 0).",
-        "Mẹo tính định thức nhanh nhất: Luôn khai triển theo hàng hoặc cột có nhiều số 0 nhất.",
-        "Khi tính \\(D_y\\), khai triển theo hàng 3 là cách làm tối ưu."
+        "Phân chia Tam Tiêu theo vị trí: Thượng (trên ngực), Trung (giữa bụng), Hạ (dưới bụng).",
+        "<b>Trung Tiêu</b> = khu vực giữa = <b>Tỳ Vị</b> = chức năng <b>tiêu hóa</b>."
       ]
     },
     {
       "id": 16,
-      "question": "Find all asymptotes of the function \\( f(x) = \\frac{x}{x-1} \\)",
+      "question": "Triệu chứng nào sau đây thường gặp nhất khi có bệnh lý ở \"Thượng Tiêu Bất Lợi\"?",
       "image": null,
       "options": [
-        "A. \\(x = -1\\) and \\(y = -1\\)",
-        "B. \\(x = 0\\) and \\(y = 1\\)",
-        "C. \\(x = 1\\) and \\(y = 1\\)",
-        "D. No asymptotes",
-        "E. \\(x = 0\\) and \\(x = 1\\)"
+        "A. Đầy bụng, chướng bụng, ăn không tiêu, buồn nôn",
+        "B. Ho, khó thở, tức ngực, họng đau",
+        "C. Tiểu tiện bất lợi (ít, khó, buốt), phù thũng ở chi dưới",
+        "D. Đau lưng, mỏi gối, di tinh, hoạt tinh"
       ],
-      "correctAnswer": "C",
-      "explanation": "Ta tìm tiệm cận bằng cách kết hợp mẹo nhanh và bản chất của giới hạn.<br /><br /><b>1. Tiệm cận đứng:</b><br />- <b>Bản chất:</b> Khi \\( x \\) tiến đến 1, mẫu số \\( (x-1) \\) tiến về 0, làm cho giá trị của hàm số tiến ra vô cùng (\\( \\infty \\)).<br />- <b>Mẹo nhanh:</b> Tiệm cận đứng chính là nghiệm của mẫu số. Cho \\( x - 1 = 0 \\Rightarrow x = 1 \\).<br /><br /><b>2. Tiệm cận ngang:</b><br />- <b>Bản chất:</b> Khi \\( x \\) tiến ra vô cùng (\\( \\pm \\infty \\)), giá trị của hàm số \\( f(x) = \\frac{x}{x-1} \\) tiến đến 1.<br />- <b>Mẹo nhanh (so sánh bậc tử và mẫu):</b><br />  - Bậc tử < bậc mẫu \\( \\Rightarrow y = 0 \\) là tiệm cận ngang.<br />  - <b>Bậc tử = bậc mẫu \\( \\Rightarrow y = \\) (tỉ số hệ số cao nhất) là tiệm cận ngang. (Trường hợp này)</b><br />  - Bậc tử > bậc mẫu \\( \\Rightarrow \\) không có tiệm cận ngang.<br />Áp dụng cho bài này (bậc tử = bậc mẫu), ta có \\( y = \\frac{1}{1} = 1 \\).<br /><br /><b>3. Tiệm cận xiên:</b><br />Hàm số không có tiệm cận xiên vì bậc của tử không lớn hơn bậc của mẫu đúng một đơn vị.<br /><br /><b>Kết luận:</b> Các tiệm cận là \\( x=1 \\) và \\( y=1 \\).",
+      "correctAnswer": "B",
+      "explanation": "Thượng Tiêu bao gồm Tâm và Phế. Khi Thượng Tiêu bị \"bất lợi\" (chức năng bị rối loạn), các triệu chứng thường liên quan đến hai tạng này:<br />- <b>Ảnh hưởng đến Phế:</b> Gây ho, khó thở, tức ngực, họng đau, khản tiếng (do Phế khai khiếu ra họng).<br />- <b>Ảnh hưởng đến Tâm:</b> Có thể gây mất ngủ, hồi hộp (nếu Tâm hỏa vượng).<br />Các triệu chứng ở lựa chọn A thuộc Trung Tiêu, C và D thuộc Hạ Tiêu.",
       "difficulty": "easy",
-      "topic": "Calculus (Functions, Asymptotes)",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Thượng Tiêu Bất Lợi",
       "hints": [
-        "Tiệm cận đứng: Cho mẫu số bằng 0.",
-        "Tiệm cận ngang: Luôn so sánh bậc của tử và mẫu.",
-        "TCN: Bậc tử < mẫu \\(\\Rightarrow y=0\\); Bậc tử = mẫu \\(\\Rightarrow y=\\)tỉ số hệ số; Bậc tử > mẫu \\(\\Rightarrow\\) không có.",
-        "Tiệm cận xiên chỉ có khi bậc tử lớn hơn bậc mẫu đúng 1 bậc."
+        "Nhớ: <b>Thượng Tiêu = Tâm + Phế</b>.",
+        "Bệnh ở Thượng Tiêu thì triệu chứng chính sẽ liên quan đến hô hấp (Phế) và tuần hoàn/thần chí (Tâm)."
       ]
     },
     {
       "id": 17,
-      "question": "Given that \\( \\begin{bmatrix} x+y & 2 \\\\ 5 & x+z \\\\ 0 & z+y \\end{bmatrix} = \\begin{bmatrix} 9 & 2 \\\\ 5 & 6 \\\\ 0 & 3 \\end{bmatrix} \\). Find \\( x+y+z \\).",
+      "question": "Hội chứng \"Trung Tiêu Ứ Trệ\" còn có tên gọi khác là gì?",
       "image": null,
       "options": [
-        "A. 0",
-        "B. -1/2",
-        "C. 5/2",
-        "D. 3/2",
-        "E. None of the other choices is correct"
+        "A. Thận Khí Bất Cố",
+        "B. Can Khí Uất Kết",
+        "C. Tỳ Vị Bất Hòa",
+        "D. Tâm Hỏa Thượng Viêm"
       ],
-      "correctAnswer": "E",
-      "explanation": "Để giải siêu tốc, ta không cần giải tìm từng biến \\(x, y, z\\). Mẹo ở đây là cộng tất cả các phương trình lại với nhau.<br /><br /><b>1. Nhẩm nhanh hệ phương trình từ ma trận:</b><br />- \\( x + y = 9 \\)<br />- \\( x + z = 6 \\)<br />- \\( y + z = 3 \\)<br /><br /><b>2. Cộng ba phương trình lại với nhau:</b><br />- Vế trái: \\( (x+y) + (x+z) + (y+z) = 2x + 2y + 2z = 2(x+y+z) \\).<br />- Vế phải: \\( 9 + 6 + 3 = 18 \\).<br /><br /><b>3. Tìm kết quả:</b><br />\\( 2(x+y+z) = 18 \\Rightarrow x+y+z = 9 \\).<br /><br />Vì 9 không có trong các lựa chọn, ta chọn đáp án 'None of the other choices is correct'.",
+      "correctAnswer": "C",
+      "explanation": "Trung Tiêu bao gồm Tỳ và Vị, có chức năng chính là tiêu hóa và hấp thu thức ăn (kiện vận). Khi Trung Tiêu bị \"ứ trệ\", tức là sự vận hành của khí ở khu vực này bị đình trệ, tắc nghẽn, sẽ dẫn đến chức năng của Tỳ và Vị bị rối loạn.<br />Tình trạng này còn được gọi là <b>\"Tỳ Vị Bất Hòa\"</b>, nghĩa là Tỳ và Vị không còn phối hợp nhịp nhàng, hòa hợp với nhau trong quá trình tiêu hóa.",
       "difficulty": "easy",
-      "topic": "Linear Algebra (Matrix Equality, Systems of Equations)",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Trung Tiêu Ứ Trệ",
       "hints": [
-        "Mẹo giải nhanh nhất: Đừng giải tìm x, y, z riêng lẻ. Hãy cộng ba phương trình lại với nhau.",
-        "Bạn sẽ thấy mỗi biến xuất hiện đúng hai lần ở vế trái.",
-        "Mục tiêu là tìm \\(2(x+y+z)\\) rồi chia cho 2."
+        "<b>Trung Tiêu = Tỳ Vị</b>.",
+        "Khi Trung Tiêu bị ứ trệ, nghĩa là Tỳ Vị đang \"bất hòa\", không làm việc ăn ý với nhau."
       ]
     },
     {
       "id": 18,
-      "question": "Find \\( y'(0) \\) if \\( 2y + x^2y^5 - 4x = 0 \\)",
+      "question": "\"Hạ Tiêu Thất Điều\" chủ yếu gây ra các rối loạn liên quan đến chức năng của những cơ quan nào?",
       "image": null,
       "options": [
-        "A. -2",
-        "B. 2",
-        "C. 0",
-        "D. -1",
-        "E. 1",
-        "F. None of the other choices is correct"
+        "A. Tâm và Phế",
+        "B. Tỳ và Vị",
+        "C. Thận và Bàng Quang",
+        "D. Não bộ và Tủy sống"
       ],
-      "correctAnswer": "B",
-      "explanation": "Để giải siêu tốc, ta áp dụng mẹo thế số ngay sau khi đạo hàm, rất nhiều số hạng sẽ tự động biến mất.<br /><br /><b>1. Tìm giá trị y tại x=0:</b><br />- Thế \\( x=0 \\) vào phương trình gốc: \\( 2y + 0 - 0 = 0 \\Rightarrow y = 0 \\).<br />- Vậy ta đang xét tại điểm \\( (0, 0) \\).<br /><br /><b>2. Lấy đạo hàm ẩn và áp dụng mẹo:</b><br />Lấy đạo hàm hai vế theo \\(x\\):<br />\\( \\frac{d}{dx}(2y) + \\frac{d}{dx}(x^2y^5) - \\frac{d}{dx}(4x) = 0 \\)<br />\\( 2y' + (2xy^5 + 5x^2y^4y') - 4 = 0 \\)<br /><br /><b>Mẹo siêu nhanh:</b> Bây giờ, thế \\(x=0\\) và \\(y=0\\) vào. Bất kỳ số hạng nào còn chứa \\(x\\) hoặc \\(y\\) sẽ trở thành 0.<br />\\( 2y' + (0 + 0) - 4 = 0 \\)<br /><br /><b>3. Giải phương trình cuối cùng:</b><br />\\( 2y' - 4 = 0 \\Rightarrow 2y' = 4 \\Rightarrow y' = 2 \\).",
+      "correctAnswer": "C",
+      "explanation": "Hạ Tiêu bao gồm Can, Thận, Bàng quang, Tiểu trường, Đại trường. Chức năng chính của Hạ Tiêu là bài tiết chất cặn bã và nước tiểu, được ví như \"kênh rãnh\".<br />Do đó, khi \"Hạ Tiêu Thất Điều\" (chức năng bị rối loạn), các vấn đề thường liên quan đến:<br />- <b>Thận:</b> Chủ về thủy dịch, sinh dục, cốt tủy. Rối loạn gây đau lưng, mỏi gối, phù, di tinh, đới hạ.<br />- <b>Bàng Quang:</b> Chứa và bài tiết nước tiểu. Rối loạn gây tiểu tiện bất lợi (tiểu ít, khó, buốt, rắt, không tự chủ, tiểu đêm).",
       "difficulty": "medium",
-      "topic": "Calculus (Implicit Differentiation)",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Hạ Tiêu Thất Điều",
       "hints": [
-        "Bước 1: Tìm giá trị `y` khi `x=0`. Bạn sẽ thấy điểm cần xét là (0, 0).",
-        "Mẹo siêu tốc: Khi đạo hàm, bạn không cần phải rút gọn. Cứ đạo hàm xong rồi thế `x=0, y=0` vào.",
-        "Bất kỳ số hạng nào còn chứa `x` hoặc `y` sau khi đạo hàm sẽ bằng 0. Phương trình sẽ rút gọn cực kỳ đơn giản."
+        "<b>Hạ Tiêu</b> liên quan mật thiết đến việc <b>bài tiết nước tiểu</b> và các chất cặn bã.",
+        "Do đó, rối loạn ở Hạ Tiêu thường ảnh hưởng đến <b>Thận</b> (điều tiết nước) và <b>Bàng Quang</b> (chứa và thải nước tiểu)."
       ]
     },
     {
       "id": 19,
-      "question": "Let \\( A = (a_{ij}) \\) be the matrix of rotation in the plane through \\( \\pi/3 \\). Find \\( a_{21} \\). <br> (i) \\( 1/2 \\) <br> (ii) \\( -1/2 \\) <br> (iii) \\( \\frac{\\sqrt{3}}{2} \\) <br> (iv) \\( -\\frac{\\sqrt{3}}{2} \\)",
+      "question": "Theo bảng Mạch học trong tài liệu, mạch \"Phù khẩn\" thường chủ bệnh gì?",
       "image": null,
       "options": [
-        "A. (iii)",
-        "B. None of the other choices is correct",
-        "C. (iv)",
-        "D. (i)",
-        "E. (ii)"
+        "A. Lý nhiệt (bệnh ở trong, tính nóng)",
+        "B. Biểu hàn (bệnh ở ngoài, tính lạnh), đau khớp do phong",
+        "C. Đàm ẩm (ứ đọng đờm và dịch), thực tích (thức ăn không tiêu)",
+        "D. Âm hư, huyết hư sinh nội nhiệt (thiếu âm, thiếu máu gây nóng trong)"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta chỉ cần nhớ cấu trúc của ma trận quay và vị trí của \\(a_{21}\\).<br /><br /><b>1. Nhớ nhanh ma trận quay \\(A\\) với góc \\(\\theta\\):</b><br />\\( A = \\begin{bmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{bmatrix} \\)<br /><br /><b>2. Xác định \\(a_{21}\\):</b><br />- Phần tử \\(a_{21}\\) nằm ở hàng 2, cột 1. Nhìn vào ma trận, ta thấy ngay \\( a_{21} = \\sin \\theta \\).<br /><br /><b>3. Tính toán:</b><br />- Với góc \\( \\theta = \\pi/3 \\), ta có:<br />\\( a_{21} = \\sin(\\pi/3) = \\frac{\\sqrt{3}}{2} \\).<br /><br />Kết quả này tương ứng với lựa chọn (iii).",
-      "difficulty": "easy",
-      "topic": "Linear Algebra (Rotation Matrices)",
+      "correctAnswer": "B",
+      "explanation": "Trong Mạch học:<br />- <b>Mạch Phù:</b> Sờ thấy mạch ngay dưới da, ấn nhẹ đã rõ. Chủ bệnh ở Biểu (phần nông, bên ngoài của cơ thể).<br />- <b>Mạch Khẩn:</b> Cảm giác như sợi dây thừng căng thẳng. Chủ Hàn chứng (bệnh do lạnh) hoặc Đau.<br />Kết hợp lại, <b>mạch Phù khẩn</b> thường chỉ tình trạng <b>Biểu hàn</b> (cảm lạnh do hàn tà) hoặc <b>đau khớp do phong hàn</b>.",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
       "hints": [
-        "Mẹo nhớ ma trận quay: \\( \\begin{smallmatrix} c & -s \\\\ s & c \\end{smallmatrix} \\) với c là cos, s là sin.",
-        "Vị trí \\(a_{21}\\) (hàng 2, cột 1) chính là \\(\\sin\\theta\\).",
-        "Chỉ cần nhẩm giá trị của \\(\\sin(\\pi/3)\\) là ra đáp án."
+        "Ghi nhớ: <b>Phù = Biểu</b> (bệnh ở phần nông, bên ngoài).",
+        "<b>Khẩn = Hàn</b> (lạnh) hoặc <b>Đau</b>.",
+        "Vậy, Phù khẩn = Lạnh ở bên ngoài, hoặc đau do lạnh ở phần biểu."
       ]
     },
     {
       "id": 20,
-      "question": "Evaluate \\( \\int_0^1 \\frac{4x^3}{(1+x^4)^2} dx \\)",
+      "question": "Mạch \"Trầm trì\" theo bảng Mạch học thường là dấu hiệu của loại bệnh nào?",
       "image": null,
       "options": [
-        "A. 7/8",
-        "B. 1/3",
-        "C. 5/16",
-        "D. None of the other choices is correct",
-        "E. 7/24"
+        "A. Biểu nhiệt, phong nhiệt",
+        "B. Can nhiệt, can hoả",
+        "C. Lý hàn",
+        "D. Đàm nhiệt, đàm hoả"
       ],
-      "correctAnswer": "D",
-      "explanation": "Để giải siêu tốc, ta cần nhận ra ngay tử số là đạo hàm của biểu thức bên trong mẫu số.<br /><br /><b>1. Nhận diện và Đổi biến (trong đầu):</b><br />- Đặt \\( u = 1 + x^4 \\).<br />- Ta thấy ngay đạo hàm \\( du = 4x^3 dx \\), chính là tử số.<br />- Tích phân trở thành một dạng rất đơn giản: \\( \\int \\frac{1}{u^2} du \\).<br /><br /><b>2. Đổi cận nhanh:</b><br />- Khi \\( x=0 \\), \\( u = 1+0^4 = 1 \\).<br />- Khi \\( x=1 \\), \\( u = 1+1^4 = 2 \\).<br /><br /><b>3. Tính nhẩm tích phân mới:</b><br />\\( \\int_1^2 \\frac{1}{u^2} du = \\left[ -\\frac{1}{u} \\right]_1^2 \\)<br />\\( = (-\\frac{1}{2}) - (-\\frac{1}{1}) = -\\frac{1}{2} + 1 = \\frac{1}{2} \\).<br /><br />Vì kết quả \\(1/2\\) không có trong các lựa chọn, ta chọn đáp án 'None of the other choices is correct'.",
-      "difficulty": "easy",
-      "topic": "Calculus (Integration, u-Substitution)",
+      "correctAnswer": "C",
+      "explanation": "Trong Mạch học:<br />- <b>Mạch Trầm:</b> Phải ấn sâu tay xuống sát xương mới thấy rõ mạch. Chủ bệnh ở Lý (phần sâu, bên trong của cơ thể).<br />- <b>Mạch Trì:</b> Mạch đập chậm (thường dưới 60 lần/phút ở người lớn khỏe mạnh). Chủ Hàn chứng (bệnh do lạnh).<br />Kết hợp lại, <b>mạch Trầm trì</b> thường chỉ tình trạng <b>Lý hàn</b> (bệnh ở sâu bên trong cơ thể và có tính chất lạnh).",
+      "difficulty": "medium",
+      "topic": "YHCT - Mạch Học",
       "hints": [
-        "Mẹo nhận diện nhanh nhất: Tử số (\\(4x^3\\)) chính là đạo hàm của phần ruột của mẫu (\\(1+x^4\\)). Đây là dấu hiệu của phép đổi biến.",
-        "Đặt \\(u = 1+x^4\\), đổi cận (từ [0,1] thành [1,2]), bài toán trở thành \\(\\int_1^2 u^{-2} du\\).",
-        "Bạn có thể nhẩm nhanh kết quả: \\((-1/2) - (-1/1) = 1/2\\)."
+        "Ghi nhớ: <b>Trầm = Lý</b> (bệnh ở phần sâu, bên trong).",
+        "<b>Trì = Hàn</b> (lạnh), mạch đập chậm chạp.",
+        "Vậy, Trầm trì = Lạnh ở bên trong cơ thể."
       ]
     },
     {
       "id": 21,
-      "question": "Let (m) be the line through \\( A = (1, 2, 3) \\) and parallel to the line joining \\( B = (-2, 2, 0) \\) and \\( C = (4, -1, 7) \\). Let (n) be the line joining \\( E = (-1, 1, 0) \\) and \\( F = (10, -1, 11) \\). <br> Then the lines (m) and (n) __________.",
+      "question": "Theo phân tích về Tỳ khí hư, trong bệnh Tiết tả (tiêu chảy kéo dài), nguyên nhân chính là gì?",
       "image": null,
       "options": [
-        "A. are parallel but not the same",
-        "B. are the same",
-        "C. are orthogonal",
-        "D. None of the other choices is correct"
+        "A. Do Can khí uất kết làm ảnh hưởng đến Tỳ",
+        "B. Do Tỳ khí hư yếu, vận hóa mất quyền, thủy thấp không biến hóa được",
+        "C. Do Tâm hỏa quá vượng, bức huyết vọng hành xuống Đại trường",
+        "D. Do Thận dương hư không ôn ấm được Tỳ dương"
       ],
-      "correctAnswer": "D",
-      "explanation": "Để giải siêu tốc, ta chỉ cần tìm 2 vector chỉ phương và kiểm tra nhẩm.<br /><br /><b>1. Tìm vector chỉ phương (VTCP):</b><br />- VTCP của (m): \\( \\vec{d_m} = C - B = (4 - (-2), -1 - 2, 7 - 0) = (6, -3, 7) \\).<br />- VTCP của (n): \\( \\vec{d_n} = F - E = (10 - (-1), -1 - 1, 11 - 0) = (11, -2, 11) \\).<br /><br /><b>2. Kiểm tra các mối quan hệ (nhẩm nhanh):</b><br />- <b>Song song?</b> Tỉ lệ các thành phần không giống nhau (\\(6/11 \\neq -3/-2\\)). <b>Loại A, B.</b><br />- <b>Vuông góc?</b> Tính tích vô hướng: \\( (6)(11) + (-3)(-2) + (7)(11) = 66 + 6 + 77 \\). Vì tất cả các số hạng đều dương, tổng không thể bằng 0. <b>Loại C.</b><br /><br /><b>Kết luận:</b> Vì đã loại hết các đáp án A, B, C, ta chọn 'None of the other choices is correct'.",
+      "correctAnswer": "B",
+      "explanation": "Trong bệnh Tiết tả do Tỳ khí hư, cơ chế chính là:<br />- <b>Tỳ khí hư yếu:</b> Chức năng vận hóa (tiêu hóa, chuyển hóa nước) của Tỳ suy giảm.<br />- <b>Vận hóa mất quyền:</b> Tỳ không làm chủ được việc biến đổi thức ăn và nước.<br />- <b>Thủy thấp không biến hóa được:</b> Nước và các chất ẩm ướt không được Tỳ chuyển hóa và đưa đi đúng chỗ, dẫn đến ứ đọng lại.<br />Kết quả là thức ăn không tiêu, nước và bã không phân chia rõ ràng (trong đục không phân), gây ra tiêu chảy kéo dài, phân lúc lỏng lúc nhão.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Lines in 3D)",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Phân tích)",
       "hints": [
-        "Mục tiêu: Tìm 2 vector chỉ phương rồi so sánh chúng ngay lập tức.",
-        "Kiểm tra song song: Hai vector có tỉ lệ với nhau không?",
-        "Mẹo kiểm tra vuông góc: Tính nhẩm tích vô hướng. Nếu các số hạng đều dương, tổng không thể bằng 0."
+        "Nhớ rằng Tỳ chủ <b>vận hóa thủy thấp</b>.",
+        "Khi Tỳ hư, khả năng này suy giảm, thủy thấp ứ lại gây tiêu chảy."
       ]
     },
     {
       "id": 22,
-      "question": "Let \\( U = \\{(a, b, c, d) \\in \\mathbb{R}^4 \\mid 3a - 5d = 0, b + c + d = 0 \\} \\) be a subspace of \\( \\mathbb{R}^4 \\). Find the dimension of U.",
+      "question": "Trong bệnh Nuy (teo cơ, yếu cơ), vai trò của Tỳ là gì và Tỳ hư ảnh hưởng thế nào?",
       "image": null,
       "options": [
-        "A. 4",
-        "B. 1",
-        "C. 2",
-        "D. 3"
+        "A. Tỳ chủ cốt tủy, Tỳ hư làm tủy yếu không nuôi dưỡng được cơ",
+        "B. Tỳ chủ huyết mạch, Tỳ hư làm máu không đến được cơ gây teo",
+        "C. Tỳ chủ tứ chi cơ nhục, Tỳ hư làm khí huyết thiếu, không nuôi dưỡng được gân cơ",
+        "D. Tỳ chủ bì mao, Tỳ hư làm da lông khô yếu, ảnh hưởng đến cơ"
       ],
       "correctAnswer": "C",
-      "explanation": "Để giải bài này trong nháy mắt, ta dùng công thức sau:<br /><br /><b>Số chiều không gian con = (Số chiều không gian tổng) - (Số phương trình ràng buộc độc lập)</b><br /><br />- Không gian tổng là \\(\\mathbb{R}^4\\), vậy có <b>4 chiều</b> (4 ẩn).<br />- Có <b>2 phương trình ràng buộc</b> độc lập.<br /><br />- Số chiều của U = 4 - 2 = 2.<br /><br />---<br /><b>Tại sao công thức này lại đúng? (Giải thích bản chất)</b><br /><br />Số chiều của một không gian chính là số biến 'tự do' mà bạn có thể chọn. Mỗi phương trình ràng buộc sẽ 'khóa' lại một biến, làm nó phụ thuộc vào các biến khác và không còn tự do nữa.<br /><br />1.  Ban đầu, trong \\(\\mathbb{R}^4\\), ta có 4 biến tự do (a, b, c, d).<br />2.  Phương trình thứ nhất, \\(3a - 5d = 0\\), buộc \\(a\\) phải phụ thuộc vào \\(d\\) (\\(a = \\frac{5}{3}d\\)). Ta mất đi một biến tự do, chỉ còn lại 3.<br />3.  Phương trình thứ hai, \\(b + c + d = 0\\), buộc \\(b\\) phải phụ thuộc vào \\(c\\) và \\(d\\) (\\(b = -c - d\\)). Ta mất thêm một biến tự do nữa, chỉ còn lại 2.<br /><br />Cuối cùng, ta chỉ có thể chọn tự do 2 biến (ví dụ là \\(c\\) và \\(d\\)), các biến còn lại (\\(a\\) và \\(b\\)) sẽ được tính theo. Vì có 2 biến tự do, nên số chiều của không gian con này là 2.",
-      "difficulty": "easy",
-      "topic": "Linear Algebra (Subspace Dimension)",
+      "explanation": "Theo YHCT, <b>Tỳ chủ tứ chi cơ nhục</b>, nghĩa là Tỳ có vai trò chính trong việc nuôi dưỡng cơ bắp ở tay chân. Tỳ vận hóa thủy cốc (thức ăn) để tạo ra khí huyết, là nguồn dinh dưỡng cho toàn thân, bao gồm cả cơ nhục.<br />Khi Tỳ hư:<br />- <b>Khí huyết thiếu:</b> Không đủ dinh dưỡng tạo ra.<br />- <b>Không nuôi dưỡng được gân cơ:</b> Cơ bắp thiếu dưỡng chất sẽ trở nên mềm yếu, vô lực, gân xương lỏng lẻo, dần dần teo nhẽo.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Phân tích)",
       "hints": [
-        "Mẹo giải nhanh nhất: Số chiều = (số ẩn) - (số phương trình ràng buộc).",
-        "Bài này có 4 ẩn (a, b, c, d) và 2 phương trình.",
-        "Chỉ cần làm phép tính: 4 - 2 = 2."
+        "Ghi nhớ: <b>Tỳ chủ cơ nhục</b> và tứ chi.",
+        "Tỳ giống như \"nhà máy\" sản xuất dinh dưỡng (khí huyết) cho cơ bắp."
       ]
     },
     {
       "id": 23,
-      "question": "Find the average value of the function \\( f(x) = x^2 - 6x + 4 \\) over the interval \\( [0, 2] \\).",
+      "question": "Pháp trị \"Kiện tỳ ích khí\" được áp dụng cho trường hợp nào của Tỳ khí hư?",
       "image": null,
       "options": [
-        "A. -4",
-        "B. -1",
-        "C. -2/3",
-        "D. None of the other choices is correct",
-        "E. 10/3"
+        "A. Khi có biểu hiện Tỳ hư hạ hãm (sa tạng phủ)",
+        "B. Khi Tỳ hư không thống huyết (chảy máu)",
+        "C. Khi Tỳ mất chức năng kiện vận (tiêu hóa kém, đầy bụng, mệt mỏi)",
+        "D. Khi có biểu hiện hư hàn rõ rệt (sợ lạnh, tay chân lạnh)"
       ],
       "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta áp dụng công thức và tính nhẩm thật nhanh.<br /><br /><b>1. Thiết lập công thức:</b><br />Giá trị trung bình = \\( \\frac{1}{2-0} \\int_0^2 (x^2 - 6x + 4) dx \\).<br /><br /><b>2. Tìm nguyên hàm và thế cận trên (vì cận dưới là 0):</b><br />- Nguyên hàm là: \\( \\frac{x^3}{3} - 3x^2 + 4x \\).<br />- Thế \\(x=2\\) vào: \\( \\frac{8}{3} - 12 + 8 = -\\frac{4}{3} \\).<br /><br /><b>3. Nhân với \\(\\frac{1}{b-a}\\) và ra kết quả:</b><br />\\( \\frac{1}{2} \\cdot (-\\frac{4}{3}) = -\\frac{2}{3} \\).<br /><br />---<br /><b>Tại sao công thức lại như vậy? (Giải thích bản chất)</b><br /><br />Hãy tưởng tượng bạn có một hình chữ nhật. Diện tích của nó bằng `Chiều cao * Chiều rộng`.<br />- Tích phân \\( \\int_a^b f(x) dx \\) cho chúng ta <b>tổng diện tích</b> dưới đồ thị của hàm số.<br />- \\( (b-a) \\) chính là <b>chiều rộng</b> của khoảng đang xét.<br />- 'Giá trị trung bình' của hàm số chính là <b>chiều cao trung bình</b> của đồ thị. Đó là chiều cao của một hình chữ nhật có cùng diện tích và cùng chiều rộng với phần diện tích dưới đồ thị.<br />- Từ đó ta có: \\( \\text{Diện tích} = \\text{Giá trị trung bình} \\times \\text{Chiều rộng} \\).<br />- Suy ra: \\( \\text{Giá trị trung bình} = \\frac{\\text{Diện tích}}{\\text{Chiều rộng}} = \\frac{1}{b-a} \\int_a^b f(x) dx \\).",
-      "difficulty": "easy",
-      "topic": "Calculus (Average Value of a Function)",
+      "explanation": "Pháp trị trong YHCT được lựa chọn dựa trên biểu hiện bệnh cụ thể:<br />- <b>\"Kiện tỳ ích khí\":</b> \"Kiện\" là làm mạnh mẽ, \"ích\" là thêm vào. Pháp này nhằm mục đích làm cho Tỳ mạnh khỏe trở lại và bổ sung khí cho Tỳ. Đây là pháp trị cơ bản khi chức năng vận hóa của Tỳ suy giảm (<b>Tỳ thất kiện vận</b>), biểu hiện qua ăn uống kém, đầy bụng, mệt mỏi, tiêu lỏng.<br />- \"Ích khí thăng đề\": Dùng khi Tỳ hư hạ hãm.<br />- \"Kiện tỳ nhiếp huyết\": Dùng khi Tỳ hư không thống huyết.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư (Pháp trị)",
       "hints": [
-        "Công thức: Giá trị trung bình = (1 / chiều rộng khoảng) * (Tích phân trên khoảng đó).",
-        "Hãy tưởng tượng bạn đang san phẳng diện tích dưới đồ thị thành một hình chữ nhật có cùng diện tích và chiều rộng. Giá trị trung bình chính là chiều cao của hình chữ nhật đó.",
-        "Mẹo giải nhanh nhất: Vì cận dưới là 0, và nguyên hàm vẫn còn chứa x nên bạn chỉ cần tính giá trị của nguyên hàm tại cận trên rồi nhân với \\(1/(b-a)\\)."
+        "\"Kiện Tỳ\" = Làm mạnh Tỳ. \"Ích Khí\" = Bổ khí.",
+        "Đây là pháp trị nền tảng khi Tỳ suy yếu chung, chưa có biến chứng nặng như sa tạng hay chảy máu."
       ]
     },
     {
       "id": 24,
-      "question": "Let \\( f(x) = 2x^2 - 2x + 1 \\). Find a number \\(c\\) such that \\( f(c) \\) is equal to the average value of \\( f(x) \\) over \\( [-1, 1] \\). <br> (i) \\( (3 - 2\\sqrt{2})/5 \\) <br> (ii) \\( (-3 + \\sqrt{21})/6 \\) <br> (iii) \\( (3 - \\sqrt{21})/6 \\) <br> (iv) \\( (3 + 2\\sqrt{2})/5 \\)",
+      "question": "Trong bệnh Thủy thũng (phù) do Tỳ dương hư, cơ chế chính gây phù là gì?",
       "image": null,
       "options": [
-        "A. (i)",
-        "B. None of the other choices is correct",
-        "C. (ii)",
-        "D. (iii)",
-        "E. (iv)"
+        "A. Tỳ dương hư không sinh đủ huyết làm huyết ứ gây phù",
+        "B. Tỳ dương hư không vận hóa được thủy thấp, khiến thủy tà tràn lan ở Hạ tiêu",
+        "C. Tỳ dương hư làm khí không nhiếp được tân dịch, tân dịch thoát ra ngoài gây phù",
+        "D. Tỳ dương hư làm Tâm dương cũng hư theo, Tâm không chủ được huyết mạch gây phù"
       ],
-      "correctAnswer": "D",
-      "explanation": "Để giải siêu tốc, ta dùng mẹo tích phân trên đoạn đối xứng \\([-1, 1]\\).<br /><br /><b>1. Tính giá trị trung bình (siêu tốc):</b><br />- Tích phân của phần lẻ (\\(-2x\\)) trên đoạn \\([-1, 1]\\) bằng 0. Ta có thể bỏ qua nó.<br />- Ta chỉ cần tính tích phân của phần chẵn (\\(2x^2+1\\)) rồi nhân đôi:<br />\\( \\int_{-1}^1 (2x^2 - 2x + 1) dx = 2 \\int_0^1 (2x^2 + 1) dx = 2[\\frac{2x^3}{3} + x]_0^1 = 2(\\frac{2}{3} + 1) = \\frac{10}{3} \\).<br />- Giá trị trung bình: \\( f_{tb} = \\frac{1}{1 - (-1)} \\cdot \\frac{10}{3} = \\frac{1}{2} \\cdot \\frac{10}{3} = \\frac{5}{3} \\).<br /><br /><b>2. Giải phương trình và nhẩm nhanh:</b><br />- \\( 2c^2 - 2c + 1 = \\frac{5}{3} \\Rightarrow 3c^2 - 3c - 1 = 0 \\).<br />- Dùng công thức nghiệm: \\( c = \\frac{3 \\pm \\sqrt{9 - 4(3)(-1)}}{6} = \\frac{3 \\pm \\sqrt{21}}{6} \\).<br />- Nhẩm nhanh: \\(\\sqrt{21}\\) lớn hơn 4. Nghiệm \\(\\frac{3+\\sqrt{21}}{6}\\) sẽ lớn hơn 1 (loại). Chỉ có nghiệm \\(\\frac{3-\\sqrt{21}}{6}\\) nằm trong đoạn \\([-1, 1]\\).",
-      "difficulty": "medium",
-      "topic": "Calculus (Mean Value Theorem for Integrals)",
+      "correctAnswer": "B",
+      "explanation": "Tỳ có chức năng vận hóa thủy thấp (chuyển hóa nước). Tỳ dương là phần dương khí giúp Tỳ thực hiện chức năng này. Khi Tỳ dương hư:<br />- <b>Không vận hóa được thủy thấp:</b> Nước không được chuyển hóa và đưa đi đúng đường, bị đình trệ lại.<br />- <b>Thủy tà tràn lan ở Hạ tiêu:</b> Nước ứ đọng có xu hướng đi xuống dưới, gây phù ở phần dưới cơ thể (lưng trở xuống).<br />Đặc điểm phù do Tỳ dương hư là phù mềm, ấn lõm lâu hồi phục, thường kèm theo tiểu tiện không lợi.",
+      "difficulty": "hard",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư (Phân tích)",
       "hints": [
-        "Mẹo siêu tốc: Khi tính tích phân trên đoạn đối xứng [-a, a], phần lẻ của hàm số có tích phân bằng 0.",
-        "Bạn chỉ cần tính tích phân của phần chẵn (\\(2x^2+1\\)) từ 0 đến 1, nhân đôi, rồi chia cho độ dài đoạn (là 2).",
-        "Sau khi có 2 nghiệm c, hãy ước lượng nhanh \\(\\sqrt{21}\\) để loại nghiệm nằm ngoài đoạn [-1, 1]."
+        "Dương khí có vai trò \"hóa\" (biến đổi, làm bay hơi). Tỳ dương hư thì khả năng \"hóa thủy\" kém.",
+        "Thủy thấp có tính nặng, hay đi xuống dưới, nên phù thường ở phần dưới cơ thể."
       ]
     },
     {
       "id": 25,
-      "question": "Find \\( y'(1) \\) for \\( y = \\frac{x^2 + 8x + 3}{\\sqrt{x}} \\)",
+      "question": "Pháp trị chính cho Tỳ dương hư là gì?",
       "image": null,
       "options": [
-        "A. 0",
-        "B. None of the other choices is correct",
-        "C. 4",
-        "D. 2",
-        "E. 3",
-        "F. 1"
+        "A. Thanh nhiệt lợi thấp",
+        "B. Tư âm giáng hỏa",
+        "C. Ôn trung kiện tỳ, ôn vận Tỳ dương",
+        "D. Sơ can lý khí"
       ],
       "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta dùng 'câu thần chú' của quy tắc thương: <b>'tử phẩy nhân mẫu, trừ mẫu phẩy nhân tử'</b>, tất cả chia cho mẫu bình phương. Ta sẽ tính giá trị của từng thành phần tại `x=1` rồi lắp vào.<br /><br /><b>1. Chuẩn bị các giá trị tại x=1 (tính nhẩm):</b><br />- Tử số: \\( u = x^2+8x+3 \\Rightarrow u(1) = 1+8+3=12 \\).<br />- Đạo hàm tử: \\( u' = 2x+8 \\Rightarrow u'(1) = 2+8=10 \\).<br />- Mẫu số: \\( v = \\sqrt{x} \\Rightarrow v(1) = 1 \\).<br />- Đạo hàm mẫu: \\( v' = \\frac{1}{2\\sqrt{x}} \\Rightarrow v'(1) = \\frac{1}{2} \\).<br /><br /><b>2. Lắp ráp vào 'câu thần chú':</b><br />\\( y'(1) = \\frac{u'(1)v(1) - u(1)v'(1)}{[v(1)]^2} \\)<br />\\( y'(1) = \\frac{(10)(1) - (12)(\\frac{1}{2})}{1^2} \\)<br />\\( y'(1) = \\frac{10 - 6}{1} = 4 \\).",
-      "difficulty": "easy",
-      "topic": "Calculus (Derivatives)",
+      "explanation": "Tỳ dương hư có đặc điểm cơ bản là \"hư\" (suy yếu) và \"hàn\" (lạnh) ở trung tiêu (Tỳ Vị). Do đó, pháp trị phải nhắm vào việc:<br />- <b>Ôn trung:</b> Làm ấm trung tiêu (Tỳ Vị). \"Ôn\" là làm ấm.<br />- <b>Kiện tỳ:</b> Làm mạnh chức năng của Tỳ.<br />- <b>Ôn vận Tỳ dương:</b> Làm ấm và phục hồi khả năng vận hóa của phần dương khí của Tỳ, đặc biệt là khả năng vận hóa thủy thấp (lợi thủy thấp).",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư (Pháp trị)",
       "hints": [
-        "Câu thần chú quy tắc thương: 'tử phẩy nhân mẫu, trừ mẫu phẩy nhân tử' (tất cả chia mẫu bình phương).",
-        "Mẹo nhanh nhất: Tính 4 giá trị `u(1), u'(1), v(1), v'(1)` trước rồi mới lắp vào công thức.",
-        "Việc thế số `x=1` ngay từ đầu sẽ nhanh hơn nhiều so với việc rút gọn biểu thức đạo hàm."
+        "Tỳ <b>dương hư</b> thì phải <b>ôn</b> (làm ấm) dương khí của Tỳ.",
+        "Kết hợp với \"Kiện Tỳ\" để phục hồi chức năng."
       ]
     },
     {
       "id": 26,
-      "question": "Which of the following statement is correct? <br> (i) If AB and BA can both be formed then AB and BA have the same size. <br> (ii) If BA=CA and A is non-zero then B=C.",
+      "question": "Trong ca lâm sàng Tỳ dương hư (bệnh nhân nam, 60 tuổi), triệu chứng \"Lưỡi bệu, nhợt, có hằn răng, rêu lưỡi trắng dày nhớt\" phản ánh điều gì?",
       "image": null,
       "options": [
-        "A. None of the other choices is correct",
-        "B. (i) and (ii)",
-        "C. (ii)",
-        "D. (i)"
+        "A. Tình trạng nhiệt độc tích tụ ở trong",
+        "B. Tình trạng âm hư sinh nội nhiệt nặng",
+        "C. Tình trạng dương hư gây hàn thấp đình trệ",
+        "D. Tình trạng huyết ứ ở kinh lạc"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta cần nhận ra ngay hai 'bẫy' kinh điển của ma trận.<br /><br /><b>1. Kiểm tra mệnh đề (i): Kích thước của AB và BA</b><br />- <b>Bẫy:</b> Điều này chỉ đúng khi A và B là ma trận vuông.<br />- <b>Phản ví dụ (nhẩm nhanh):</b> Giả sử A là ma trận \\(2 \\times 3\\) và B là \\(3 \\times 2\\).<br />  - \\(AB\\) sẽ có kích thước \\(2 \\times 2\\).<br />  - \\(BA\\) sẽ có kích thước \\(3 \\times 3\\).<br />- Kích thước không giống nhau. Vậy (i) <b>SAI</b>.<br /><br /><b>2. Kiểm tra mệnh đề (ii): Phép giản ước</b><br />- <b>Bẫy:</b> Phép giản ước \\(BA=CA \\Rightarrow B=C\\) chỉ đúng khi A là ma trận <b>khả nghịch</b> (tức là \\(\\det(A) \\neq 0\\)).<br />- Đề bài chỉ cho A khác 0, chứ không cho A khả nghịch. Một ma trận khác 0 vẫn có thể không khả nghịch (ví dụ ma trận có định thức bằng 0).<br />- Vậy (ii) <b>SAI</b>.<br /><br /><b>Kết luận:</b> Cả hai mệnh đề đều sai.",
-      "difficulty": "medium",
-      "topic": "Linear Algebra (Matrix Properties)",
+      "correctAnswer": "C",
+      "explanation": "Phân tích đặc điểm lưỡi của bệnh nhân:<br />- <b>Lưỡi bệu, nhợt, có hằn răng:</b> Dấu hiệu của Tỳ khí hư (khí không đủ để giữ hình dáng lưỡi, không đủ nuôi dưỡng lưỡi).<br />- <b>Rêu lưỡi trắng:</b> Biểu hiện của \"hàn\" chứng.<br />- <b>Rêu dày nhớt:</b> Biểu hiện của \"thấp\" tà đình trệ.<br />Tổng hợp lại, lưỡi này điển hình cho tình trạng <b>dương hư</b> (gây ra hàn, lưỡi nhợt, rêu trắng) và <b>thấp trệ</b> (gây lưỡi bệu, hằn răng, rêu dày nhớt) do dương khí không vận hóa được thủy thấp.",
+      "difficulty": "hard",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Dương Hư (Ca lâm sàng)",
       "hints": [
-        "Mẹo cho (i): 'Cùng kích thước?'. Hãy nghĩ ngay đến trường hợp ma trận không vuông (ví dụ 2x3 và 3x2).",
-        "Mẹo cho (ii): 'Giản ước được không?'. Phép giản ước chỉ đúng khi ma trận A khả nghịch, 'khác 0' là chưa đủ.",
-        "Cả hai đều là những khẳng định sai kinh điển trong đại số tuyến tính."
+        "Lưỡi <b>bệu, nhợt, hằn răng</b> = Tỳ khí hư + Thấp.",
+        "Rêu <b>trắng</b> = Hàn. Rêu <b>dày nhớt</b> = Thấp.",
+        "Kết hợp: Dương hư (sinh hàn) và Thấp trệ."
       ]
     },
     {
       "id": 27,
-      "question": "Let S be the transformation induced by the matrix \\( \\begin{bmatrix} 1 & 1 & 1 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & 2 \\end{bmatrix} \\). Calculate \\( S([1 \\quad 2 \\quad 1]^T) \\). <br> <br> (i) \\( [3 \\quad 2 \\quad 2]^T \\) <br> (ii) \\( [4 \\quad 3 \\quad 2]^T \\) <br> (iii) \\( \\vec{0} \\) <br> (iv) \\( [2 \\quad 3 \\quad 4]^T \\) <br> (v) \\( [2 \\quad 2 \\quad 3]^T \\)",
+      "question": "Một người phụ nữ có triệu chứng ra nhiều khí hư trắng, kèm theo người mệt mỏi, bụng đầy trướng, đại tiện lỏng. Đây có thể là biểu hiện của hội chứng nào liên quan đến Tỳ?",
       "image": null,
       "options": [
-        "A. (See picture)",
-        "B. None of the other choices is correct",
-        "C. (iv)",
-        "D. (v)",
-        "E. (ii)",
-        "F. (i)"
+        "A. Tỳ Bị Thấp Nhiệt",
+        "B. Tỳ Hư Hạ Hãm",
+        "C. Tỳ Bị Hàn Thấp",
+        "D. Tỳ Không Thống Huyết"
       ],
-      "correctAnswer": "E",
-      "explanation": "Để giải siêu tốc, ta chỉ cần thực hiện phép nhân ma trận với vector bằng cách tính nhẩm từng hàng.<br /><br />\\[ \\begin{bmatrix} 1 & 1 & 1 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & 2 \\end{bmatrix} \\begin{bmatrix} 1 \\\\ 2 \\\\ 1 \\end{bmatrix} \\]<br /><br /><b>Tính nhẩm từng phần tử của vector kết quả:</b><br />- <b>Hàng 1:</b> \\((1)(1) + (1)(2) + (1)(1) = 1 + 2 + 1 = 4\\).<br />- <b>Hàng 2:</b> \\((0)(1) + (1)(2) + (1)(1) = 0 + 2 + 1 = 3\\).<br />- <b>Hàng 3:</b> \\((0)(1) + (0)(2) + (2)(1) = 0 + 0 + 2 = 2\\).<br /><br />Kết quả là \\( [4 \\quad 3 \\quad 2]^T \\), tương ứng với lựa chọn (ii).",
-      "difficulty": "easy",
-      "topic": "Linear Algebra (Matrix Transformations)",
+      "correctAnswer": "C",
+      "explanation": "Phân tích các triệu chứng:<br />- <b>Ra nhiều khí hư trắng:</b> Khí hư màu trắng thường do hàn hoặc thấp.<br />- <b>Người mệt mỏi, bụng đầy trướng, đại tiện lỏng:</b> Đây là các triệu chứng thường gặp khi Tỳ mất chức năng vận hóa, có thể do hàn thấp gây ra.<br />Hội chứng <b>Tỳ Bị Hàn Thấp</b> (Tỳ bị hàn và thấp gây bệnh) có các biểu hiện như: bụng đầy trướng, lợm giọng buồn nôn, người mệt mỏi, thân thể nặng nề, đại tiện lỏng, phụ nữ có thể ra nhiều khí hư trắng. Các triệu chứng này phù hợp với mô tả.",
+      "difficulty": "medium",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Bị Hàn Thấp",
       "hints": [
-        "Mẹo giải nhanh nhất: Chỉ cần nhân ma trận với vector.",
-        "Lấy từng hàng của ma trận nhân vô hướng với vector cột.",
-        "Các số 0 trong ma trận giúp việc tính nhẩm trở nên rất nhanh."
+        "<b>Khí hư trắng</b> thường liên quan đến <b>Hàn</b> hoặc <b>Thấp</b>.",
+        "Các triệu chứng mệt mỏi, đầy bụng, tiêu lỏng là dấu hiệu của Tỳ hư không vận hóa được."
       ]
     },
     {
       "id": 28,
-      "question": "Find the equation of the line that passes through the points \\( (7,4) \\) and \\( (-9,4) \\).",
+      "question": "Tâm Bào và Tam Tiêu có mối quan hệ gì theo YHCT?",
       "image": null,
       "options": [
-        "A. \\( y = 4 \\)",
-        "B. \\( y = 4x + 7 \\)",
-        "C. \\( 9y = 7x + 4 \\)",
-        "D. \\( y = -4 \\)",
-        "E. None of the other choices is correct"
+        "A. Quan hệ tương sinh (Tâm Bào sinh Tam Tiêu)",
+        "B. Quan hệ tương khắc (Tâm Bào khắc Tam Tiêu)",
+        "C. Quan hệ biểu lý (trong ngoài)",
+        "D. Không có quan hệ trực tiếp"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải bài này trong nháy mắt, ta chỉ cần quan sát tung độ (giá trị y) của hai điểm.<br /><br /><b>1. Quan sát nhanh:</b><br />- Cả hai điểm (7, <b>4</b>) và (-9, <b>4</b>) đều có tung độ bằng 4.<br /><br /><b>2. Kết luận:</b><br />- Một đường thẳng đi qua hai điểm có cùng tung độ luôn là một đường thẳng nằm ngang.<br />- Phương trình của đường thẳng đó chính là \\( y = 4 \\).",
-      "difficulty": "easy",
-      "topic": "Analytic Geometry (Equation of a Line)",
+      "correctAnswer": "C",
+      "explanation": "Theo YHCT, Tâm Bào được coi là một \"phủ kỳ hằng\" và có mối quan hệ <b>biểu lý</b> (trong - ngoài) với Tam Tiêu. <br />- <b>Tâm Bào</b> thuộc Tạng (mặc dù là vỏ bọc của Tâm nhưng có một số đặc tính của Tạng, và được xếp vào nhóm Phủ kỳ hằng vì chức năng đặc biệt của nó), là \"lý\" (bên trong).<br />- <b>Tam Tiêu</b> thuộc Phủ, là \"biểu\" (bên ngoài).<br />Mối quan hệ biểu lý này giúp giải thích sự liên hệ về bệnh lý giữa chúng.",
+      "difficulty": "hard",
+      "topic": "YHCT - Tâm và Tâm Bào - Đại cương về Tâm Bào",
       "hints": [
-        "Mẹo nhanh nhất: Nhìn vào tung độ y của hai điểm. Chúng có giống nhau không?",
-        "Nếu hai điểm có cùng tung độ, đó là một đường thẳng nằm ngang.",
-        "Phương trình của đường thẳng ngang có dạng \\(y = \\) [giá trị tung độ chung đó]."
+        "Tâm Bào bảo vệ Tâm (ở trong), Tam Tiêu là đường vận hành khí và dịch toàn thân (bao quát bên ngoài).",
+        "Nhớ cặp quan hệ biểu lý: <b>Tâm Bào - Tam Tiêu</b>."
       ]
     },
     {
       "id": 29,
-      "question": "Find the volume of the parallelepiped determined by \\( 2u, -3v, 5w \\), provided that \\( u = [1, 2, -1]^T, v = [0, 2, 4]^T, w = [1, 4, a]^T \\).",
+      "question": "Trong hội chứng \"Nhiệt nhập Tâm Bào\", triệu chứng \"chân tay quyết lạnh\" (chân tay lạnh ngắt) được giải thích như thế nào?",
       "image": null,
       "options": [
-        "A. \\( 60a - 180 \\)",
-        "B. \\( 30a - 30 \\)",
-        "C. \\( 60a + 30 \\)",
-        "D. \\( 30a + 30 \\)"
+        "A. Do hàn tà từ ngoài xâm nhập vào tứ chi",
+        "B. Do dương khí toàn thân đã suy kiệt hoàn toàn",
+        "C. Đây là chứng \"chân hàn giả nhiệt\", do nhiệt thịnh bên trong làm dương khí bị uất lại, không ra ngoài ôn ấm tứ chi được",
+        "D. Do huyết hư không đủ nuôi dưỡng làm ấm tứ chi"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta dùng tính chất của định thức để rút các hằng số ra ngoài trước.<br /><br /><b>1. Áp dụng tính chất định thức:</b><br />Thể tích \\( V = |\\det(2u, -3v, 5w)| \\)<br />\\( V = |2 \\cdot (-3) \\cdot 5 \\cdot \\det(u, v, w)| = 30 \\cdot |\\det(u, v, w)| \\).<br /><br /><b>2. Tính định thức gốc (nhanh hơn nhiều):</b><br />Bây giờ ta chỉ cần tính định thức của ma trận gốc với các số nhỏ:<br />\\( \\det(u, v, w) = \\begin{vmatrix} 1 & 0 & 1 \\\\ 2 & 2 & 4 \\\\ -1 & 4 & a \\end{vmatrix} \\)<br />Khai triển theo hàng 1 (vì có số 0):<br />\\( = 1(2a - 16) - 0 + 1(8 - (-2)) = 2a - 16 + 10 = 2a - 6 \\).<br /><br /><b>3. Kết hợp lại:</b><br />\\( V = 30 \\cdot |2a - 6| = |60a - 180| \\).<br /><br />Kết quả này tương ứng với đáp án A.",
-      "difficulty": "medium",
-      "topic": "Linear Algebra (Scalar Triple Product, Volume of Parallelepiped)",
+      "correctAnswer": "C",
+      "explanation": "Triệu chứng \"chân tay quyết lạnh\" trong bối cảnh sốt rất cao của \"Nhiệt nhập Tâm Bào\" là một hiện tượng đặc biệt, gọi là <b>\"chân hàn giả nhiệt\"</b> (bên ngoài lạnh giả, bên trong nhiệt thật) hoặc \"nhiệt cực sinh hàn\".<br />Cơ chế là do <b>nhiệt tà quá thịnh ở bên trong</b>, làm cho dương khí của cơ thể bị <b>uất kết</b>, tắc nghẽn, không thể lưu thông ra bên ngoài để ôn ấm tứ chi. Vì vậy, mặc dù bên trong rất nóng, nhưng bên ngoài chân tay lại biểu hiện lạnh.",
+      "difficulty": "hard",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Nhiệt nhập Tâm Bào",
       "hints": [
-        "Mẹo nhanh nhất: Dùng tính chất \\(det(ku, lv, mw) = klm \\cdot det(u, v, w)\\) để không phải nhân các số lớn.",
-        "Đừng nhân các vector với hằng số trước. Hãy tính định thức của \\(u, v, w\\) trước.",
-        "Lấy kết quả định thức đó nhân với 30 (là \\(|2 \\cdot -3 \\cdot 5|\\))."
+        "Đây là một nghịch lý: <b>sốt rất cao mà chân tay lại lạnh</b>.",
+        "Lý do: Nhiệt quá mạnh \"nhốt\" dương khí lại, không cho ra ngoài sưởi ấm tay chân."
       ]
     },
     {
       "id": 30,
-      "question": "John and Joe earn a total of $24.80 when John works 2 hours and Joe works 3 hours. If John works 3 hours and Joe works 2 hours, they get $23.90. Find their hourly rates (in dollars).",
+      "question": "Đặc điểm mạch của bệnh nhân \"Nhiệt nhập Tâm Bào\" thường là gì?",
       "image": null,
       "options": [
-        "A. 6.70, 9.40",
-        "B. 4.50, 5.20",
-        "C. 12.60, 15.80",
-        "D. All of the other choices are incorrect",
-        "E. 1.40, 0.80"
+        "A. Mạch Trầm Trì, Nhược",
+        "B. Mạch Phù Hoãn",
+        "C. Mạch Tế Sác hoặc Huyền Sác",
+        "D. Mạch Hoạt, Thực, Hữu Lực"
       ],
-      "correctAnswer": "B",
-      "explanation": "Để giải siêu tốc, ta sẽ không giải hệ mà thử trực tiếp đáp án.<br /><br /><b>1. Thiết lập nhanh hệ phương trình (trong đầu):</b><br />- \\( 2J + 3O = 24.80 \\)<br />- \\( 3J + 2O = 23.90 \\)<br /><br /><b>2. Thử đáp án B (J=4.50, O=5.20):</b><br />- Thử với phương trình thứ hai (vì số 23.90 trông 'đẹp' hơn):<br />  \\( 3(4.50) + 2(5.20) = 13.50 + 10.40 = 23.90 \\). <b>Khớp hoàn hảo!</b><br />- Chỉ cần một phương trình khớp, khả năng rất cao đây là đáp án đúng (có thể đề bài bị lỗi đánh máy ở phương trình còn lại). Không cần thử tiếp, chọn ngay đáp án này.<br /><br /><b>Mẹo kiểm tra siêu tốc khác:</b><br />- Cộng hai phương trình gốc lại với nhau:<br />\\( (2J+3O) + (3J+2O) = 24.80 + 23.90 \\)<br />\\( 5J + 5O = 48.70 \\Rightarrow J+O = 9.74 \\)<br />- Kiểm tra tổng của đáp án B: \\( 4.50 + 5.20 = 9.70 \\). Tổng này gần như chính xác, càng khẳng định B là đáp án đúng.",
-      "difficulty": "easy",
-      "topic": "Algebra (Systems of Linear Equations)",
+      "correctAnswer": "C",
+      "explanation": "Trong hội chứng \"Nhiệt nhập Tâm Bào\":<br />- <b>Nhiệt tà thịnh:</b> Gây ra mạch <b>Sác</b> (nhanh).<br />- <b>Tân dịch bị thiêu đốt:</b> Nhiệt làm tổn thương tân dịch, khiến huyết dịch có thể bị cô đặc lại, lòng mạch không được đầy đủ, gây ra mạch <b>Tế</b> (nhỏ, như sợi chỉ).<br />- <b>Can phong nội động (nếu có co giật):</b> Nhiệt cực có thể sinh phong, gây ra mạch <b>Huyền</b> (căng như dây đàn).<br />Do đó, mạch thường gặp là <b>Tế Sác</b> (nhỏ, nhanh) hoặc <b>Huyền Sác</b> (căng, nhanh).",
+      "difficulty": "medium",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Nhiệt nhập Tâm Bào",
       "hints": [
-        "Mẹo nhanh nhất: Đừng giải hệ, hãy thử đáp án.",
-        "Bắt đầu thử với phương trình thứ hai `3J + 2O = 23.90`. Đáp án B khớp hoàn toàn.",
-        "Mẹo kiểm tra khác: Cộng 2 phương trình lại để tìm tổng `J+O`, rồi so sánh với tổng của các đáp án."
+        "<b>Nhiệt</b> thì mạch <b>Sác (nhanh)</b>.",
+        "Nhiệt làm <b>hao tổn tân dịch</b> nên mạch có thể <b>Tế (nhỏ)</b>.",
+        "Nếu có co giật (phong) thì mạch có thể <b>Huyền (căng)</b>."
       ]
     },
     {
       "id": 31,
-      "question": "Find the critical numbers of the function \\( g(x) = \\sqrt{x^2 - x} \\)",
+      "question": "Hội chứng \"Đàm Trọc Che Lấp Tâm Khiếu\" nếu do \"đàm hỏa\" thì đặc điểm lưỡi và mạch sẽ là gì?",
       "image": null,
       "options": [
-        "A. 1/2",
-        "B. 1",
-        "C. 0, 1 and 1/2",
-        "D. 0",
-        "E. None of the other choices is correct",
-        "F. 0 and 1"
+        "A. Lưỡi bệu, rêu trắng nhớt; Mạch Trầm Hoạt",
+        "B. Lưỡi đỏ, rêu vàng nhớt; Mạch Hoạt Sác",
+        "C. Lưỡi nhạt, ít rêu; Mạch Hư Nhược",
+        "D. Lưỡi tím, có điểm ứ huyết; Mạch Sáp"
       ],
-      "correctAnswer": "F",
-      "explanation": "Để giải siêu tốc, ta xác định hai nguồn gây ra điểm tới hạn: đạo hàm bằng 0 và đạo hàm không xác định.<br /><br /><b>1. Nguồn 1: Đạo hàm không xác định (Mẫu số của đạo hàm = 0)</b><br />- Đạo hàm của hàm căn thức sẽ có mẫu chứa chính biểu thức trong căn. Vì vậy, đạo hàm không xác định khi:<br />\\( x^2 - x = 0 \\Rightarrow x(x-1) = 0 \\Rightarrow x=0 \\text{ và } x=1 \\).<br />- Đây cũng chính là các điểm đầu mút của tập xác định, nên chúng chắc chắn là điểm tới hạn.<br /><br /><b>2. Nguồn 2: Đạo hàm bằng 0 (Tử số của đạo hàm = 0)</b><br />- Đạo hàm của ruột (\\(x^2 - x\\)) là \\(2x-1\\). Đây sẽ là tử số của đạo hàm.<br />\\( 2x - 1 = 0 \\Rightarrow x = 1/2 \\).<br /><br /><b>3. Kiểm tra và kết luận:</b><br />- Ta chỉ cần kiểm tra \\(x=1/2\\). Thế vào biểu thức trong căn: \\((1/2)^2 - 1/2 = -1/4\\), là số âm. Vậy \\(x=1/2\\) không nằm trong tập xác định, không phải là điểm tới hạn.<br /><br />- Các điểm tới hạn duy nhất là <b>0 và 1</b>.",
+      "correctAnswer": "B",
+      "explanation": "Khi \"Đàm Trọc Che Lấp Tâm Khiếu\" có yếu tố \"Hỏa\" (Đàm Hỏa Nhiễu Loạn Tâm Bào):<br />- <b>Lưỡi:</b><br />  - <b>Đỏ:</b> Do có Hỏa (nhiệt).<br />  - <b>Rêu vàng nhớt:</b> Vàng do nhiệt, nhớt do đàm.<br />- <b>Mạch:</b><br />  - <b>Hoạt:</b> Do có đàm (mạch trơn tuột).<br />  - <b>Sác:</b> Do có hỏa (mạch nhanh).<br />Ngược lại, nếu là \"đàm thấp\" (không có hỏa) thì lưỡi thường bệu, rêu trắng nhớt, mạch Trầm Hoạt.",
       "difficulty": "medium",
-      "topic": "Calculus (Critical Numbers, Derivatives)",
+      "topic": "YHCT - Tâm và Tâm Bào - Biện chứng Đàm Trọc Che Lấp Tâm Khiếu",
       "hints": [
-        "Mẹo nhanh nhất: Điểm tới hạn đến từ 2 nguồn: (1) điểm làm cho biểu thức trong căn bằng 0, (2) điểm làm cho đạo hàm của ruột bằng 0.",
-        "Nguồn 1 (trong căn = 0): \\(x^2-x=0 \\Rightarrow x=0, 1\\). Đây luôn là điểm tới hạn.",
-        "Nguồn 2 (đạo hàm ruột = 0): \\(2x-1=0 \\Rightarrow x=1/2\\). Chỉ cần kiểm tra xem điểm này có thuộc tập xác định không."
+        "Mẹo nhận biết Đàm Hỏa: <b>Lưỡi đỏ, rêu vàng nhớt</b>. <b>Mạch Hoạt Sác</b>.",
+        "\"Hỏa\" = Đỏ, Vàng, Sác (nhanh). \"Đàm\" = Nhớt, Hoạt (trơn)."
       ]
     },
     {
       "id": 32,
-      "question": "Which of the following matrices are in row-echelon form? <br> (i) \\( \\begin{bmatrix} 1 & 1 & 3 \\\\ 0 & 1 & 2 \\end{bmatrix} \\) <br> (ii) \\( \\begin{bmatrix} 0 & 1 & -1 \\\\ 0 & 2 & 3 \\\\ 0 & 1 & 5 \\end{bmatrix} \\)",
+      "question": "Thượng Tiêu trong hệ thống Tam Tiêu được ví như gì và chủ về chức năng nào?",
       "image": null,
       "options": [
-        "A. (i)",
-        "B. (ii)",
-        "C. (i) and (ii)",
-        "D. None of the other choices is correct"
+        "A. Được ví như \"kênh rãnh\", chủ về phân biệt thanh trọc và bài xuất",
+        "B. Được ví như \"bọt nước\" hay \"vũng bùn\", chủ về hủ thục và vận hóa thủy cốc",
+        "C. Được ví như \"sương mù\", chủ về thu nạp khí trời và tuyên phát dinh vệ",
+        "D. Được ví như \"nhà kho\", chủ về tàng trữ tinh hoa"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta chỉ cần kiểm tra trực quan 'cấu trúc bậc thang' và quy tắc 'số 0 bên dưới'.<br /><br /><b>1. Kiểm tra ma trận (i):</b><br />\\[ \\begin{bmatrix} 1 & 1 & 3 \\\\ 0 & 1 & 2 \\end{bmatrix} \\]<br />- Nhìn vào các phần tử khác 0 đầu tiên của mỗi hàng (gọi là phần tử dẫn đầu): <b>1</b> và <b>1</b>.<br />- Chúng tạo thành một hình bậc thang đi xuống sang phải. Bên dưới phần tử dẫn đầu đầu tiên là số 0.<br />- → Ma trận (i) <b>đúng</b>.<br /><br /><b>2. Kiểm tra ma trận (ii):</b><br />\\[ \\begin{bmatrix} 0 & 1 & -1 \\\\ 0 & 2 & 3 \\\\ 0 & 1 & 5 \\end{bmatrix} \\]<br />- Nhìn vào các phần tử dẫn đầu: <b>1</b>, <b>2</b>, <b>1</b>.<br />- Chúng đều nằm trên cùng một cột. Điều này ngay lập tức phá vỡ cấu trúc bậc thang.<br />- → Ma trận (ii) <b>sai</b>.<br /><br /><b>Kết luận:</b> Chỉ có ma trận (i) là đúng.",
+      "correctAnswer": "C",
+      "explanation": "Các phần của Tam Tiêu được ví von để dễ hình dung chức năng:<br />- <b>Thượng Tiêu (Tâm, Phế):</b> Chủ về thu nạp khí trời (qua Phế) và phân bố dinh dưỡng, vệ khí đi khắp cơ thể (qua Tâm chủ huyết, Phế chủ khí). Chức năng tuyên phát (đưa đi, tỏa ra) này được ví như <b>\"sương mù\"</b> lan tỏa.<br />- Trung Tiêu (Tỳ, Vị): Như \"vũng bùn\" hay \"bọt nước\" (nơi ủ chín, tiêu hóa thức ăn).<br />- Hạ Tiêu (Can, Thận, Bàng quang...): Như \"kênh rãnh\" (đường dẫn thải).",
       "difficulty": "easy",
-      "topic": "Linear Algebra (Row-Echelon Form)",
+      "topic": "YHCT - Phủ Tam Tiêu - Đại cương về Tam Tiêu",
       "hints": [
-        "Mẹo nhanh nhất: Ma trận bậc thang có hình dạng một 'cầu thang' đi xuống và sang phải.",
-        "Quy tắc cốt lõi: Phần tử khác 0 đầu tiên của mỗi hàng phải nằm ở bên phải của phần tử khác 0 đầu tiên của hàng trên nó.",
-        "Ở ma trận (ii), bạn thấy ngay các số 1, 2, 1 ở cột hai thẳng hàng nhau, đây là dấu hiệu sai."
+        "Thượng Tiêu ở trên cao, liên quan đến Tâm Phế, nơi khí được hít vào và phân bố đi như sương mù.",
+        "<b>Thượng Tiêu = Sương mù (tuyên phát)</b>."
       ]
     },
     {
       "id": 33,
-      "question": "Which of the following subsets of \\( \\mathbb{R}^2 \\) are subspaces? <br> (i) \\( \\{(x, y) \\mid x \\ge 0 \\text{ and } y \\ge 0 \\} \\) <br> (ii) \\( \\{(x, y) \\mid x = 2y + 1 \\} \\)",
+      "question": "Ví dụ về pháp trị cho \"Thượng Tiêu Bất Lợi\" do ngoại cảm phong nhiệt xâm phạm Phế là gì?",
       "image": null,
       "options": [
-        "A. (i) and (ii)",
-        "B. None of (i) or (ii)",
-        "C. (ii) only",
-        "D. (i) only"
+        "A. Ma Hoàng Thang",
+        "B. Ngân Kiều Tán",
+        "C. Tả Tâm Thang",
+        "D. Lục Vị Địa Hoàng Hoàn"
       ],
       "correctAnswer": "B",
-      "explanation": "Để kiểm tra siêu tốc, ta dùng các mẹo nhận diện nhanh để loại trừ.<br /><br /><b>1. Kiểm tra tập (i): Góc phần tư thứ nhất</b><br />- <b>Mẹo:</b> Một không gian con phải 'đóng' với phép nhân vô hướng, kể cả số âm. Nếu ta lấy một vector trong tập này (ví dụ (1,1)) và nhân với -1, ta được (-1,-1), vector này không còn thuộc tập hợp nữa.<br />- → Tập (i) <b>không phải</b> là không gian con.<br /><br /><b>2. Kiểm tra tập (ii): Đường thẳng \\(x = 2y + 1\\)</b><br />- <b>Mẹo:</b> Một không gian con phải chứa vector không (0,0).<br />- Thử thế (0,0) vào phương trình: \\( 0 = 2(0) + 1 \\Rightarrow 0 = 1 \\). Điều này sai.<br />- Vì không chứa gốc tọa độ, tập (ii) <b>không phải</b> là không gian con.<br /><br /><b>Kết luận:</b> Cả hai đều không phải là không gian con.",
+      "explanation": "Khi Thượng Tiêu bất lợi do <b>ngoại cảm phong nhiệt</b> xâm phạm Phế (ví dụ cảm cúm có sốt, đau họng, ho), pháp trị là phải sơ phong thanh nhiệt, tuyên thông Phế khí.<br />- <b>Ngân Kiều Tán</b> là bài thuốc cổ phương nổi tiếng dùng để trị các chứng cảm mạo do phong nhiệt ở giai đoạn đầu, với các triệu chứng như sốt, sợ gió, đau đầu, ho, đau họng.<br />- Ma Hoàng Thang: Trị cảm mạo phong hàn.<br />- Tả Tâm Thang: Thanh Tâm hỏa.<br />- Lục Vị Địa Hoàng Hoàn: Bổ Thận âm.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Subspaces)",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Thượng Tiêu Bất Lợi",
       "hints": [
-        "Mẹo nhanh nhất: Một không gian con phải thỏa mãn 2 điều kiện 'tối thiểu': (1) Chứa vector không, (2) Nếu chứa vector v thì cũng phải chứa -v.",
-        "Tập (ii) sai vì không chứa gốc tọa độ (0,0).",
-        "Tập (i) sai vì nó chứa vector (1,1) nhưng lại không chứa vector (-1,-1)."
+        "Thượng Tiêu Bất Lợi do <b>phong nhiệt</b> ở Phế thì cần bài thuốc có tác dụng <b>thanh nhiệt, giải biểu</b>.",
+        "<b>Ngân Kiều Tán</b> là bài thuốc tiêu biểu cho trường hợp này."
       ]
     },
     {
       "id": 34,
-      "question": "Volume of a spherical balloon is decreasing at rate \\( 9 \\text{ cm}^3/\\text{s} \\). How fast is its diameter decreasing when the volume is \\( 6 \\text{ cm}^3 \\)?",
+      "question": "Trong ca lâm sàng \"Trung Tiêu Ứ Trệ do Thấp Khốn Tỳ Vị\" (bệnh nhân Nguyễn Thị C), đặc điểm \"Lưỡi bệu, rêu trắng dày và hơi nhớt\" chủ yếu phản ánh sự có mặt của yếu tố bệnh lý nào?",
       "image": null,
       "options": [
-        "A. \\( 3.127 \\text{ cm/s} \\)",
-        "B. \\( 0.127 \\text{ cm/s} \\)",
-        "C. \\( 2.127 \\text{ cm/s} \\)",
-        "D. None of the other choices is correct",
-        "E. \\( 1.127 \\text{ cm/s} \\)"
+        "A. Nhiệt độc",
+        "B. Khí trệ",
+        "C. Huyết ứ",
+        "D. Thấp tà"
       ],
-      "correctAnswer": "E",
-      "explanation": "Để giải siêu tốc, ta cần một công thức liên hệ trực tiếp các đại lượng. Mẹo ở đây là lấy phương trình đạo hàm chia cho phương trình thể tích.<br /><br /><b>1. Các phương trình cơ bản:</b><br />- Thể tích: \\( V = \\frac{\\pi D^3}{6} \\)<br />- Tốc độ thay đổi: \\( \\frac{dV}{dt} = \\frac{\\pi D^2}{2} \\frac{dD}{dt} \\)<br /><br /><b>2. Tạo công thức siêu tốc:</b><br />Lấy (phương trình tốc độ) chia cho (phương trình thể tích):<br />\\( \\frac{dV/dt}{V} = \\frac{ (\\pi D^2 / 2) \\cdot (dD/dt) }{ \\pi D^3 / 6 } = \\frac{3}{D} \\frac{dD}{dt} \\)<br />Sắp xếp lại, ta có công thức cuối cùng:<br />\\[ \\frac{dD}{dt} = \\frac{D}{3V} \\frac{dV}{dt} \\]<br /><br /><b>3. Áp dụng:</b><br />- Tìm D khi V=6: \\( 6 = \\frac{\\pi D^3}{6} \\Rightarrow D^3 = \\frac{36}{\\pi} \\Rightarrow D \\approx 2.25 \\text{ cm} \\).<br />- Thế số vào công thức siêu tốc:<br />\\( \\frac{dD}{dt} \\approx \\frac{2.25}{3 \\cdot 6} \\cdot (-9) = \\frac{2.25}{18} \\cdot (-9) = -\\frac{2.25}{2} = -1.125 \\).<br /><br />Tốc độ giảm là \\(1.125\\), gần nhất với đáp án E.",
+      "correctAnswer": "D",
+      "explanation": "Phân tích đặc điểm lưỡi của bệnh nhân:<br />- <b>Lưỡi bệu:</b> Thường do Tỳ hư không vận hóa được thủy thấp, hoặc do thấp tà làm khí cơ bị ngăn trở, lưỡi trương to.<br />- <b>Rêu trắng dày và hơi nhớt:</b> Đây là dấu hiệu rất điển hình của <b>thấp tà</b>. Rêu trắng thường chỉ hàn hoặc thấp, rêu dày và nhớt càng khẳng định sự có mặt của thấp.<br />\"Thấp khốn Tỳ Vị\" nghĩa là thấp tà gây trở ngại cho chức năng của Tỳ Vị, làm Tỳ Vị bị \"khốn đốn\".",
       "difficulty": "medium",
-      "topic": "Calculus (Related Rates)",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Trung Tiêu Ứ Trệ (Ca lâm sàng)",
       "hints": [
-        "Mẹo nhanh nhất: Dùng công thức rút gọn \\( \\frac{dD}{dt} = \\frac{D}{3V} \\frac{dV}{dt} \\).",
-        "Bạn chỉ cần 2 bước: (1) Tìm D khi V=6, (2) Thế tất cả các số vào công thức trên.",
-        "Công thức này được tạo ra bằng cách lấy phương trình đạo hàm chia cho phương trình gốc để khử các số hạng phức tạp."
+        "Ghi nhớ: Lưỡi <b>bệu</b> và rêu <b>trắng dày nhớt</b> là dấu hiệu của <b>\"Thấp\"</b>.",
+        "\"Khốn\" trong \"Thấp khốn Tỳ Vị\" nghĩa là bị bao vây, làm khó dễ bởi thấp tà."
       ]
     },
     {
       "id": 35,
-      "question": "Find the first row of the adjugate of the matrix \\( A = \\begin{bmatrix} 1 & 2 & 0 \\\\ 3 & -1 & 1 \\\\ 0 & -2 & 1 \\end{bmatrix} \\)",
+      "question": "Nguyên nhân chính gây ra hội chứng \"Tam Tiêu Khí Cơ Bất Lợi\" là gì?",
       "image": null,
       "options": [
-        "A. \\( [1 \\quad -2 \\quad 2] \\)",
-        "B. \\( [-1 \\quad -2 \\quad 2] \\)",
-        "C. \\( [1 \\quad -3 \\quad -6] \\)",
-        "D. \\( [1 \\quad 2 \\quad 2] \\)",
-        "E. None of the other choices is correct"
+        "A. Do ăn uống nhiều đồ cay nóng, dầu mỡ",
+        "B. Do ngoại cảm phong hàn tà khí",
+        "C. Thường do tình chí uất kết, hoặc do bệnh lâu ngày làm khí cơ toàn thân vận hành không thông suốt",
+        "D. Do phú bẩm bất túc, Thận tinh suy yếu từ nhỏ"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta phải nhớ rằng **hàng 1 của ma trận phụ hợp** chính là **cột 1 của ma trận đồng yếu tố**.\\\\[ \\text{adj}(A)_{1j} = C_{ji} \\]<br /><br />Ta chỉ cần tính 3 phần tử \\(C_{11}, C_{21}, C_{31}\\) và xếp chúng thành một hàng.<br /><br /><b>1. Tính nhẩm các đồng yếu tố:</b><br />- \\(C_{11}\\) (dấu +): \\( (-1)(1) - (1)(-2) = 1 \\).<br />- \\(C_{21}\\) (dấu -): \\( -[(2)(1) - (0)(-2)] = -2 \\).<br />- \\(C_{31}\\) (dấu +): \\( (2)(1) - (0)(-1) = 2 \\).<br /><br /><b>2. Ghép lại thành hàng:</b><br />Hàng đầu tiên của ma trận phụ hợp là \\([1, -2, 2]\\).",
+      "correctAnswer": "C",
+      "explanation": "\"Tam Tiêu Khí Cơ Bất Lợi\" là tình trạng sự vận hành của khí trong toàn bộ ba phần Thượng, Trung, Hạ Tiêu bị rối loạn, không thông suốt.<br />Nguyên nhân thường gặp là:<br />- <b>Tình chí uất kết:</b> Các yếu tố tinh thần (lo lắng, tức giận, buồn phiền...) kéo dài làm cho khí bị tắc nghẽn, không lưu thông được (Can chủ sơ tiết, điều暢 khí cơ toàn thân, khi Can bị uất kết sẽ ảnh hưởng đến sự lưu thông khí của Tam Tiêu).<br />- <b>Bệnh lâu ngày:</b> Bệnh tật kéo dài làm tổn thương khí huyết, chức năng các tạng phủ suy yếu, dẫn đến khí cơ toàn thân vận hành trì trệ.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Adjugate Matrix, Cofactors)",
+      "topic": "YHCT - Phủ Tam Tiêu - Biện chứng Tam Tiêu Khí Cơ Bất Lợi",
       "hints": [
-        "Mẹo nhanh nhất: Hàng 1 của ma trận phụ hợp (adj) = Cột 1 của ma trận đồng yếu tố (C).",
-        "Bạn chỉ cần tính 3 phần tử: \\(C_{11}, C_{21}, C_{31}\\).",
-        "Nhớ quy tắc dấu xen kẽ (+, -, +) khi tính các đồng yếu tố."
+        "\"Khí cơ bất lợi\" nghĩa là sự vận hành của khí không thuận lợi, bị tắc nghẽn.",
+        "Nguyên nhân hàng đầu gây khí trệ là <b>tình chí (cảm xúc) uất kết</b>."
       ]
     },
     {
       "id": 36,
-      "question": "Solve the homogeneous system \\( \\begin{cases} 3x_1 + x_2 + x_3 + x_4 = 0 \\\\ 5x_1 - x_2 + x_3 - x_4 = 0 \\end{cases} \\)",
+      "question": "Theo bảng Mạch học, mạch \"Trầm huyền\" thường chủ bệnh gì?",
       "image": null,
       "options": [
-        "A. \\( (-s/4, -s/4+t, s, t) \\)",
-        "B. \\( (s/4, s/4+t, s, t) \\)",
-        "C. None of the other choices is correct",
-        "D. \\( (-s/4, -s/4-t, s, t) \\)",
-        "E. \\( (s/4, s/4-t, s, t) \\)"
+        "A. Biểu hàn, đau khớp do phong",
+        "B. Lý nhiệt",
+        "C. Can uất khí trệ, chưng đau",
+        "D. Âm hư, huyết hư sinh nội nhiệt"
       ],
-      "correctAnswer": "D",
-      "explanation": "Để giải siêu tốc, ta không giải hệ mà sẽ thử đáp án. Tất cả các đáp án đều có dạng \\((..., s, t)\\), nghĩa là ta được cho trước \\(x_3=s\\) và \\(x_4=t\\).<br /><br /><b>1. Chọn và phân tích đáp án D:</b><br />- \\(x_1 = -s/4\\)<br />- \\(x_2 = -s/4 - t\\)<br />- \\(x_3 = s\\)<br />- \\(x_4 = t\\)<br /><br /><b>2. Thử nhanh vào phương trình (1):</b> \\(3x_1 + x_2 + x_3 + x_4 = 0\\)<br />\\( 3(-\\frac{s}{4}) + (-\\frac{s}{4} - t) + s + t = -\\frac{3s}{4} - \\frac{s}{4} - t + s + t = -\\frac{4s}{4} + s = -s + s = 0 \\).<br />→ Khớp.<br /><br /><b>3. Thử nhanh vào phương trình (2):</b> \\(5x_1 - x_2 + x_3 - x_4 = 0\\)<br />\\( 5(-\\frac{s}{4}) - (-\\frac{s}{4} - t) + s - t = -\\frac{5s}{4} + \\frac{s}{4} + t + s - t = -\\frac{4s}{4} + s = -s + s = 0 \\).<br />→ Khớp.<br /><br />Vì đáp án D thỏa mãn cả hai phương trình, đây là đáp án đúng.",
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Trầm huyền\":<br />- <b>Mạch Trầm:</b> Chủ bệnh ở Lý (bên trong).<br />- <b>Mạch Huyền:</b> Căng như dây đàn. Thường chủ các bệnh của Can (do Can chủ sơ tiết, khi Can uất thì khí cơ căng thẳng), hoặc chủ chứng Đau (do khí trệ huyết ứ gây đau làm mạch căng).<br />Kết hợp lại, mạch <b>Trầm huyền</b> thường gặp trong các trường hợp bệnh ở Lý, liên quan đến <b>Can uất khí trệ</b> (khí của Can bị tắc nghẽn) hoặc các chứng <b>đau</b> do khí cơ không thông.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Homogeneous Systems)",
+      "topic": "YHCT - Mạch Học",
       "hints": [
-        "Mẹo nhanh nhất: Đừng giải hệ, hãy thử đáp án!",
-        "Tất cả các đáp án đều đặt `x₃ = s` và `x₄ = t`. Bạn chỉ cần thế `x₁` và `x₂` từ một đáp án vào để kiểm tra.",
-        "Chỉ cần một phương trình sai là có thể loại ngay đáp án đó và chuyển sang thử đáp án khác."
+        "<b>Trầm = Lý</b> (bên trong).",
+        "<b>Huyền = Can uất</b> hoặc <b>Đau</b>.",
+        "Vậy, Trầm huyền = Can bị uất ở bên trong, hoặc đau ở bên trong."
       ]
     },
     {
       "id": 37,
-      "question": "Let \\( T: \\mathbb{R}^3 \\to \\mathbb{R}^3 \\) be a linear transformation with \\( T(1, 1, 0) = (2, 3, -1) \\), and \\( T(0, -1, 1) = (5, 0, 1) \\). Find \\( T(1, 3, -2) \\).",
+      "question": "Mạch \"Hồng sác\" theo bảng Mạch học chủ bệnh gì?",
       "image": null,
       "options": [
-        "A. None of the others",
-        "B. (8, 3, -3)",
-        "C. (1, -6, 3)",
-        "D. (7, 3, 0)"
+        "A. Lý hàn",
+        "B. Nhiệt thịnh ở khí phận",
+        "C. Huyết hư kèm ứ huyết",
+        "D. Bệnh ở tỳ vị, bệnh mạn tính"
       ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta cần tìm nhanh hai số \\(a, b\\) sao cho:<br />\\( (1, 3, -2) = a(1, 1, 0) + b(0, -1, 1) \\).<br /><br /><b>1. Nhẩm nhanh hệ số \\(a, b\\) nhờ các số 0:</b><br />- <b>Nhìn vào thành phần x:</b> \\( 1 = a(1) + b(0) \\Rightarrow a = 1 \\).<br />- <b>Nhìn vào thành phần z:</b> \\( -2 = a(0) + b(1) \\Rightarrow b = -2 \\).<br /><br /><b>2. Áp dụng tính chất tuyến tính và tính nhẩm:</b><br />Ta đã có \\( \\vec{v} = 1 \\cdot \\vec{u_1} - 2 \\cdot \\vec{u_2} \\), vậy:<br />\\( T(1, 3, -2) = 1 \\cdot T(1, 1, 0) - 2 \\cdot T(0, -1, 1) \\)<br />\\( = 1 \\cdot (2, 3, -1) - 2 \\cdot (5, 0, 1) \\)<br />\\( = (2, 3, -1) - (10, 0, 2) \\)<br />\\( = (-8, 3, -3) \\).<br /><br />Kết quả này không khớp với các lựa chọn B, C, D, nên ta chọn 'None of the others'.",
+      "correctAnswer": "B",
+      "explanation": "Phân tích mạch \"Hồng sác\":<br />- <b>Mạch Hồng:</b> Mạch đến mạnh mẽ, to, đầy, như sóng trào, đi thì yếu dần. Chủ dương nhiệt cực thịnh.<br />- <b>Mạch Sác:</b> Mạch đập nhanh. Chủ Nhiệt chứng.<br />Kết hợp lại, mạch <b>Hồng sác</b> là dấu hiệu của <b>Nhiệt thịnh ở khí phận</b>. \"Khí phận\" là một giai đoạn trong bệnh ôn nhiệt, khi nhiệt tà đã vào sâu hơn biểu nhưng chưa vào đến dinh, huyết; lúc này chính khí và tà khí đấu tranh mạnh mẽ, biểu hiện bằng sốt cao, mặt đỏ, khát nước, mạch Hồng Sác.",
       "difficulty": "medium",
-      "topic": "Linear Algebra (Linear Transformations)",
+      "topic": "YHCT - Mạch Học",
       "hints": [
-        "Mẹo nhanh nhất: Tìm `a, b` sao cho vector mục tiêu là tổ hợp tuyến tính của hai vector đã cho.",
-        "Nhờ các số 0, bạn có thể nhẩm ngay `a` từ thành phần đầu và `b` từ thành phần cuối.",
-        "Kết quả cuối cùng là `1*T(u₁) - 2*T(u₂)`."
+        "<b>Hồng = Nhiệt rất mạnh, như sóng trào</b>.",
+        "<b>Sác = Nhiệt (mạch nhanh)</b>.",
+        "Hồng Sác = Nhiệt rất dữ dội, thường ở giai đoạn khí phận của bệnh ôn nhiệt."
       ]
     },
     {
       "id": 38,
-      "question": "Which of the following vectors is perpendicular to the plane passing through the points \\( (-7, 10, 0) \\), \\( (4, 1, 6) \\) and \\( (2, -1, 3) \\)?",
+      "question": "Nếu một bệnh nhân có mạch \"Tế sáp\", theo bảng Mạch học, điều này gợi ý tình trạng bệnh lý nào?",
       "image": null,
       "options": [
-        "A. None of the other choices is correct",
-        "B. \\( (39, 21, 40) \\)",
-        "C. \\( (-12, 33, 22) \\)",
-        "D. \\( (12, 33, 22) \\)",
-        "E. \\( (39, 21, -40) \\)"
+        "A. Phong đàm, biểu chứng kèm thêm đàm thấp",
+        "B. Can thận âm hư, âm hư can uất",
+        "C. Huyết hư kèm ứ huyết",
+        "D. Đàm nhiệt, đàm hoả"
       ],
-      "correctAnswer": "E",
-      "explanation": "Để giải siêu tốc, ta cần tìm hai vector trong mặt phẳng rồi dùng tích có hướng để tìm vector pháp tuyến (vuông góc).<br /><br /><b>1. Tính 2 vector trong mặt phẳng (nhẩm nhanh):</b><br />- Lấy điểm thứ hai trừ điểm đầu: \\(\\vec{u} = (4 - (-7), 1 - 10, 6 - 0) = (11, -9, 6)\\).<br />- Lấy điểm thứ ba trừ điểm đầu: \\(\\vec{v} = (2 - (-7), -1 - 10, 3 - 0) = (9, -11, 3)\\).<br /><br /><b>2. Tính tích có hướng (mẹo: tính từng thành phần rồi liếc đáp án):</b><br />- <b>Thành phần x:</b> \\((-9)(3) - (6)(-11) = -27 + 66 = 39\\).<br />  <i>(Nhìn đáp án, ta loại được C và D).</i><br />- <b>Thành phần y (nhớ đổi dấu):</b> \\(-[(11)(3) - (6)(9)] = -[33 - 54] = -[-21] = 21\\).<br />  <i>(Cả B và E đều có thành phần này, ta phải tính tiếp).</i><br />- <b>Thành phần z:</b> \\((11)(-11) - (-9)(9) = -121 + 81 = -40\\).<br /><br />Vector pháp tuyến là \\((39, 21, -40)\\), khớp với đáp án E.",
-      "difficulty": "medium",
-      "topic": "Linear Algebra (Vectors in 3D, Cross Product, Planes)",
+      "correctAnswer": "C",
+      "explanation": "Phân tích mạch \"Tế sáp\":<br />- <b>Mạch Tế:</b> Mạch nhỏ như sợi chỉ, ấn nhẹ không rõ, ấn mạnh mới thấy. Chủ Khí huyết hư, hoặc Thấp tà cản trở.<br />- <b>Mạch Sáp:</b> Mạch đi lại khó khăn, không trơn tru, như dao tre cạo vào ống tre. Chủ Huyết hư, hoặc Tinh thương, hoặc Khí trệ huyết ứ.<br />Khi <b>Tế</b> (do huyết không đủ đầy lòng mạch) kết hợp với <b>Sáp</b> (do huyết lưu thông khó khăn), thường chỉ tình trạng <b>Huyết hư kèm theo ứ huyết</b>. Nghĩa là vừa thiếu máu, vừa có máu đông cục bộ làm cản trở lưu thông.",
+      "difficulty": "hard",
+      "topic": "YHCT - Mạch Học",
       "hints": [
-        "Mẹo nhanh nhất: (1) Tạo 2 vector từ 3 điểm, (2) Tính tích có hướng của chúng.",
-        "Khi tính tích có hướng, hãy tính thành phần đầu tiên (x), rồi liếc nhìn các đáp án để loại trừ.",
-        "Nhớ rằng thành phần thứ hai (y) của tích có hướng phải đổi dấu."
+        "<b>Tế = Thiếu (khí hoặc huyết)</b>.",
+        "<b>Sáp = Khó khăn, không trơn tru (do huyết hư hoặc huyết ứ)</b>.",
+        "Tế sáp = Vừa thiếu máu, vừa có cục máu đông gây tắc nghẽn."
       ]
     },
     {
       "id": 39,
-      "question": "Find the differential of the function \\( y = \\sqrt{4+5x} \\). <br> (i) \\( dy = \\frac{5\\sqrt{4+5x}}{2} dx \\) <br> (ii) \\( dy = \\frac{5}{2\\sqrt{4+5x}} dx \\) <br> (iii) \\( dy = \\frac{1}{2\\sqrt{4+5x}} dx \\) <br> (iv) \\( dy = \\frac{1}{2} \\sqrt{4+5x} dx \\)",
+      "question": "Nguyên nhân gây \"Tỳ Bị Thấp Nhiệt\" thường liên quan đến yếu tố nào trong ăn uống và sinh hoạt?",
       "image": null,
       "options": [
-        "A. (i)",
-        "B. (iii)",
-        "C. (iv)",
-        "D. None of the other choices is correct",
-        "E. (ii)"
+        "A. Ăn phải đồ lạnh, ở nơi ẩm thấp",
+        "B. Ưu tư tổn thương đến Tỳ thổ",
+        "C. Ăn nhiều đồ cay nóng, dầu mỡ, uống rượu bia",
+        "D. Lao động quá sức, không điều độ"
       ],
-      "correctAnswer": "E",
-      "explanation": "Để giải siêu tốc, ta áp dụng quy tắc chuỗi và viết ra kết quả ngay lập tức.<br /><br /><b>1. Nhớ công thức:</b><br />Vi phân \\( dy = y' \\cdot dx \\). Ta chỉ cần tính đạo hàm \\(y'\\).<br /><br /><b>2. Áp dụng quy tắc chuỗi (nhẩm nhanh):</b><br />- <b>Đạo hàm hàm ngoài (hàm căn):</b> Đạo hàm của \\(\\sqrt{u}\\) là \\(\\frac{1}{2\\sqrt{u}}\\).<br />- <b>Đạo hàm hàm trong (hàm ruột \\(4+5x\\)):</b> Đạo hàm là 5.<br /><br /><b>3. Kết hợp lại:</b><br />\\( y' = (\\text{đạo hàm ngoài}) \\times (\\text{đạo hàm trong}) = \\frac{1}{2\\sqrt{4+5x}} \\cdot 5 = \\frac{5}{2\\sqrt{4+5x}} \\).<br /><br />Vậy, vi phân là \\( dy = \\frac{5}{2\\sqrt{4+5x}} dx \\), tương ứng với lựa chọn (ii).",
+      "correctAnswer": "C",
+      "explanation": "Hội chứng \"Tỳ Bị Thấp Nhiệt\" là do Tỳ bị cả hai yếu tố <b>Thấp</b> và <b>Nhiệt</b> cùng tác động.<br />Nguyên nhân thường do chế độ ăn uống không phù hợp, làm phát sinh nội thấp và nội nhiệt:<br />- <b>Ăn nhiều đồ cay nóng, dầu mỡ:</b> Những đồ ăn này có tính \"nhiệt\", dễ sinh nhiệt trong cơ thể. Đồ dầu mỡ khó tiêu cũng dễ sinh \"thấp\".<br />- <b>Uống rượu bia:</b> Rượu bia cũng có tính thấp nhiệt, làm tổn thương Tỳ Vị.<br />Những yếu tố này làm Tỳ Vị bị tổn thương, chức năng vận hóa rối loạn, sinh ra thấp trọc và nhiệt tà.",
       "difficulty": "easy",
-      "topic": "Calculus (Differentials)",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Bị Thấp Nhiệt",
       "hints": [
-        "Mẹo nhanh nhất: Vi phân `dy` chính là `(đạo hàm) * dx`.",
-        "Công thức đạo hàm nhanh cho hàm căn: Đạo hàm của \\(\\sqrt{u}\\) là \\(\\frac{u'}{2\\sqrt{u}}\\).",
-        "Trong bài này, \\(u = 4+5x\\) và \\(u' = 5\\). Chỉ cần thế vào công thức là xong."
+        "\"Thấp Nhiệt\" thường do <b>ăn uống đồ béo ngọt, cay nóng, rượu bia</b> mà sinh ra.",
+        "Liên tưởng đến cảm giác nặng nề, nóng trong sau khi ăn nhiều đồ chiên xào, cay nóng."
       ]
     },
     {
       "id": 40,
-      "question": "Let A be a 3x3 matrix. Choose correct statements: <br> (i) \\( \\det(-A) = -\\det(A) \\) <br> (ii) If A has two equal rows, then \\( \\det(A) = 0 \\) <br> (iii) If \\( \\det(A) = 0 \\), then A has two equal rows.",
+      "question": "Hội chứng \"Tỳ khí hư\" với biểu hiện \"ăn uống kém, chán ăn, ăn không ngon miệng\" là do chức năng nào của Tỳ bị suy giảm trực tiếp?",
       "image": null,
       "options": [
-        "A. All of (i), (ii) and (iii)",
-        "B. (ii) and (iii)",
-        "C. (i) and (ii)",
-        "D. (iii)",
-        "E. (i) and (iii)"
+        "A. Chức năng thống nhiếp huyết dịch",
+        "B. Chức năng chủ cơ nhục, tứ chi",
+        "C. Chức năng vận hóa thủy cốc",
+        "D. Chức năng thăng thanh giáng trọc"
       ],
       "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta cần nhớ các tính chất cơ bản của định thức.<br /><br /><b>1. Kiểm tra (i): \\( \\det(-A) = -\\det(A) \\)</b><br />- <b>Tính chất:</b> \\(\\det(kA) = k^n \\det(A)\\), với n là cấp của ma trận.<br />- Ở đây A là ma trận 3x3 (n=3), k=-1. Vậy \\(\\det(-A) = (-1)^3 \\det(A) = -\\det(A)\\).<br />- → Mệnh đề (i) <b>ĐÚNG</b> (vì n=3 là số lẻ).<br /><br /><b>2. Kiểm tra (ii): Hai hàng bằng nhau \\(\\Rightarrow \\det(A) = 0\\)</b><br />- Đây là một tính chất cơ bản và kinh điển của định thức.<br />- → Mệnh đề (ii) <b>ĐÚNG</b>.<br /><br /><b>3. Kiểm tra (iii): \\(\\det(A) = 0 \\Rightarrow\\) hai hàng bằng nhau</b><br />- <b>Bẫy kinh điển:</b> Đây là mệnh đề đảo của (ii), và nó không đúng.<br />- \\(\\det(A)=0\\) chỉ có nghĩa là các hàng phụ thuộc tuyến tính, không nhất thiết phải có hai hàng bằng nhau.<br />- <b>Phản ví dụ:</b> Một hàng là bội số của hàng khác (ví dụ hàng 2 = 2 * hàng 1) hoặc một hàng là tổng của hai hàng khác. <br />- → Mệnh đề (iii) <b>SAI</b>.<br /><br /><b>Kết luận:</b> (i) và (ii) đúng.",
-      "difficulty": "medium",
-      "topic": "Linear Algebra (Properties of Determinants)",
-      "hints": [
-        "Mẹo cho (i): Công thức là \\(\\det(kA) = k^n \\det(A)\\). Với n=3 (lẻ), dấu trừ được giữ lại.",
-        "Mẹo cho (ii): Đây là tính chất đúng 'kinh điển' của định thức.",
-        "Mẹo cho (iii): Đây là mệnh đề đảo, một 'bẫy' kinh điển. \\(det(A)=0\\) chỉ suy ra các hàng/cột phụ thuộc tuyến tính, không nhất thiết phải bằng nhau."
-      ]
-    },
-    {
-      "id": 41,
-      "question": "Find \\( \\int \\frac{x dx}{(\\cos x)^2} \\). <br> (i) \\( x \\sin x - \\tan x + C \\) <br> (ii) \\( x \\tan x + \\ln|\\cos x| + C \\) <br> (iii) \\( x \\sin x + \\ln|\\cos x| + C \\) <br> (iv) \\( x \\tan x + \\ln(\\cos x) + C \\) <br> (v) \\( x \\tan x + \\ln|\\sec x| + C \\)",
-      "image": null,
-      "options": [
-        "A. (i)",
-        "B. (v)",
-        "C. (iv)",
-        "D. (ii)",
-        "E. (iii)",
-        "F. None of the other choices is correct"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Để giải siêu tốc, ta cần nhận ra ngay đây là tích phân từng phần và nhớ kết quả của các tích phân cơ bản.<br /><br /><b>1. Nhận dạng và Đặt (trong đầu):</b><br />- Viết lại tích phân: \\( \\int x \\sec^2 x \\, dx \\).<br />- Theo quy tắc 'Nhất Lô, Nhì Đa, Tam Lượng...', ta ưu tiên đặt \\( u = x \\) (hàm đa thức) và \\( dv = \\sec^2 x \\, dx \\) (hàm lượng giác).<br /><br /><b>2. Áp dụng công thức Từng phần: \\(uv - \\int v du\\)</b><br />- \\( u=x \\Rightarrow du=dx \\)<br />- \\( dv = \\sec^2 x dx \\Rightarrow v = \\tan x \\)<br />- Thay vào công thức: \\( x \\tan x - \\int \\tan x \\, dx \\).<br /><br /><b>3. Nhớ nguyên hàm của tan(x):</b><br />- Nguyên hàm của \\( \\tan x \\) là \\( -\\ln|\\cos x| \\).<br />- Kết quả cuối cùng: \\( x \\tan x - (-\\ln|\\cos x|) + C = x \\tan x + \\ln|\\cos x| + C \\).<br /><br />Điều này tương ứng với lựa chọn (ii).",
-      "difficulty": "medium",
-      "topic": "Calculus (Integration by Parts)",
-      "hints": [
-        "Mẹo nhanh nhất: Nhận dạng ngay đây là tích phân từng phần của \\(x\\sec^2x\\).",
-        "Đặt \\(u=x\\) và \\(dv=\\sec^2x dx\\).",
-        "Phải thuộc lòng: \\( \\int \\tan x \\, dx = -\\ln|\\cos x| \\). Kết hợp với dấu trừ của công thức từng phần sẽ ra dấu cộng."
-      ]
-    },
-    {
-      "id": 42,
-      "question": "Find the parametric equation of the line passing through \\( A(2, -1, 3) \\) and \\( B(1, 0, 1) \\).",
-      "image": null,
-      "options": [
-        "A. \\( x = 2+t, y = -1-t, z = 3+2t \\)",
-        "B. \\( x = 2+t, y = -1+t, z = 3+2t \\)",
-        "C. \\( x = 1+t, y = t, z = 1+2t \\)",
-        "D. None of the other choices is correct",
-        "E. \\( x = 1+t, y = t, z = 2t \\)"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta không viết phương trình mà sẽ kiểm tra ngược từ đáp án. Mỗi đáp án cho ta 2 thông tin: một **điểm đi qua** và một **vector chỉ phương**.<br /><br /><b>1. Tính nhẩm vector chỉ phương (VTCP) đúng:</b><br />- \\(\\vec{d} = A - B = (2-1, -1-0, 3-1) = (1, -1, 2)\\).<br /><br /><b>2. Phân tích các đáp án:</b><br />- <b>Đáp án A:</b> \\(x = 2+t, y = -1-t, z = 3+2t\\)<br />  - Điểm đi qua là (2, -1, 3), chính là điểm A. <b>(Đúng)</b><br />  - VTCP (hệ số của t) là (1, -1, 2). <b>(Đúng)</b><br />- → Khớp hoàn toàn. Đây là đáp án đúng.<br /><br />- <b>Đáp án C:</b> \\(x = 1+t, y = t, z = 1+2t\\)<br />  - Điểm đi qua là (1, 0, 1), chính là điểm B. <b>(Đúng)</b><br />  - VTCP là (1, 1, 2). <b>(Sai)</b>, vì VTCP đúng là (1, -1, 2).",
+      "explanation": "Tỳ có nhiều chức năng quan trọng, trong đó <b>chức năng vận hóa thủy cốc</b> là cốt lõi. \"Vận hóa\" bao gồm việc tiêu hóa thức ăn, hấp thu chất dinh dưỡng và chuyển hóa nước (thủy dịch).<br />Khi Tỳ khí hư, chức năng này suy giảm, dẫn đến:<br />- Thức ăn không được tiêu hóa tốt, gây <b>chán ăn, ăn không ngon miệng</b>.<br />- Chất dinh dưỡng không được hấp thu đầy đủ, gây mệt mỏi, suy nhược.<br />- Nước không được chuyển hóa, gây đầy bụng, tiêu lỏng.",
       "difficulty": "easy",
-      "topic": "Analytic Geometry (Parametric Equations of a Line)",
+      "topic": "YHCT - Tạng Tỳ - Tỳ Khí Hư",
       "hints": [
-        "Mẹo nhanh nhất: Đừng viết phương trình, hãy kiểm tra đáp án.",
-        "Từ mỗi đáp án, rút ra 2 thứ: 'Điểm' (các số hạng không chứa t) và 'Vector chỉ phương' (các hệ số của t).",
-        "Đối chiếu 'Điểm' với A hoặc B, và đối chiếu 'Vector chỉ phương' với A-B hoặc B-A."
-      ]
-    },
-    {
-      "id": 43,
-      "question": "Determine where the function is increasing and where it is decreasing: \\( f(x) = \\frac{5x}{x^2+1} \\) <br> (i) Decreasing on \\( (-\\infty, -1) \\) and \\( (1, \\infty) \\), Increasing on \\( (-1, 1) \\) <br> (ii) Increasing on \\( (-\\infty, -1) \\) and \\( (1, \\infty) \\), Decreasing on \\( (-1, 1) \\) <br> (iii) Increasing on \\( (-\\infty, 0) \\), Decreasing on \\( (0, \\infty) \\) <br> (iv) Decreasing on \\( (-\\infty, -1) \\), Increasing on \\( (-1, \\infty) \\)",
-      "image": null,
-      "options": [
-        "A. (i)",
-        "B. None of the other choices is correct",
-        "C. (iv)",
-        "D. (iii)",
-        "E. (ii)"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Để giải siêu tốc, ta chỉ cần xét dấu của đạo hàm \\(f'(x)\\).<br /><br /><b>1. Tính đạo hàm (dùng quy tắc thương):</b><br />\\( f'(x) = \\frac{(5)(x^2+1) - (5x)(2x)}{(x^2+1)^2} = \\frac{5x^2+5 - 10x^2}{(x^2+1)^2} = \\frac{5(1-x^2)}{(x^2+1)^2} \\).<br /><br /><b>2. Phân tích dấu (Mẹo siêu nhanh):</b><br />- Mẫu số \\((x^2+1)^2\\) luôn dương, nên ta có thể bỏ qua nó.<br />- Dấu của \\(f'(x)\\) phụ thuộc hoàn toàn vào tử số: \\(1 - x^2\\).<br />- Đây là một tam thức bậc hai có hệ số a âm (parabol quay xuống), nên nó sẽ có giá trị dương ở 'trong khoảng hai nghiệm' và âm ở 'ngoài khoảng hai nghiệm'.<br /><br /><b>3. Tìm nghiệm và kết luận:</b><br />- Nghiệm của \\(1-x^2=0\\) là \\(x=-1\\) và \\(x=1\\).<br />- <b>Trong khoảng (-1, 1):</b> \\(f'(x) > 0 \\Rightarrow\\) hàm số đồng biến (tăng).<br />- <b>Ngoài khoảng (-1, 1):</b> \\(f'(x) < 0 \\Rightarrow\\) hàm số nghịch biến (giảm).<br /><br />Kết quả này khớp với lựa chọn (i).",
-      "difficulty": "medium",
-      "topic": "Calculus (Increasing/Decreasing Functions, First Derivative Test)",
-      "hints": [
-        "Mẹo nhanh nhất: Dấu của đạo hàm chỉ phụ thuộc vào tử số \\(5(1-x^2)\\).",
-        "Tử số là một parabol quay xuống, nên nó sẽ dương ở giữa hai nghiệm (-1 và 1) và âm ở bên ngoài.",
-        "Trong khoảng nghiệm (-1, 1) là đồng biến. Ngoài khoảng là nghịch biến."
-      ]
-    },
-    {
-      "id": 44,
-      "question": "Given the function \\( f(x) = -\\frac{1}{(x-1)^2} \\). Which of the following statements is TRUE?",
-      "image": null,
-      "options": [
-        "A. The function is continuous for all real values of x.",
-        "B. The function is discontinuous at x = 1.",
-        "C. The function is discontinuous for all x < 1.",
-        "D. The function is discontinuous at x = -1 and at x = -1."
-      ],
-      "correctAnswer": "B",
-      "explanation": "Để giải siêu tốc, ta chỉ cần tìm điểm làm cho mẫu số bằng 0.<br /><br /><b>1. Nhìn vào mẫu số:</b><br />- Mẫu số là \\((x-1)^2\\).<br /><br /><b>2. Tìm nghiệm của mẫu:</b><br />- \\( (x-1)^2 = 0 \\Rightarrow x - 1 = 0 \\Rightarrow x = 1 \\).<br /><br /><b>Kết luận:</b><br />Hàm số bị gián đoạn (không xác định) duy nhất tại điểm làm cho mẫu bằng 0, đó chính là \\(x=1\\).",
-      "difficulty": "easy",
-      "topic": "Calculus (Continuity)",
-      "hints": [
-        "Mẹo nhanh nhất: Một hàm phân thức chỉ bị gián đoạn tại nơi mẫu số bằng 0.",
-        "Chỉ cần giải phương trình: `mẫu số = 0`."
-      ]
-    },
-    {
-      "id": 45,
-      "question": "Express the area under the graph of \\( f(x) = x^2 - 1 \\), from 0 to 4, as a limit. <br> (i) \\( \\lim_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{4}{n} (1 + \\frac{64i^2}{n^2}) \\) <br> (ii) \\( \\lim_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{4}{n} (\\frac{4i^2}{n^2} - 1) \\) <br> (iii) \\( \\lim_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{4}{n} (1 + \\frac{4i}{n}) \\) <br> (iv) \\( \\lim_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{4}{n} (\\frac{16i^2}{n^2} - 1) \\)",
-      "image": null,
-      "options": [
-        "A. (ii)",
-        "B. (i)",
-        "C. (iv)",
-        "D. None of the other choices is correct.",
-        "E. (iii)"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta lắp ráp nhanh các thành phần của công thức tổng Riemann:<br />\\[ \\lim_{n \\to \\infty} \\sum_{i=1}^{n} f(x_i) \\Delta x \\]<br /><br /><b>1. Tính các thành phần cơ bản (nhẩm nhanh):</b><br />- <b>Chiều rộng \\(\\Delta x\\):</b> \\( \\frac{4-0}{n} = \\frac{4}{n} \\).<br />  <i>(Nhìn vào đây, ta thấy mọi đáp án đều có \\(\\frac{4}{n}\\) ở ngoài, không loại được gì).</i><br />- <b>Điểm mút phải \\(x_i\\):</b> \\( a + i \\Delta x = 0 + i \\frac{4}{n} = \\frac{4i}{n} \\).<br /><br /><b>2. Tính giá trị hàm số \\(f(x_i)\\):</b><br />- Chỉ cần thế \\(x_i\\) vào hàm \\(f(x) = x^2 - 1\\):<br />\\( f(x_i) = (\\frac{4i}{n})^2 - 1 = \\frac{16i^2}{n^2} - 1 \\).<br /><br /><b>3. Lắp ráp và kết luận:</b><br />Kết hợp lại, ta có biểu thức: \\( \\lim_{n \\to \\infty} \\sum_{i=1}^{n} (\\frac{16i^2}{n^2} - 1) \\frac{4}{n} \\).<br />Điều này tương ứng với lựa chọn (iv).",
-      "difficulty": "medium",
-      "topic": "Calculus (Definite Integrals as Limits of Riemann Sums)",
-      "hints": [
-        "Mẹo nhanh nhất: Công thức là \\(\\lim \\sum f(x_i) \\Delta x\\).",
-        "Bước 1: Tìm \\(\\Delta x = (b-a)/n = 4/n\\).",
-        "Bước 2: Tìm \\(x_i = a + i\\Delta x = 4i/n\\).",
-        "Bước 3: Thế \\(x_i\\) vào hàm \\(f(x)\\). Bạn sẽ có ngay \\((\\frac{16i^2}{n^2} - 1)\\). Kết hợp với \\(\\Delta x\\) là ra đáp án."
-      ]
-    },
-    {
-      "id": 46,
-      "question": "Find all numbers \\(a\\) such that the set of vectors \\( \\{(1, -1, 0), (2, 0, 1), (0, 1, a)\\} \\) is dependent.",
-      "image": null,
-      "options": [
-        "A. 1/3",
-        "B. 1/2",
-        "C. All numbers but 1/2",
-        "D. All numbers but 1/3",
-        "E. None of the other choices is correct"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Để giải siêu tốc, ta dùng quy tắc: 3 vector trong \\(\\mathbb{R}^3\\) phụ thuộc tuyến tính khi và chỉ khi định thức của ma trận tạo bởi chúng bằng 0.<br /><br /><b>1. Tính định thức (nhanh nhất bằng cách khai triển theo hàng 1 vì có số 0):</b><br />\\( \\det(M) = \\begin{vmatrix} 1 & -1 & 0 \\\\ 2 & 0 & 1 \\\\ 0 & 1 & a \\end{vmatrix} \\)<br />\\( = 1 \\cdot (0 - 1) - (-1) \\cdot (2a - 0) + 0 \\)<br />\\( = -1 + 2a \\).<br /><br /><b>2. Cho định thức bằng 0 và giải:</b><br />\\( -1 + 2a = 0 \\Rightarrow 2a = 1 \\Rightarrow a = 1/2 \\).",
-      "difficulty": "medium",
-      "topic": "Linear Algebra (Linear Dependence)",
-      "hints": [
-        "Mẹo nhanh nhất: Các vector 'phụ thuộc' khi định thức của ma trận tạo bởi chúng bằng 0.",
-        "Đặt các vector vào ma trận và tính định thức.",
-        "Khai triển định thức theo hàng hoặc cột có nhiều số 0 nhất để tính toán tối giản."
-      ]
-    },
-    {
-      "id": 47,
-      "question": "A ball is thrown upward such that its height (in meters) after \\(t\\) seconds takes the form \\( h(t) = 1 + 25t + at^2 \\). Assume that the velocity of the ball at time \\( t = 2 \\)s is 5 m/s. Find \\(a\\).",
-      "image": null,
-      "options": [
-        "A. (See picture)",
-        "B. -10",
-        "C. -5",
-        "D. 5",
-        "E. 10"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta thực hiện đạo hàm và giải phương trình trong vài bước ngắn gọn.<br /><br /><b>1. Tìm hàm vận tốc (đạo hàm nhẩm):</b><br />- Vận tốc \\(v(t)\\) là đạo hàm của quãng đường \\(h(t)\\).<br />\\( v(t) = h'(t) = 25 + 2at \\).<br /><br /><b>2. Thiết lập phương trình từ dữ kiện:</b><br />- Đề bài cho biết tại \\(t=2\\), vận tốc \\(v(2)=5\\).<br />- Thế \\(t=2\\) vào hàm vận tốc: \\( v(2) = 25 + 2a(2) = 25 + 4a \\).<br /><br /><b>3. Giải phương trình tìm a:</b><br />\\( 25 + 4a = 5 \\)<br />\\( 4a = 5 - 25 = -20 \\)<br />\\( a = -5 \\).",
-      "difficulty": "easy",
-      "topic": "Calculus (Derivatives, Kinematics)",
-      "hints": [
-        "Mẹo nhanh nhất: Vận tốc là đạo hàm của quãng đường.",
-        "Lấy đạo hàm của `h(t)` để có `v(t)`, sau đó thế `t=2` và cho `v(2)=5`.",
-        "Phương trình cuối cùng bạn cần giải là `25 + 4a = 5`."
-      ]
-    },
-    {
-      "id": 48,
-      "question": "Use Newton's method with the specified initial approximation \\(x_0\\) to find \\(x_2\\), the third approximation to the root of the given equation. \\( x^3 - 3x + 1 = 0, x_0 = 0 \\) (Give your answer to 4 decimal places)",
-      "image": null,
-      "options": [
-        "A. (See picture)",
-        "B. 1.2472",
-        "C. 0.6528",
-        "D. 0.3472",
-        "E. 0.6667",
-        "F. 0.3133"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Để giải siêu tốc, ta cần áp dụng công thức 2 lần một cách máy móc và nhanh gọn.<br /><br /><b>1. Chuẩn bị (nhẩm nhanh):</b><br />- \\( f(x) = x^3 - 3x + 1 \\)<br />- \\( f'(x) = 3x^2 - 3 \\)<br /><br /><b>2. Vòng lặp 1 (Tìm x₁):</b><br />- Với \\(x_0 = 0\\), ta có \\(f(0)=1\\) và \\(f'(0)=-3\\).<br />- \\( x_1 = x_0 - \\frac{f(x_0)}{f'(x_0)} = 0 - \\frac{1}{-3} = \\frac{1}{3} \\).<br /><br /><b>3. Vòng lặp 2 (Tìm x₂):</b><br />- Với \\(x_1 = 1/3\\), ta có:<br />  \\( f(1/3) = (1/3)^3 - 1 + 1 = 1/27 \\).<br />  \\( f'(1/3) = 3(1/3)^2 - 3 = 1/3 - 3 = -8/3 \\).<br />- \\( x_2 = \\frac{1}{3} - \\frac{1/27}{-8/3} = \\frac{1}{3} + \\frac{1}{27} \\cdot \\frac{3}{8} = \\frac{1}{3} + \\frac{1}{72} = \\frac{24+1}{72} = \\frac{25}{72} \\).<br /><br /><b>4. Chuyển sang số thập phân:</b><br />\\( \\frac{25}{72} \\approx 0.3472 \\).",
-      "difficulty": "medium",
-      "topic": "Numerical Methods (Newton's Method)",
-      "hints": [
-        "Mẹo nhanh nhất: Thuộc lòng công thức \\(x_{n+1} = x_n - f(x_n)/f'(x_n)\\) và thực hiện tuần tự.",
-        "Vòng lặp đầu tiên thường rất đơn giản để tính (với x=0).",
-        "Cẩn thận khi chia phân số ở vòng lặp thứ hai."
-      ]
-    },
-    {
-      "id": 49,
-      "question": "Let A be a 30x70 matrix having rank A = 20. Find dim(Col(A)), dim(Row(A)) and dim(Null(A)).",
-      "image": null,
-      "options": [
-        "A. 70, 30, 20",
-        "B. 20, 20, 40",
-        "C. 20, 20, 50",
-        "D. None of the other choices is correct"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta áp dụng 3 quy tắc cơ bản và nhanh chóng.<br /><br /><b>1. Số chiều không gian cột và hàng:</b><br />- Cả hai đều bằng hạng của ma trận.<br />- \\( \\text{dim(Col(A))} = \\text{dim(Row(A))} = \\text{rank}(A) = 20 \\).<br /><br /><b>2. Số chiều không gian Null (hạt nhân):</b><br />- Áp dụng Định lý Hạng-Số chiều: \\( \\text{rank}(A) + \\text{dim(Null(A))} = \\text{số cột} \\).<br />- \\( 20 + \\text{dim(Null(A))} = 70 \\).<br />- \\( \\text{dim(Null(A))} = 70 - 20 = 50 \\).<br /><br /><b>Kết quả:</b> Các số chiều lần lượt là (20, 20, 50).",
-      "difficulty": "easy",
-      "topic": "Linear Algebra (Rank-Nullity Theorem, Fundamental Subspaces)",
-      "hints": [
-        "Mẹo nhanh nhất: Nhớ 3 quy tắc vàng.",
-        "1. dim(Cột) = Hạng = 20.",
-        "2. dim(Hàng) = Hạng = 20.",
-        "3. dim(Null) = (Số cột) - Hạng = 70 - 20 = 50."
-      ]
-    },
-    {
-      "id": 50,
-      "question": "Given that -3 is an eigenvalue for the matrix \\( \\begin{bmatrix} 3 & -6 <br/> 8 & -11 \\end{bmatrix} \\). Find all eigenvectors corresponding to this eigenvalue \\( \\lambda = -3 \\).",
-      "image": null,
-      "options": [
-        "A. (See picture)",
-        "B. None of the other choices is correct",
-        "C. \\( t(1, 1) \\), t is nonzero",
-        "D. \\( t(2, 1) \\), t is nonzero",
-        "E. \\( t(1, -1) \\), t is nonzero"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Để giải siêu tốc, ta chỉ cần giải hệ \\((A - \\lambda I)\\vec{v} = \\vec{0}\\) bằng cách nhìn vào một hàng duy nhất.<br /><br /><b>1. Tính nhanh \\( A - \\lambda I \\):</b><br />- Với \\(\\lambda = -3\\), ta cần tính \\(A + 3I\\):<br />\\( A + 3I = \\begin{bmatrix} 3+3 & -6 \\\\ 8 & -11+3 \\end{bmatrix} = \\begin{bmatrix} 6 & -6 \\\\ 8 & -8 \\end{bmatrix} \\).<br /><br /><b>2. Dùng một hàng để tìm vector (Mẹo nhanh nhất):</b><br />- Hai hàng của ma trận này luôn tỉ lệ với nhau. Ta chỉ cần dùng hàng đầu tiên: \\([6, -6]\\).<br />- Phương trình tương ứng là \\(6x - 6y = 0\\), suy ra \\(x = y\\).<br /><br /><b>3. Kết luận:</b><br />- Một vector có dạng \\(x=y\\) sẽ là \\((t, t)\\) hoặc \\(t(1, 1)\\).<br />- Điều này khớp với đáp án C.",
-      "difficulty": "easy",
-      "topic": "Linear Algebra (Eigenvalues and Eigenvectors)",
-      "hints": [
-        "Mục tiêu là giải \\((A - \\lambda I)\\vec{v} = \\vec{0}\\).",
-        "Mẹo nhanh nhất: Sau khi tính \\((A - \\lambda I)\\), bạn chỉ cần dùng một hàng để tìm ra mối quan hệ giữa x và y.",
-        "Nếu một hàng là `[a, b]`, vector riêng tương ứng sẽ là `t(-b, a)`. Trong bài này, hàng là `[6, -6]`, vậy vector là `t(6, 6)` hay `t(1, 1)`."
+        "Tỳ được ví như \"cái bếp\" của cơ thể, phụ trách <b>tiêu hóa và hấp thu (vận hóa)</b> thức ăn.",
+        "Khi \"bếp\" yếu (Tỳ hư) thì việc ăn uống sẽ không còn ngon miệng, tiêu hóa kém."
       ]
     }
+    
+    
   ]
 }
