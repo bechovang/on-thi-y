@@ -6,7 +6,8 @@ export default function LoginPage() {
   const router = useRouter()
 
   const handleStart = () => {
-    router.push("/select-exam")
+    // Sử dụng window.location để đảm bảo chuyển trang hoạt động trên Netlify
+    window.location.href = "/select-exam"
   }
 
   return (
